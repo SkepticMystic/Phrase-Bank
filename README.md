@@ -2,14 +2,8 @@
 
 ## Format
 
-This is open to change, but currently I use the following format:
+This is open to change, but we currently use the following format in the `phrasebank.json` file:
 
-```md
-# Group
-
-## Subgroup
-
-### Sub sub
-
-Phrase snippet
+```js
+{ "section": string, "keywords": string[] "phrases": string[] }[]
 ```
