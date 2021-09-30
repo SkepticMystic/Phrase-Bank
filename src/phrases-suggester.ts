@@ -1,15 +1,18 @@
 import { App, FuzzyMatch, FuzzySuggestModal } from "obsidian";
-import { Settings } from "src/main";
+import { getActiveView } from "src/utils";
+import PhraseBankPlugin, { Settings } from "src/main";
 import { PBSettingsTab } from "src/settings";
 
 export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
     app: App;
+    plugin: PhraseBankPlugin;
     phrases: string[];
     settings: Settings;
 
-    constructor(app: App, phrases: string[], settings: Settings) {
+    constructor(app: App, plugin: PhraseBankPlugin, phrases: string[], settings: Settings) {
         super(app);
         this.app = app;
+        this.plugin = plugin
         this.phrases = phrases;
         this.settings = settings;
     }
@@ -28,6 +31,9 @@ export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
 
     onChooseItem(item: string, evt: MouseEvent | KeyboardEvent): void {
         console.log(item);
-
+        const activeView = getActiveView(this.plugin);
+        const activeEditor = activeView.editor;
+        const editorRange = activeEditor.getCursor('from')
+        activeEditor.replaceRange(item, editorRange)
     }
 }

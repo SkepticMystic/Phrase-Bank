@@ -71,11 +71,16 @@ function __generator(thisArg, body) {
     }
 }
 
+function getActiveView(plugin) {
+    return plugin.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
+}
+
 var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhrasesFuzzySuggestModal, _super);
-    function PBPhrasesFuzzySuggestModal(app, phrases, settings) {
+    function PBPhrasesFuzzySuggestModal(app, plugin, phrases, settings) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
+        _this.plugin = plugin;
         _this.phrases = phrases;
         _this.settings = settings;
         return _this;
@@ -91,15 +96,20 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     };
     PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
         console.log(item);
+        var activeView = getActiveView(this.plugin);
+        var activeEditor = activeView.editor;
+        var editorRange = activeEditor.getCursor('from');
+        activeEditor.replaceRange(item, editorRange);
     };
     return PBPhrasesFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
 
 var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBSectionFuzzySuggestModal, _super);
-    function PBSectionFuzzySuggestModal(app, pb, settings) {
+    function PBSectionFuzzySuggestModal(app, plugin, pb, settings) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
+        _this.plugin = plugin;
         _this.pb = pb;
         _this.settings = settings;
         return _this;
@@ -120,7 +130,7 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
     };
     PBSectionFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
         console.log(item.section);
-        new PBPhrasesFuzzySuggestModal(this.app, item.phrases, this.settings).open();
+        new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
     };
     return PBSectionFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
@@ -179,7 +189,7 @@ var PhraseBankPlugin = /** @class */ (function (_super) {
                         this.addCommand({
                             id: 'write-metadataframe',
                             name: 'Write Metadataframe',
-                            callback: function () { return new PBSectionFuzzySuggestModal(_this.app, _this.pb, _this.settings).open(); }
+                            callback: function () { return new PBSectionFuzzySuggestModal(_this.app, _this, _this.pb, _this.settings).open(); }
                         });
                         this.addSettingTab(new PBSettingsTab(this.app, this));
                         currFile = this.app.vault.getAbstractFileByPath('Phrase Bank.md');
