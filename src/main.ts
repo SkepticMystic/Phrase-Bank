@@ -28,7 +28,7 @@ export default class PhraseBankPlugin extends Plugin {
         this.addCommand({
             id: 'write-metadataframe',
             name: 'Write Metadataframe',
-            callback: () => new PBSectionFuzzySuggestModal(this.app, this.pb, this.settings).open()
+            callback: () => new PBSectionFuzzySuggestModal(this.app, this, this.pb, this.settings).open()
         });
 
         this.addSettingTab(new PBSettingsTab(this.app, this));
