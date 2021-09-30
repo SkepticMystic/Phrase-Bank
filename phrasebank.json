@@ -1,6 +1,13 @@
 [
     {
-        "section":"Introduction",
+        "section":"General Introduction",
+        "keywords":[
+        		"introduction",
+        		"tradition",
+        		"beginning",
+        		"relevance",
+        		"intro"
+        ],
         "phrases":[
             "Research on XX has a long tradition",
             "For decades, one of the most popular ideas in XX literature is the idea that XX",
@@ -36,6 +43,11 @@
     },
     {
         "section":"Problem definition",
+        "keywords":[
+        		"problem",
+        		"shortcoming",
+        		"need for improvement"
+        ],
         "phrases":[
             "This seems to be a common problem in XX",
             "This leads to myriad problems in XX",
@@ -72,6 +84,22 @@
     },
     {
         "section":"Gaps in literature",
+        "keywords":[
+        		"gap",
+        		"insufficient existing research",
+        		"not enough knowledge",
+        		"neglect",
+        		"negligence"
+        		"previous research",
+        		"existing research",
+        		"existing literature",
+        		"previous literature"
+        		"paste research",
+        		"paste literature",
+        		"shortcoming",
+        		"limitions of previous work",
+        		"limitions of existing work"
+        ],
         "phrases":[
             "There is no previous research using XX approach.",
             "As far as we know, no previous research has investigated XX",
@@ -87,6 +115,16 @@
     },
     {
         "section":"Problem solution",
+        "keywords":[
+        		"imrovement",
+        		"solution",
+        		"enhancement",
+        		"our ways",
+        		"our approach",
+        		"our method",
+        		"our contribution",
+        		"benefit"
+        ],
         "phrases":[
             "One way to overcome these problems is to XX",
             "There are many alternative methods are available for solving these problems.",
@@ -134,6 +172,14 @@
     },
     {
         "section":"Study motivation",
+        "keywords":[
+        		"motive",
+        		"our interest",
+        		"this paper",
+        		"this study",
+        		"this publication",
+        		"study motivation"
+        ],
         "phrases":[
             "It is of interest to know whether XX still hold true.",
             "It would be of special interest toXX",
@@ -150,6 +196,13 @@
     },
     {
         "section":"Aims & objectives",
+        "keywords":[
+        		"goal",
+        		"objective",
+        		"target",
+        		"aim",
+        		"overall"
+        ],
         "phrases":[
             "The aim is to develop more sophisticated methods for XX",
             "The aim of this work is to develop XX",
@@ -178,6 +231,17 @@
     },
     {
         "section":"Significance and advantages of your work",
+        "keywords":[
+        		"importance",
+        		"benefit",
+        		"improvement",
+        		"advantage",
+        		"significance",
+        		"significantly",
+        		"important",
+        		"relevance",
+        		"relevant"
+        ],
         "phrases":[
             "This thesis documents several key contributions made to the fields of XX",
             "This thesis has made a number of significant contributions to the field of XX",
@@ -215,6 +279,22 @@
     },
     {
         "section":"Previous literature",
+        "keywords":[
+        		"gap",
+        		"insufficient existing research",
+        		"not enough knowledge",
+        		"neglect",
+        		"negligence"
+        		"previous research",
+        		"existing research",
+        		"existing literature",
+        		"previous literature"
+        		"paste research",
+        		"paste literature",
+        		"shortcoming",
+        		"limitions of previous work",
+        		"limitions of existing work",
+        ],
         "phrases":[
             "The literature review shows that XX",
             "Previous research showed XX",
@@ -262,6 +342,22 @@
     },
     {
         "section":"Limitations of previous research",
+        "keywords":[
+        		"gap",
+        		"insufficient existing research",
+        		"not enough knowledge",
+        		"neglect",
+        		"negligence",
+        		"previous research",
+        		"existing research",
+        		"existing literature",
+        		"previous literature",
+        		"paste research",
+        		"paste literature",
+        		"shortcoming",
+        		"limitions of previous work",
+        		"limitions of existing work",
+        ],
         "phrases":[
             "A number of questions regarding XX remain to be addressed.",
             "A closer look to the literature on XX, however, reveals a number of gaps and shortcomings.",
@@ -300,6 +396,17 @@
     },
     {
         "section":"Research questions",
+        "keywords":[
+        		"overall question",
+        		"goal",
+        		"puzzle",
+        		"main problem",
+        		"major question",
+        		"research questions",
+        		"question we aim to answer",
+        		"hypothesis",
+        		"proposition"
+        ],
         "phrases":[
             "More specific research questions will be introduced and investigated in XX",
             "A further question is whether XX",
@@ -330,6 +437,13 @@
     },
     {
         "section":"Research to be explored",
+        "keywords":[
+        		"call for further research",
+        		"more research is required",
+        		"research to be explored",
+        		"future research",
+        		"future studies"
+        ],
         "phrases":[
             "A more systematic and theoretical analysis is required for XX",
             "As the authors note earlier, more work is necessary toXX",
@@ -342,6 +456,14 @@
     },
     {
         "section":"Experimental setup",
+        "keywords":[
+        		"research design",
+        		"methodology",
+        		"our approach",
+        		"experiments",
+        		"calibration",
+        		"methodological setup"
+        ],
         "phrases":[
             "This experimental design was employed because XX",
             "In the course of the experiment, XX played an important role.",
@@ -367,7 +489,15 @@
         ]
     },
     {
-        "section":"Data collection",
+        "section":"Data collection (quantitative)",
+        "keywords":[
+        		"data collection",
+        		"sample",
+        		"test subjects",
+        		"participants",
+        		"sampling",
+        		"data obtainment"
+        ],
         "phrases":[
             "There were XX participants in this sample.",
             "Participants first provided informed consent about XX",
@@ -398,7 +528,15 @@
         ]
     },
     {
-        "section":"Data analysis",
+        "section":"Data analysis (quantitative)",
+        "keywords":[
+        		"analysis",
+        		"empirical analysis",
+        		"calculation",
+        		"results",
+        		"insight",
+        		"trend"
+        ],
         "phrases":[
             "However, there are trends in our data to suggest that XX",
             "The trend values were then subjected to XX",
@@ -429,6 +567,12 @@
     },
     {
         "section":"Statistical testing",
+        "keywords":[
+        		"testing",
+        		"statistically significant",
+        		"data interpretation",
+        		"statistical analysis"
+        ],
         "phrases":[
             "We explored these effects statistically by XX",
             "Statistical analyses was performed by using the XX applying a significance level of XX",
@@ -457,6 +601,13 @@
     },
     {
         "section":"Assumptions",
+        "keywords":[
+        		"assumptions",
+        		"implicit in the model",
+        		"implicit assumption",
+        		"pre-assumption",
+				"underlying assumption"
+        ],
         "phrases":[
             "Such a potentially unrealistic assumption arises from the fact that XX",
             "Based on these assumptions, hypotheses were developed: XX",
@@ -475,6 +626,13 @@
     },
     {
         "section":"Remit of the experiment",
+        "keywords":[
+        		"remit",
+        		"sufficient",
+        		"enough",
+        		"experiment",
+        		"saturation"
+        ],
         "phrases":[
             "For the current work, it is sufficient to point out that XX",
             "Because we were interested in XX, we considered only XX",
@@ -496,6 +654,14 @@
     },
     {
         "section":"Findings & Results",
+        "keywords":[
+        		"findings",
+        		"insight",
+        		"presentation",
+        		"results",
+        		"central findings",
+        		"empirical data"
+        ],
         "phrases":[
             "From the short review above, key findings emerge: XX",
             "We describe the results of XX, which show XX",
@@ -543,6 +709,12 @@
     },
     {
         "section":"Comparison with prior studies",
+        "keywords":[
+        		"comparison",
+        		"beyond previous research",
+        		"contrasting",
+        		"improvement"
+        ],
         "phrases":[
             "The results demonstrated in this chapter match state of the art methods.",
             "Here we compare the results of the proposed method with those of the traditional methods.",
@@ -569,6 +741,12 @@
     },
     {
         "section":"Limitations of your work",
+        "keywords":[
+        		"limitations",
+        		"restrictions",
+        		"limited by",
+        		"unfortunately"
+        ],
         "phrases":[
             "Because of the lack of XX we decided to not investigate XX",
             "One concern about the findings of XX was that XX",
@@ -594,6 +772,17 @@
     },
     {
         "section":"Causal arguments",
+        "keywords":[
+        		"explanandum",
+        		"explanans",
+        		"explanation",
+        		"factor",
+        		"cause",
+        		"underlying factor",
+        		"root cause",
+        		"fundamental cause",
+        		"independent variable"
+        ],
         "phrases":[
             "A popular explanation of XX is that XX",
             "It is by now generally accepted that XX",
@@ -621,6 +810,15 @@
     },
     {
         "section":"Speculations",
+        "keywords":[
+        		"suspect",
+        		"assume",
+        		"seemingly",
+        		"speculation",
+        		"potentially",
+        		"unclear",
+        		"unanswered"
+        ],
         "phrases":[
             "However, we acknowledge that there are considerable discussions among researchers as to XX",
             "We speculate that this might be due to XX",
@@ -647,6 +845,13 @@
     },
     {
         "section":"Deductive Arguments",
+        "keywords":[
+        		"logically",
+        		"therefore",
+        		"hence",
+        		"necessarily",
+        		"deduction"
+        ],
         "phrases":[
             "A difference between these XX can only be attributable to XX",
             "Nonetheless, we believe that it is well justified to XX",
@@ -661,6 +866,14 @@
     },
     {
         "section":"Overall Summary & Conclusion",
+        "keywords":[
+        		"conclude",
+        		"in summary",
+        		"overall",
+        		"recap",
+        		"we have shown",
+        		"conclusion"
+        ],
         "phrases":[
             "The paper concludes by arguing XX",
             "On this basis, we conclude that XX",
@@ -706,6 +919,16 @@
     },
     {
         "section":"Future work",
+        "keywords":[
+        		"call for further research",
+        		"more research is required",
+        		"research to be explored",
+        		"future research",
+        		"outro",
+        		"epilogue",
+        		"future studies",
+        		"remaining questions"
+        ],
         "phrases":[
             "Future research should consider the potential effects of XX more carefully, for example XX",
             "This assumption might be addressed in future studies.",
@@ -749,6 +972,13 @@
     },
     {
         "section":"Acknowledgments",
+        "keywords":[
+        		"grateful",
+        		"thankful",
+        		"ackknowledge",
+        		"ackknowledgement",
+        		"financial support"
+        ],
         "phrases":[
             "The authors gratefully acknowledge the financial support of __",
             "The authors acknowledge the infrastructure and support of __",
@@ -772,6 +1002,15 @@
     },
     {
         "section":"Appendix",
+        "keywords":[
+        		"epilogue",
+        		"outro",
+        		"research to be explored",
+        		"future research",
+        		"future studies",
+        		"attachment",
+        		"detailled data"
+        ],
         "phrases":[
             "For interested readers a detailed description is presented in the Appendix __",
             "Further description is available in the Appendix or from the author__",

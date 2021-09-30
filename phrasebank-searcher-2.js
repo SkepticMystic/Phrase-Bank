@@ -26,5 +26,12 @@ phrases_array.forEach(phrase => {
 	});
 });
 
+jsonArray.push({
+	'title': "⬅️ Go back",
+	'subtitle': "to section section selection",
+	'match': "up back section previous",
+	'arg': "back",
+});
+
 JSON.stringify({ items: jsonArray });
 
