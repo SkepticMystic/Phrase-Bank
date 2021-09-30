@@ -2,7 +2,7 @@
 
 ## Format
 
-This is open to changem but currently I use the following format:
+This is open to change, but currently I use the following format:
 
 ```md
 # Group
