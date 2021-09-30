@@ -21,7 +21,7 @@ phraseJSON.forEach(section => {
 		'title': sectionName,
 		'uid': sectionName,
 		'subtitle': "",
-		'match': alfredMatcher(sectionName),
+		'match': section.keywords.join(" ") + " " + sectionName,
 		'arg': JSON.stringify(section),
 	});
 });
