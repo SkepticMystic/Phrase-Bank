@@ -1,0 +1,11 @@
+{
+  "include": ["src/**/*", "src/*", "**/*.ts"],
+  "exclude": ["node_modules/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src": ["src/*"]
+    },
+    "lib": ["ES2019", "DOM"]
+  }
+}
