@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.6...0.0.7) (2021-10-01)
+
+
+### Features
+
+* :sparkles: Option to go back to section-suggester ([183f1a0](https://github.com/SkepticMystic/Phrase-Bank/commit/183f1a09e7f1d9af715d371b1dc8dcc17fb1add0))
+
+
+### Bug Fixes
+
+* :bug: Shift + Enter now selects a random phrase from that section ([7ce28a7](https://github.com/SkepticMystic/Phrase-Bank/commit/7ce28a75f63f870213f3b2846cb6de20f2893a3f))
+
 ### [0.0.6](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.5...0.0.6) (2021-10-01)
 
 
