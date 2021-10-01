@@ -317,7 +317,8 @@ var PBPlugin = /** @class */ (function (_super) {
         console.log({ lines: lines });
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
-            if (line.startsWith('## ')) {
+            if (pb.length === 0 && !line.startsWith('## ')) ;
+            else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 var section = line.slice(3);
                 pb.push({ section: section, desc: '', keywords: [], phrases: [] });
