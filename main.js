@@ -137,6 +137,11 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
         _this.plugin = plugin;
         _this.pb = pb;
         _this.settings = settings;
+        _this.scope.register(['Shift'], 'Enter', function (evt) {
+            // @ts-ignore
+            _this.chooser.useSelectedItem(evt);
+            return false;
+        });
         return _this;
     }
     PBSectionFuzzySuggestModal.prototype.getItems = function () {

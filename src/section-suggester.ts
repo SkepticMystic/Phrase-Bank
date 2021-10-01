@@ -16,6 +16,11 @@ export class PBSectionFuzzySuggestModal extends FuzzySuggestModal<PBItem> {
         this.plugin = plugin
         this.pb = pb;
         this.settings = settings;
+        this.scope.register(['Shift'], 'Enter', (evt: KeyboardEvent) => {
+			// @ts-ignore
+			this.chooser.useSelectedItem(evt);
+			return false;
+		});
     }
 
     getItems(): PBItem[] {
