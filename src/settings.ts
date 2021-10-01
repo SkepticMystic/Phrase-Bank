@@ -17,13 +17,13 @@ export class PBSettingTab extends PluginSettingTab {
         containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
 
         new Setting(containerEl)
-            .setName('Phrase Bank file path')
-            .setDesc('Path to your phrase bank.md file in your vault.')
+            .setName('Phrase Bank file names')
+            .setDesc('Names of your phrase bank.md files in your vault. You can also enter a comma-separated list of pb.md filenames, and the plugin will merge them into one global PB')
             .addText(tc => {
-                tc.setValue(settings.pbFilePaths.join(', '))
+                tc.setValue(settings.pbFileNames.join(', '))
                 tc.inputEl.onblur = async () => {
                     const { value } = tc.inputEl
-                    settings.pbFilePaths = value.split(',').map(path => path.trim());
+                    settings.pbFileNames = value.split(',').map(path => path.trim());
                     await this.plugin.saveSettings();
                     await this.plugin.refreshPB()
                 }

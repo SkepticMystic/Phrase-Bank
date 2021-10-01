@@ -1,16 +1,16 @@
-import { Http2ServerRequest } from 'http2';
-import { normalizePath, Notice, Plugin, TFile } from 'obsidian';
+import { Notice, Plugin } from 'obsidian';
 import { PBItem } from 'src/interfaces';
+import { removeDuplicates } from 'src/utils';
 import { PBSectionFuzzySuggestModal } from './section-suggester';
 import { PBSettingTab } from './Settings';
 
 export interface Settings {
-    pbFilePaths: string[];
+    pbFileNames: string[];
     useRemotePB: boolean
 }
 
 const DEFAULT_SETTINGS: Settings = {
-    pbFilePaths: [''],
+    pbFileNames: [''],
     useRemotePB: false,
 }
 
@@ -55,17 +55,18 @@ export default class PBPlugin extends Plugin {
 
     }
 
-    mdToJSON(content: string) {
+    mdToJSON(content: string, fileName: string) {
         const lines = content.split('\n');
         const pb: PBItem[] = [];
         console.log({ lines })
 
         for (let line of lines) {
-            if (pb.length === 0 && !line.startsWith('## ')) { }
-            else if (line.startsWith('## ')) {
+            if (pb.length === 0 && !line.startsWith('## ')) {
+                // Skip all lines until the first level 2 heading
+            } else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 const section = line.slice(3)
-                pb.push({ section, desc: '', keywords: [], phrases: [] })
+                pb.push({ fileName, section, desc: '', keywords: [], phrases: [] })
             } else if (line.startsWith('> ')) {
                 // Blockquotes indicate description
                 pb.last().desc = line.slice(2)
@@ -135,7 +136,7 @@ export default class PBPlugin extends Plugin {
     }
 
     async refreshPB() {
-        if (this.settings.pbFilePaths[0] === '' && !this.settings.useRemotePB) {
+        if (this.settings.pbFileNames[0] === '' && !this.settings.useRemotePB) {
             new Notice('Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.');
             return
         }

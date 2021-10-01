@@ -5,6 +5,12 @@ export function getActiveView(plugin: PBPlugin): MarkdownView {
     return plugin.app.workspace.getActiveViewOfType(MarkdownView);
 }
 
-export function removeDuplicates(...arrs: any[]) {
-    return [...new Set([...arrs])]
+export function removeDuplicates<T>(a: T[]) {
+    var result: T[] = [];
+    a.forEach((item) => {
+        if (result.indexOf(item) < 0) {
+            result.push(item);
+        }
+    });
+    return result
 }
