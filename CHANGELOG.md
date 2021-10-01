@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.7...0.0.8) (2021-10-01)
+
+
+### Features
+
+* :sparkles: Allow arbitrary content before the phrase banks starts ([1e14a0d](https://github.com/SkepticMystic/Phrase-Bank/commit/1e14a0d4819686d1fb3b49ba70574a6c914261f5))
+
 ### [0.0.7](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.6...0.0.7) (2021-10-01)
 
 
