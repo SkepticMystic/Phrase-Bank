@@ -70,7 +70,7 @@ export default class PBPlugin extends Plugin {
                 pb.last().desc = line.slice(2)
             } else if (line.startsWith('- ')) {
                 // Bullets indicates keywords
-                const kws = line.slice(2).split(',');
+                const kws = line.slice(2).split(',').map(kw => kw.trim());
                 pb.last().keywords.push(...kws)
             } else if (line.startsWith('%%')) {
                 // Ignore comments
