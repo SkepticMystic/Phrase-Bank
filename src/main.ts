@@ -1,3 +1,4 @@
+import { Http2ServerRequest } from 'http2';
 import { normalizePath, Notice, Plugin, TFile } from 'obsidian';
 import { PBItem } from 'src/interfaces';
 import { PBSectionFuzzySuggestModal } from './section-suggester';
@@ -46,6 +47,9 @@ export default class PBPlugin extends Plugin {
         this.app.workspace.onLayoutReady(async () => {
             await this.refreshPB()
         })
+
+        // const resp = await fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank.md')
+        // resp.text
     }
 
     mdToJSON(content: string) {
@@ -64,6 +68,12 @@ export default class PBPlugin extends Plugin {
                 // Bullets indicates keywords
                 const kws = line.slice(2).split(',');
                 pb.last().keywords.push(...kws)
+            } else if (line.startsWith('%%')) {
+                // Ignore comments
+                return
+            } else if (line.startsWith('|')) {
+                // Ignore tables for now
+                return
             } else if (line.trim() !== '') {
                 // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line)
