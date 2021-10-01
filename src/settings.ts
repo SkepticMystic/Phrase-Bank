@@ -1,4 +1,4 @@
-import { App, PluginSettingTab, Setting } from 'obsidian';
+import { App, PluginSettingTab, Setting, TextComponent } from 'obsidian';
 import PBPlugin from "src/main";
 
 export class PBSettingTab extends PluginSettingTab {
@@ -14,18 +14,19 @@ export class PBSettingTab extends PluginSettingTab {
         const { settings, saveSettings } = this.plugin
 
         containerEl.empty();
-
         containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
 
         new Setting(containerEl)
             .setName('Phrase Bank file path')
             .setDesc('Path to your phrase bank.md file in your vault.')
-            .addText(text => text
-                .setValue(settings.pbFilePath)
-                .onChange(async (value) => {
-                    console.log('Secret: ' + value);
-                    settings.pbFilePath = value;
-                    await saveSettings();
-                }));
+            .addText(tc => {
+                tc.setValue(settings.pbFilePaths.join(', '))
+                tc.inputEl.onblur = async () => {
+                    const { value } = tc.inputEl
+                    settings.pbFilePaths = value.split(',').map(path => path.trim());
+                    await this.plugin.saveSettings();
+                }
+            }
+            );
     }
 }
