@@ -61,7 +61,8 @@ export default class PBPlugin extends Plugin {
         console.log({ lines })
 
         for (let line of lines) {
-            if (line.startsWith('## ')) {
+            if (pb.length === 0 && !line.startsWith('## ')) { }
+            else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 const section = line.slice(3)
                 pb.push({ section, desc: '', keywords: [], phrases: [] })
