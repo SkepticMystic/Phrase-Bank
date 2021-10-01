@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.5...0.0.6) (2021-10-01)
+
+
+### Features
+
+* :sparkles: Support keywords! ([830f27e](https://github.com/SkepticMystic/Phrase-Bank/commit/830f27e5fe79ae7715382512c098fa2d8ca85603))
+
+
+### Bug Fixes
+
+* :bug: Point to remotePB ([fabd359](https://github.com/SkepticMystic/Phrase-Bank/commit/fabd359c8bea39d7a4294d053d1ab400761c92fe))
+* :bug: Trim keyword input ([1ef3623](https://github.com/SkepticMystic/Phrase-Bank/commit/1ef3623b523eb7fbec9f18ea6e09ef1068d51840))
+
 ### [0.0.5](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.4...0.0.5) (2021-10-01)
 
 
