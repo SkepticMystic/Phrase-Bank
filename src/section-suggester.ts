@@ -46,7 +46,7 @@ export class PBSectionFuzzySuggestModal extends FuzzySuggestModal<PBItem> {
         if (!evt.shiftKey) {
             new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open()
         } else {
-            const randI = Math.round(Math.random() * (item.phrases.length - 1))
+            const randI = Math.floor(Math.random() * (item.phrases.length - 1))
             const randPhrase = item.phrases[randI]
             try {
                 this.close()
