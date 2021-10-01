@@ -4,11 +4,11 @@ import { PBSectionFuzzySuggestModal } from './section-suggester';
 import { PBSettingTab } from './Settings';
 
 export interface Settings {
-    pbFilePath: string
+    pbFilePaths: string[]
 }
 
 const DEFAULT_SETTINGS: Settings = {
-    pbFilePath: ''
+    pbFilePaths: ['']
 }
 
 declare module "obsidian" {
@@ -72,20 +72,49 @@ export default class PBPlugin extends Plugin {
         return pb
     }
 
+    mergePBs(localPBs: PBItem[][]) {
+        const globalPB: PBItem[] = [];
+        localPBs.forEach(localPB => {
+            localPB.forEach(pbItem => {
+                const existingPBSection = globalPB.findIndex(pb => pb.section === pbItem.section)
+                if (existingPBSection > -1) {
+                    globalPB[existingPBSection].phrases.push(...pbItem.phrases)
+                    globalPB[existingPBSection].keywords.push(...pbItem.keywords)
+                    if (globalPB[existingPBSection].desc === '') {
+                        globalPB[existingPBSection].desc = pbItem.desc
+                    }
+                } else {
+                    globalPB.push({ ...pbItem })
+                }
+            })
+        })
+        return globalPB
+    }
+
+    async buildLocalPBs() {
+        const localPBs: PBItem[][] = []
+        this.settings.pbFilePaths.forEach(async (path) => {
+            const pbFilePathNorm = normalizePath(path)
+            const pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm) as TFile
+            const content = await this.app.vault.cachedRead(pbFile)
+            console.log({ content })
+            localPBs.push(this.mdToJSON(content))
+        })
+
+        return localPBs
+    }
+
     async refreshPB() {
-        if (this.settings.pbFilePath === '') {
+        if (this.settings.pbFilePaths[0] === '') {
             new Notice('Please enter a path to the phrase bank.md file');
             return
         }
-        const pbFilePathNorm = normalizePath(this.settings.pbFilePath)
-        const pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm) as TFile
-        const content = await this.app.vault.cachedRead(pbFile)
 
-        this.pb = this.mdToJSON(content)
+        const localPBs = await this.buildLocalPBs()
+        this.pb = this.mergePBs(localPBs)
 
         new Notice('Phrase Bank Refreshed!')
-
-        console.log({ pb: this.pb, pbFilePathNorm, pbFile })
+        console.log({ pb: this.pb })
     }
 
     onunload() {

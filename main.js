@@ -33,6 +33,17 @@ function __extends(d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 }
 
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+
 function __awaiter(thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -164,33 +175,35 @@ var PBSettingTab = /** @class */ (function (_super) {
     PBSettingTab.prototype.display = function () {
         var _this = this;
         var containerEl = this.containerEl;
-        var _a = this.plugin, settings = _a.settings, saveSettings = _a.saveSettings;
+        var _a = this.plugin, settings = _a.settings; _a.saveSettings;
         containerEl.empty();
         containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
         new obsidian.Setting(containerEl)
             .setName('Phrase Bank file path')
             .setDesc('Path to your phrase bank.md file in your vault.')
-            .addText(function (text) { return text
-            .setValue(settings.pbFilePath)
-            .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        console.log('Secret: ' + value);
-                        settings.pbFilePath = value;
-                        return [4 /*yield*/, saveSettings()];
-                    case 1:
-                        _a.sent();
-                        return [2 /*return*/];
-                }
-            });
-        }); }); });
+            .addText(function (tc) {
+            tc.setValue(settings.pbFilePaths.join(', '));
+            tc.inputEl.onblur = function () { return __awaiter(_this, void 0, void 0, function () {
+                var value;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            value = tc.inputEl.value;
+                            settings.pbFilePaths = value.split(',').map(function (path) { return path.trim(); });
+                            return [4 /*yield*/, this.plugin.saveSettings()];
+                        case 1:
+                            _a.sent();
+                            return [2 /*return*/];
+                    }
+                });
+            }); };
+        });
     };
     return PBSettingTab;
 }(obsidian.PluginSettingTab));
 
 var DEFAULT_SETTINGS = {
-    pbFilePath: ''
+    pbFilePaths: ['']
 };
 var PBPlugin = /** @class */ (function (_super) {
     __extends(PBPlugin, _super);
@@ -268,24 +281,68 @@ var PBPlugin = /** @class */ (function (_super) {
         }
         return pb;
     };
+    PBPlugin.prototype.mergePBs = function (localPBs) {
+        var globalPB = [];
+        localPBs.forEach(function (localPB) {
+            localPB.forEach(function (pbItem) {
+                var _a, _b;
+                var existingPBSection = globalPB.findIndex(function (pb) { return pb.section === pbItem.section; });
+                if (existingPBSection > -1) {
+                    (_a = globalPB[existingPBSection].phrases).push.apply(_a, pbItem.phrases);
+                    (_b = globalPB[existingPBSection].keywords).push.apply(_b, pbItem.keywords);
+                    if (globalPB[existingPBSection].desc === '') {
+                        globalPB[existingPBSection].desc = pbItem.desc;
+                    }
+                }
+                else {
+                    globalPB.push(__assign({}, pbItem));
+                }
+            });
+        });
+        return globalPB;
+    };
+    PBPlugin.prototype.buildLocalPBs = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var localPBs;
+            var _this = this;
+            return __generator(this, function (_a) {
+                localPBs = [];
+                this.settings.pbFilePaths.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
+                    var pbFilePathNorm, pbFile, content;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0:
+                                pbFilePathNorm = obsidian.normalizePath(path);
+                                pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm);
+                                return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
+                            case 1:
+                                content = _a.sent();
+                                console.log({ content: content });
+                                localPBs.push(this.mdToJSON(content));
+                                return [2 /*return*/];
+                        }
+                    });
+                }); });
+                return [2 /*return*/, localPBs];
+            });
+        });
+    };
     PBPlugin.prototype.refreshPB = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var pbFilePathNorm, pbFile, content;
+            var localPBs;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (this.settings.pbFilePath === '') {
+                        if (this.settings.pbFilePaths[0] === '') {
                             new obsidian.Notice('Please enter a path to the phrase bank.md file');
                             return [2 /*return*/];
                         }
-                        pbFilePathNorm = obsidian.normalizePath(this.settings.pbFilePath);
-                        pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm);
-                        return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
+                        return [4 /*yield*/, this.buildLocalPBs()];
                     case 1:
-                        content = _a.sent();
-                        this.pb = this.mdToJSON(content);
+                        localPBs = _a.sent();
+                        this.pb = this.mergePBs(localPBs);
                         new obsidian.Notice('Phrase Bank Refreshed!');
-                        console.log({ pb: this.pb, pbFilePathNorm: pbFilePathNorm, pbFile: pbFile });
+                        console.log({ pb: this.pb });
                         return [2 /*return*/];
                 }
             });
