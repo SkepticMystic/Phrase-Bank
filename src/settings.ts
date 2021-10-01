@@ -26,6 +26,16 @@ export class PBSettingTab extends PluginSettingTab {
                     settings.pbFilePaths = value.split(',').map(path => path.trim());
                     await this.plugin.saveSettings();
                 }
+            });
+
+        new Setting(containerEl)
+            .setName('Phrase Bank file path')
+            .setDesc('Path to your phrase bank.md file in your vault.')
+            .addToggle(tg => {
+                tg.setValue(settings.useRemotePB).onChange(async val => {
+                    settings.useRemotePB = val;
+                    await this.plugin.saveSettings()
+                })
             }
             );
     }
