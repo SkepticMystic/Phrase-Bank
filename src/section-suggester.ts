@@ -23,11 +23,12 @@ export class PBSectionFuzzySuggestModal extends FuzzySuggestModal<PBItem> {
     }
 
     getItemText(item: PBItem): string {
-        return item.section;
+        return item.section + '|||' + item.keywords.join(', ');
     }
 
     renderSuggestion(item: FuzzyMatch<PBItem>, el: HTMLElement) {
         super.renderSuggestion(item, el);
+        el.innerText = el.innerText.split('|||')[0]
         this.updateSuggestionElWithDesc(item, el);
     }
 
