@@ -29,13 +29,15 @@ export class PBSettingTab extends PluginSettingTab {
             });
 
         new Setting(containerEl)
-            .setName('Phrase Bank file path')
-            .setDesc('Path to your phrase bank.md file in your vault.')
+            .setName('Use Remote Phrase Bank')
+            .setDesc('Use the content of the community-maintaned PB from: https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')
             .addToggle(tg => {
-                tg.setValue(settings.useRemotePB).onChange(async val => {
-                    settings.useRemotePB = val;
-                    await this.plugin.saveSettings()
-                })
+                tg
+                    .setValue(settings.useRemotePB)
+                    .onChange(async val => {
+                        settings.useRemotePB = val;
+                        await this.plugin.saveSettings()
+                    })
             }
             );
     }

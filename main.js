@@ -209,10 +209,12 @@ var PBSettingTab = /** @class */ (function (_super) {
             }); };
         });
         new obsidian.Setting(containerEl)
-            .setName('Phrase Bank file path')
-            .setDesc('Path to your phrase bank.md file in your vault.')
+            .setName('Use Remote Phrase Bank')
+            .setDesc('Use the content of the community-maintaned PB from: https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')
             .addToggle(function (tg) {
-            tg.setValue(settings.useRemotePB).onChange(function (val) { return __awaiter(_this, void 0, void 0, function () {
+            tg
+                .setValue(settings.useRemotePB)
+                .onChange(function (val) { return __awaiter(_this, void 0, void 0, function () {
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
