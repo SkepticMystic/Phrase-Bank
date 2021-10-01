@@ -102,7 +102,7 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.plugin = plugin;
-        _this.phrases = phrases;
+        _this.phrases = __spreadArray(__spreadArray([], phrases, true), ['BACK'], false);
         _this.settings = settings;
         return _this;
     }
@@ -116,14 +116,20 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
         _super.prototype.renderSuggestion.call(this, item, el);
     };
     PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        try {
-            var activeView = getActiveView(this.plugin);
-            var activeEditor = activeView.editor;
-            var editorRange = activeEditor.getCursor('from');
-            activeEditor.replaceRange(item, editorRange);
+        if (item === 'BACK') {
+            this.close();
+            new PBSectionFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
         }
-        catch (error) {
-            console.log(error);
+        else {
+            try {
+                var activeView = getActiveView(this.plugin);
+                var activeEditor = activeView.editor;
+                var editorRange = activeEditor.getCursor('from');
+                activeEditor.replaceRange(item, editorRange);
+            }
+            catch (error) {
+                console.log(error);
+            }
         }
     };
     return PBPhrasesFuzzySuggestModal;
@@ -164,7 +170,7 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
             new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
         }
         else {
-            var randI = Math.round(Math.random() * (item.phrases.length - 1));
+            var randI = Math.floor(Math.random() * (item.phrases.length - 1));
             var randPhrase = item.phrases[randI];
             try {
                 this.close();
