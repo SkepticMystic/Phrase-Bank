@@ -131,8 +131,8 @@ export default class PBPlugin extends Plugin {
     }
 
     async refreshPB() {
-        if (this.settings.pbFilePaths[0] === '') {
-            new Notice('Please enter a path to the phrase bank.md file');
+        if (this.settings.pbFilePaths[0] === '' && !this.settings.useRemotePB) {
+            new Notice('Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.');
             return
         }
 

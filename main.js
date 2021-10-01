@@ -386,8 +386,8 @@ var PBPlugin = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (this.settings.pbFilePaths[0] === '') {
-                            new obsidian.Notice('Please enter a path to the phrase bank.md file');
+                        if (this.settings.pbFilePaths[0] === '' && !this.settings.useRemotePB) {
+                            new obsidian.Notice('Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.');
                             return [2 /*return*/];
                         }
                         return [4 /*yield*/, this.buildLocalPBs()];
