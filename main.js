@@ -95,6 +95,15 @@ function __spreadArray(to, from, pack) {
 function getActiveView(plugin) {
     return plugin.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
 }
+function removeDuplicates(a) {
+    var result = [];
+    a.forEach(function (item) {
+        if (result.indexOf(item) < 0) {
+            result.push(item);
+        }
+    });
+    return result;
+}
 
 var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhrasesFuzzySuggestModal, _super);
@@ -154,7 +163,7 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
         return this.pb;
     };
     PBSectionFuzzySuggestModal.prototype.getItemText = function (item) {
-        return item.section + '|||' + item.keywords.join(', ');
+        return item.section + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
     };
     PBSectionFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
@@ -201,17 +210,17 @@ var PBSettingTab = /** @class */ (function (_super) {
         containerEl.empty();
         containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
         new obsidian.Setting(containerEl)
-            .setName('Phrase Bank file path')
-            .setDesc('Path to your phrase bank.md file in your vault.')
+            .setName('Phrase Bank file names')
+            .setDesc('Names of your phrase bank.md files in your vault. You can also enter a comma-separated list of pb.md filenames, and the plugin will merge them into one global PB')
             .addText(function (tc) {
-            tc.setValue(settings.pbFilePaths.join(', '));
+            tc.setValue(settings.pbFileNames.join(', '));
             tc.inputEl.onblur = function () { return __awaiter(_this, void 0, void 0, function () {
                 var value;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
                             value = tc.inputEl.value;
-                            settings.pbFilePaths = value.split(',').map(function (path) { return path.trim(); });
+                            settings.pbFileNames = value.split(',').map(function (path) { return path.trim(); });
                             return [4 /*yield*/, this.plugin.saveSettings()];
                         case 1:
                             _a.sent();
@@ -250,7 +259,7 @@ var PBSettingTab = /** @class */ (function (_super) {
 }(obsidian.PluginSettingTab));
 
 var DEFAULT_SETTINGS = {
-    pbFilePaths: [''],
+    pbFileNames: [''],
     useRemotePB: false
 };
 var PBPlugin = /** @class */ (function (_super) {
@@ -310,7 +319,7 @@ var PBPlugin = /** @class */ (function (_super) {
             });
         });
     };
-    PBPlugin.prototype.mdToJSON = function (content) {
+    PBPlugin.prototype.mdToJSON = function (content, fileName) {
         var _a;
         var lines = content.split('\n');
         var pb = [];
@@ -321,7 +330,7 @@ var PBPlugin = /** @class */ (function (_super) {
             else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 var section = line.slice(3);
-                pb.push({ section: section, desc: '', keywords: [], phrases: [] });
+                pb.push({ fileName: fileName, section: section, desc: '', keywords: [], phrases: [] });
             }
             else if (line.startsWith('> ')) {
                 // Blockquotes indicate description
@@ -347,8 +356,8 @@ var PBPlugin = /** @class */ (function (_super) {
             localPB.forEach(function (pbItem) {
                 var existingPBSection = globalPB.findIndex(function (pb) { return pb.section === pbItem.section; });
                 if (existingPBSection > -1) {
-                    globalPB[existingPBSection].phrases = __spreadArray([], new Set(__spreadArray(__spreadArray([], globalPB[existingPBSection].phrases, true), pbItem.phrases, true)), true);
-                    globalPB[existingPBSection].keywords = __spreadArray([], new Set(__spreadArray(__spreadArray([], globalPB[existingPBSection].keywords, true), pbItem.keywords, true)), true);
+                    globalPB[existingPBSection].phrases = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingPBSection].phrases, true), pbItem.phrases, true));
+                    globalPB[existingPBSection].keywords = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingPBSection].keywords, true), pbItem.keywords, true));
                     // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
                     // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
                     if (globalPB[existingPBSection].desc === '') {
@@ -372,22 +381,23 @@ var PBPlugin = /** @class */ (function (_super) {
                         localPBs = [];
                         currFile = this.app.workspace.getActiveFile();
                         return [4 /*yield*/, Promise.all([
-                                this.settings.pbFilePaths.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
-                                    var pbFilePathNorm, pbFile, content;
+                                this.settings.pbFileNames.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
+                                    var pbFile, content;
                                     return __generator(this, function (_a) {
                                         switch (_a.label) {
                                             case 0:
-                                                pbFilePathNorm = obsidian.normalizePath(path);
-                                                pbFile = this.app.metadataCache.getFirstLinkpathDest(pbFilePathNorm, currFile.path);
+                                                pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path);
                                                 console.log({ pbFile: pbFile });
                                                 if (!pbFile) return [3 /*break*/, 2];
                                                 return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
                                             case 1:
                                                 content = _a.sent();
-                                                console.log({ content: content });
-                                                localPBs.push(this.mdToJSON(content));
-                                                _a.label = 2;
-                                            case 2: return [2 /*return*/];
+                                                localPBs.push(this.mdToJSON(content, pbFile.basename));
+                                                return [3 /*break*/, 3];
+                                            case 2:
+                                                new obsidian.Notice(path + " does not exist in your vault.");
+                                                _a.label = 3;
+                                            case 3: return [2 /*return*/];
                                         }
                                     });
                                 }); })
@@ -404,8 +414,7 @@ var PBPlugin = /** @class */ (function (_super) {
             var remotePBItemArr;
             return __generator(this, function (_a) {
                 if (this.settings.useRemotePB) {
-                    remotePBItemArr = this.mdToJSON(this.remotePBmd);
-                    console.log({ remotePBItemArr: remotePBItemArr });
+                    remotePBItemArr = this.mdToJSON(this.remotePBmd, 'REMOTE');
                     return [2 /*return*/, remotePBItemArr];
                 }
                 return [2 /*return*/, []];
@@ -418,7 +427,7 @@ var PBPlugin = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (this.settings.pbFilePaths[0] === '' && !this.settings.useRemotePB) {
+                        if (this.settings.pbFileNames[0] === '' && !this.settings.useRemotePB) {
                             new obsidian.Notice('Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.');
                             return [2 /*return*/];
                         }

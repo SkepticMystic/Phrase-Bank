@@ -92,8 +92,8 @@ export default class PBPlugin extends Plugin {
             localPB.forEach(pbItem => {
                 const existingPBSection = globalPB.findIndex(pb => pb.section === pbItem.section)
                 if (existingPBSection > -1) {
-                    globalPB[existingPBSection].phrases = [...new Set([...globalPB[existingPBSection].phrases, ...pbItem.phrases])]
-                    globalPB[existingPBSection].keywords = [...new Set([...globalPB[existingPBSection].keywords, ...pbItem.keywords])]
+                    globalPB[existingPBSection].phrases = removeDuplicates([...globalPB[existingPBSection].phrases, ...pbItem.phrases])
+                    globalPB[existingPBSection].keywords = removeDuplicates([...globalPB[existingPBSection].keywords, ...pbItem.keywords])
                     // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
                     // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
                     if (globalPB[existingPBSection].desc === '') {
@@ -111,14 +111,14 @@ export default class PBPlugin extends Plugin {
         const localPBs: PBItem[][] = []
         const currFile = this.app.workspace.getActiveFile()
         await Promise.all([
-            this.settings.pbFilePaths.forEach(async (path) => {
-                const pbFilePathNorm = normalizePath(path)
-                const pbFile = this.app.metadataCache.getFirstLinkpathDest(pbFilePathNorm, currFile.path)
+            this.settings.pbFileNames.forEach(async (path) => {
+                const pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path)
                 console.log({ pbFile })
                 if (pbFile) {
                     const content = await this.app.vault.cachedRead(pbFile)
-                    console.log({ content })
-                    localPBs.push(this.mdToJSON(content))
+                    localPBs.push(this.mdToJSON(content, pbFile.basename))
+                } else {
+                    new Notice(`${path} does not exist in your vault.`)
                 }
             })
         ])
@@ -128,8 +128,7 @@ export default class PBPlugin extends Plugin {
 
     async buildRemotePB() {
         if (this.settings.useRemotePB) {
-            const remotePBItemArr = this.mdToJSON(this.remotePBmd)
-            console.log({ remotePBItemArr })
+            const remotePBItemArr = this.mdToJSON(this.remotePBmd, 'REMOTE')
             return remotePBItemArr
         }
         return []
