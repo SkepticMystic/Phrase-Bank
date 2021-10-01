@@ -25,6 +25,7 @@ export class PBSettingTab extends PluginSettingTab {
                     const { value } = tc.inputEl
                     settings.pbFilePaths = value.split(',').map(path => path.trim());
                     await this.plugin.saveSettings();
+                    await this.plugin.refreshPB()
                 }
             });
 
@@ -37,6 +38,7 @@ export class PBSettingTab extends PluginSettingTab {
                     .onChange(async val => {
                         settings.useRemotePB = val;
                         await this.plugin.saveSettings()
+                        await this.plugin.refreshPB()
                     })
             }
             );

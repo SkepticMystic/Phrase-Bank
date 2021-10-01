@@ -203,6 +203,9 @@ var PBSettingTab = /** @class */ (function (_super) {
                             return [4 /*yield*/, this.plugin.saveSettings()];
                         case 1:
                             _a.sent();
+                            return [4 /*yield*/, this.plugin.refreshPB()];
+                        case 2:
+                            _a.sent();
                             return [2 /*return*/];
                     }
                 });
@@ -221,6 +224,9 @@ var PBSettingTab = /** @class */ (function (_super) {
                             settings.useRemotePB = val;
                             return [4 /*yield*/, this.plugin.saveSettings()];
                         case 1:
+                            _a.sent();
+                            return [4 /*yield*/, this.plugin.refreshPB()];
+                        case 2:
                             _a.sent();
                             return [2 /*return*/];
                     }
@@ -345,27 +351,38 @@ var PBPlugin = /** @class */ (function (_super) {
     };
     PBPlugin.prototype.buildLocalPBs = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var localPBs;
+            var localPBs, currFile;
             var _this = this;
             return __generator(this, function (_a) {
-                localPBs = [];
-                this.settings.pbFilePaths.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
-                    var pbFilePathNorm, pbFile, content;
-                    return __generator(this, function (_a) {
-                        switch (_a.label) {
-                            case 0:
-                                pbFilePathNorm = obsidian.normalizePath(path);
-                                pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm);
-                                return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
-                            case 1:
-                                content = _a.sent();
-                                console.log({ content: content });
-                                localPBs.push(this.mdToJSON(content));
-                                return [2 /*return*/];
-                        }
-                    });
-                }); });
-                return [2 /*return*/, localPBs];
+                switch (_a.label) {
+                    case 0:
+                        localPBs = [];
+                        currFile = this.app.workspace.getActiveFile();
+                        return [4 /*yield*/, Promise.all([
+                                this.settings.pbFilePaths.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
+                                    var pbFilePathNorm, pbFile, content;
+                                    return __generator(this, function (_a) {
+                                        switch (_a.label) {
+                                            case 0:
+                                                pbFilePathNorm = obsidian.normalizePath(path);
+                                                pbFile = this.app.metadataCache.getFirstLinkpathDest(pbFilePathNorm, currFile.path);
+                                                console.log({ pbFile: pbFile });
+                                                if (!pbFile) return [3 /*break*/, 2];
+                                                return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
+                                            case 1:
+                                                content = _a.sent();
+                                                console.log({ content: content });
+                                                localPBs.push(this.mdToJSON(content));
+                                                _a.label = 2;
+                                            case 2: return [2 /*return*/];
+                                        }
+                                    });
+                                }); })
+                            ])];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/, localPBs];
+                }
             });
         });
     };
