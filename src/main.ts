@@ -5,11 +5,13 @@ import { PBSectionFuzzySuggestModal } from './section-suggester';
 import { PBSettingTab } from './Settings';
 
 export interface Settings {
-    pbFilePaths: string[]
+    pbFilePaths: string[];
+    useRemotePB: boolean
 }
 
 const DEFAULT_SETTINGS: Settings = {
-    pbFilePaths: ['']
+    pbFilePaths: [''],
+    useRemotePB: false,
 }
 
 declare module "obsidian" {
@@ -20,6 +22,7 @@ declare module "obsidian" {
 export default class PBPlugin extends Plugin {
     settings: Settings;
     pb: PBItem[];
+    remotePBmd: string;
 
     async onload() {
         console.log('Loading PhraseBank plugin');
@@ -45,16 +48,17 @@ export default class PBPlugin extends Plugin {
 
         this.pb = []
         this.app.workspace.onLayoutReady(async () => {
+            const resp = await fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')
+            this.remotePBmd = await resp.text()
             await this.refreshPB()
         })
 
-        // const resp = await fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank.md')
-        // resp.text
     }
 
     mdToJSON(content: string) {
         const lines = content.split('\n');
         const pb: PBItem[] = [];
+        console.log({ lines })
 
         for (let line of lines) {
             if (line.startsWith('## ')) {
@@ -70,10 +74,10 @@ export default class PBPlugin extends Plugin {
                 pb.last().keywords.push(...kws)
             } else if (line.startsWith('%%')) {
                 // Ignore comments
-                return
+
             } else if (line.startsWith('|')) {
                 // Ignore tables for now
-                return
+
             } else if (line.trim() !== '') {
                 // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line)
@@ -88,8 +92,10 @@ export default class PBPlugin extends Plugin {
             localPB.forEach(pbItem => {
                 const existingPBSection = globalPB.findIndex(pb => pb.section === pbItem.section)
                 if (existingPBSection > -1) {
-                    globalPB[existingPBSection].phrases.push(...pbItem.phrases)
-                    globalPB[existingPBSection].keywords.push(...pbItem.keywords)
+                    globalPB[existingPBSection].phrases = [...new Set([...globalPB[existingPBSection].phrases, ...pbItem.phrases])]
+                    globalPB[existingPBSection].keywords = [...new Set([...globalPB[existingPBSection].keywords, ...pbItem.keywords])]
+                    // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
+                    // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
                     if (globalPB[existingPBSection].desc === '') {
                         globalPB[existingPBSection].desc = pbItem.desc
                     }
@@ -111,7 +117,17 @@ export default class PBPlugin extends Plugin {
             localPBs.push(this.mdToJSON(content))
         })
 
+
         return localPBs
+    }
+
+    async buildRemotePB() {
+        if (this.settings.useRemotePB) {
+            const remotePBItemArr = this.mdToJSON(this.remotePBmd)
+            console.log({ remotePBItemArr })
+            return remotePBItemArr
+        }
+        return []
     }
 
     async refreshPB() {
@@ -121,7 +137,8 @@ export default class PBPlugin extends Plugin {
         }
 
         const localPBs = await this.buildLocalPBs()
-        this.pb = this.mergePBs(localPBs)
+        const remotePB = await this.buildRemotePB()
+        this.pb = this.mergePBs([...localPBs, remotePB])
 
         new Notice('Phrase Bank Refreshed!')
         console.log({ pb: this.pb })

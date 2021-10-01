@@ -82,6 +82,16 @@ function __generator(thisArg, body) {
     }
 }
 
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+
 function getActiveView(plugin) {
     return plugin.app.workspace.getActiveViewOfType(obsidian.MarkdownView);
 }
@@ -198,12 +208,30 @@ var PBSettingTab = /** @class */ (function (_super) {
                 });
             }); };
         });
+        new obsidian.Setting(containerEl)
+            .setName('Phrase Bank file path')
+            .setDesc('Path to your phrase bank.md file in your vault.')
+            .addToggle(function (tg) {
+            tg.setValue(settings.useRemotePB).onChange(function (val) { return __awaiter(_this, void 0, void 0, function () {
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            settings.useRemotePB = val;
+                            return [4 /*yield*/, this.plugin.saveSettings()];
+                        case 1:
+                            _a.sent();
+                            return [2 /*return*/];
+                    }
+                });
+            }); });
+        });
     };
     return PBSettingTab;
 }(obsidian.PluginSettingTab));
 
 var DEFAULT_SETTINGS = {
-    pbFilePaths: ['']
+    pbFilePaths: [''],
+    useRemotePB: false
 };
 var PBPlugin = /** @class */ (function (_super) {
     __extends(PBPlugin, _super);
@@ -240,11 +268,19 @@ var PBPlugin = /** @class */ (function (_super) {
                         // this.pb = JSON.parse(readFileSync('C:\\Users\\rossk\\OneDrive\\1D Personal\\Programming\\Obsidian Plugins\\PB Vault\\.obsidian\\plugins\\Phrase-Bank\\phrasebank.json', 'utf-8'))
                         this.pb = [];
                         this.app.workspace.onLayoutReady(function () { return __awaiter(_this, void 0, void 0, function () {
-                            return __generator(this, function (_a) {
-                                switch (_a.label) {
-                                    case 0: return [4 /*yield*/, this.refreshPB()];
+                            var resp, _a;
+                            return __generator(this, function (_b) {
+                                switch (_b.label) {
+                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')];
                                     case 1:
-                                        _a.sent();
+                                        resp = _b.sent();
+                                        _a = this;
+                                        return [4 /*yield*/, resp.text()];
+                                    case 2:
+                                        _a.remotePBmd = _b.sent();
+                                        return [4 /*yield*/, this.refreshPB()];
+                                    case 3:
+                                        _b.sent();
                                         return [2 /*return*/];
                                 }
                             });
@@ -258,6 +294,7 @@ var PBPlugin = /** @class */ (function (_super) {
         var _a;
         var lines = content.split('\n');
         var pb = [];
+        console.log({ lines: lines });
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
             if (line.startsWith('## ')) {
@@ -274,6 +311,8 @@ var PBPlugin = /** @class */ (function (_super) {
                 var kws = line.slice(2).split(',');
                 (_a = pb.last().keywords).push.apply(_a, kws);
             }
+            else if (line.startsWith('%%')) ;
+            else if (line.startsWith('|')) ;
             else if (line.trim() !== '') {
                 // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line);
@@ -285,11 +324,12 @@ var PBPlugin = /** @class */ (function (_super) {
         var globalPB = [];
         localPBs.forEach(function (localPB) {
             localPB.forEach(function (pbItem) {
-                var _a, _b;
                 var existingPBSection = globalPB.findIndex(function (pb) { return pb.section === pbItem.section; });
                 if (existingPBSection > -1) {
-                    (_a = globalPB[existingPBSection].phrases).push.apply(_a, pbItem.phrases);
-                    (_b = globalPB[existingPBSection].keywords).push.apply(_b, pbItem.keywords);
+                    globalPB[existingPBSection].phrases = __spreadArray([], new Set(__spreadArray(__spreadArray([], globalPB[existingPBSection].phrases, true), pbItem.phrases, true)), true);
+                    globalPB[existingPBSection].keywords = __spreadArray([], new Set(__spreadArray(__spreadArray([], globalPB[existingPBSection].keywords, true), pbItem.keywords, true)), true);
+                    // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
+                    // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
                     if (globalPB[existingPBSection].desc === '') {
                         globalPB[existingPBSection].desc = pbItem.desc;
                     }
@@ -327,9 +367,22 @@ var PBPlugin = /** @class */ (function (_super) {
             });
         });
     };
+    PBPlugin.prototype.buildRemotePB = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var remotePBItemArr;
+            return __generator(this, function (_a) {
+                if (this.settings.useRemotePB) {
+                    remotePBItemArr = this.mdToJSON(this.remotePBmd);
+                    console.log({ remotePBItemArr: remotePBItemArr });
+                    return [2 /*return*/, remotePBItemArr];
+                }
+                return [2 /*return*/, []];
+            });
+        });
+    };
     PBPlugin.prototype.refreshPB = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var localPBs;
+            var localPBs, remotePB;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -340,7 +393,10 @@ var PBPlugin = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.buildLocalPBs()];
                     case 1:
                         localPBs = _a.sent();
-                        this.pb = this.mergePBs(localPBs);
+                        return [4 /*yield*/, this.buildRemotePB()];
+                    case 2:
+                        remotePB = _a.sent();
+                        this.pb = this.mergePBs(__spreadArray(__spreadArray([], localPBs, true), [remotePB], false));
                         new obsidian.Notice('Phrase Bank Refreshed!');
                         console.log({ pb: this.pb });
                         return [2 /*return*/];
