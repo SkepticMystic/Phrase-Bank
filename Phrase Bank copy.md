@@ -2521,3 +2521,692 @@ In 1981, Smith and co-workers demonstrated that X induced in vitro resistance to
 In 1984, Jones et al. made several amino acid esters of X and evaluated them as …  
 In 1990, Patel et al. demonstrated that replacement of H2O with heavy water led to …  
 Thirty years later, Smith (1974) reported three cases of Candida Albicans which …
+
+
+## Writing Abstracts 
+
+An abstract is a short statement that describes a much longer piece of writing or a prospective conference presentation. Abstracts for research papers or theses should provide the reader with a quick overview of the entire study. Abstracts written for PhDs typically contain the following elements:
+
+>Importance of the topic <br>*and/or*<br>Reference to the current literature<br>*and/or*<br>Identification of a knowledge gap
+
+>Aim(s) of the current study
+
+>Indication of the methods used
+
+> **Statement of  the key finding(s)**
+
+>Implications of the findings<br>*and/or* <br> Value of the current study
+
+The first three elements listed above are grouped together because, although they may substitute each other, it is possible to find all three together. However, it is also possible to find PhD abstracts where none of them are present. Of all the elements listed above, only the ‘aims of the current study’ and the ‘statement of key findings’ appear to be obligatory and so these appear here in bold. Note that all except the last two may also be found in the introductory section of a research paper.<br>The last two are normally found in the discussion and conclusion sections. Phrases associated with all these elements are listed below.
+
+### Highlighting the Importance of the Topic 
+
+- X is vital for …
+- X plays a key role in …
+- X is a classic problem in …
+- $X$s were a major element of  …
+- There is a recognised need for …
+- X is a condition that is characterized by …
+- X is a pathogenic bacterium that causes …
+- Recently, there has been renewed interest in …
+- Since the 1960s, gradual changes in $X$ have been observed.
+- The $X$ industry is estimated to be worth over $300 billion annually.
+
+### Reference to Current Literature 
+
+- Several studies have documented …
+- Studies of $X$ show the importance of …
+- Several attempts have been made to …
+- A growing body of evidence suggests …
+- $X$ is becoming a common trend in $Y$ research.
+- Recent studies related to $X$ have shown that …
+- X has been the focus of much investigation in the search for …
+- X has emerged as a powerful tool in studying the behaviour of …
+- There has been substantial research undertaken on the role of …
+- Previous research has indicated potential associations between …
+- $X$ has attracted considerable attention, both scholarly and popular.
+
+### Identification of a Knowledge Gap 
+
+- However, $X$ has yet to be understood.
+- Previous studies of $X$ have not dealt with ...
+- Researchers have not treated $X$ in much detail.
+- The historiography of $X$ largely ignores the role of $Y$.
+- Most studies in the field of $X$ have only focused on ...
+- The contribution of $X$ has received little attention within …
+- For the past three decades, studies of $X$ have been restricted to …
+- The cellular mechanisms underlying those defects are still poorly understood.
+- No known empirical research has focused on exploring relationships between …
+- This research has been impeded by the lack of appropriate attachment measures.
+
+### Aim of the Current Study 
+
+- The aim of this study was to …
+- This study set out to examine …
+- This study set out to determine whether …
+- The principal objective of this project was to investigate …
+- In this study, techniques for $X$ were developed and applied to …
+- The present study aimed to explore the relationship between …
+
+|This thesis |argues …<br>reports on …<br>investigates …<br>analyses the roles played by …<br>explores the degree to which …<br>addresses a neglected aspect of …<br>aims to portray the different ways in which …<br>examines the chronology and geography of …<br>seeks to understand and explain the role of …|
+| :- | :- |
+
+### Indication of Methods Used 
+
+- The research is based on four case studies.
+- Contemporary source material was used to examine …
+- This study provides a novel approach to quantifying $X$ using …
+- This study used a phenomenographic approach to identify the …
+- An online survey provided quantitative data from 670 participants.
+- Questionnaire assessments of $X$ were collected from 116 adults who …
+- The study utilised a comparison control group design with three groups of …
+- The research consisted of an extensive ethnographic enquiry that included …
+- A combined qualitative and quantitative methodological approach was used to …
+- A cross-sectional study was undertaken to explore the potential relationship between …
+
+### Statement of Key Findings 
+
+- Results showed that …
+- This study identified …
+- The findings show that …
+- Respondents reported …
+- The thesis concludes that …
+- Analysis of $X$ revealed that …
+- The experimental data suggested that …
+- Evidence is presented which shows that …
+- The research presented here confirms that …
+- The study identified limited evidence of the …
+- The principal findings of this research are that …
+- In this study, $X$ was shown to vary in response to …
+- This review found evidence that early interventions are effective in …
+- The findings indicated that there was a positive relationship between …
+- Significant associations for $X$ were identified for ten variables, including …
+
+### Implications and/or the Value of the Current Study 
+
+- The study implies that …
+- The involvement of $X$ implies that …
+- It is evidently clear from the findings that …
+- An implication of this is the possibility that ...
+- The results of this study support the view that …
+- These findings provide a solid evidence base for …
+- The present results highlight the detrimental effects that $X$ has on …
+- These data support further clinical development of …
+- The findings can contribute to a better understanding of …
+- This research provides a timely and necessary study of the …
+- The findings presented in this thesis add to our understanding of …
+- The research results represent a further step towards developing …
+- This study should, therefore, be of value to practitioners wishing to …
+- As a result of these investigations, suggestions were identified for future research.
+
+## Writing Acknowledgements 
+
+The ‘acknowledgments’ sections in PhD theses are not simply a polite formality. They are important because they reveal and pay tribute to the other people and to the bodies who made the research possible.  Typically included are: funding organisations, research institutes, institutions, supervisors, collaborators, close colleagues and family members. In the majority of cases, the structure moves from acknowledging the more formal support (funding bodies, institutions, supervisors) to the most familiar (close friends and family members). The phrases listed below illustrate some of the ways that thanks and appreciation can be expressed.
+
+|Firstly,<br>Secondly, <br>Finally,  |I wish to<br>I want to<br>I would like to |thank $X$<br>extend my thanks to $X$<br>express my gratitude to $X$<br>give a special thank you to $X$|for his constant<br>for her continuous |advice.<br>support.<br>tolerance.<br>patience.<br>guidance.<br>forbearance.<br>reassurance.<br>encouragement.|
+| :- | :- | :- | :- | :- |
+
+|Most of all,<br>In particular,<br>First and foremost,<br>Last but not least,|I would like to thank |my supervisor for …<br>the University of $X$ for …<br>each of the participants in this study for …<br>|
+| :- | :- | :- |
+
+|I am  |also<br>very<br>deeply<br>forever<br>equally<br>eternally<br>especially<br>extremely<br>immensely<br>particularly |grateful to $X$  for …<br>|
+| :- | :- | :- |
+
+- I owe a great deal to …
+- I owe a debt of gratitude to …
+- I want to express my gratitude to …
+- I am indebted to my supervisors for their …
+- I must thank $X$ for the award of the funding which enabled me to undertake …
+- I think it is essential that I thank my long term friend and companion, $X$, for his …
+- I welcome this opportunity to thank the friends, family and colleagues who provided …
+- I must express my sincere appreciation to $X$ for her constant and continued support and patience.
+
+|My  |special<br>sincere <br>warmest<br>heartfelt  |thanks  |go to<br>are due to  |X|who has always encouraged me to …<br>who provided the help, guidance and support …<br>who has been an unstinting source of support …<br>who always made time to help and support me  …<br><br>for his continued support and patience.<br>for agreeing to participate in this study.<br>for her guidance, encouragement and support.<br>for her academic supervision and personal support. |
+| :- | :- | :- | :- | :- | :- |
+
+- A very special thank you goes out to …
+- Thanks also to the University of $X$, for providing the data for …
+- Thanks to the staff of $X$ for their contributions to the research …
+- My gratitude is also extended to the following funding bodies:
+- My acknowledgements would not be complete without thanking …
+- There were a multitude of individuals who helped me to arrive at this point, and …
+- Most importantly, I would not have been able to afford to undertake this endeavour without …
+
+|$X$  has  been  |supportive and patient throughout the writing of this thesis.<br>an unfailing source of encouragement, advice and reassurance.<br>a continuing source of encouragement and optimism throughout.<br>been supportive and has provided me with invaluable teaching opportunities.|
+| :- | :- |
+
+- X has offered valuable advice on specific aspects of ...
+- X has provided valuable assistance with accessing online resources.
+- X’s enthusiasm for my topic, was essential in helping me complete this project.
+- X has monitored my progress and offered advice and encouragement throughout.
+
+# Notes on Academic Writing 
+
+## A Note on Academic Style 
+
+The principal characteristics of written academic style are listed below.
+
+### 1. Evidence-based 
+
+Perhaps the most important distinguishing feature of written academic style is that it is evidence-based. Writers support their arguments and claims with evidence from the body of knowledge relevant to their discipline. In addition, any research that is undertaken must make reference to previous work in the field. As a result, academic texts are rich in attributions to other writers and references to previous research, as seen in the examples below:
+
+- Previous studies have shown that ...
+- These sources suggest that from the fifth century onwards ....
+- According to the 1957 Annual Medical Report, the death of the 960 inhabitants of ...
+- However, as has been shown elsewhere (e.g. Smith, 1992), the increase in ...
+
+For further examples, refer to the section on *[[John Morley - Manchester Phrasebank 2018#Referring to the Literature to Justify a Method or Approach|Referring to the Literature]]* in this document.
+
+In addition, general propositions are usually supported with real examples.
+
+- *This can be seen in the case of ...*
+- *A good example of this can be found in ...*
+
+### 2. Words of Classical Origin 
+
+Unlike everyday English, academic writing is characterised by a high frequency of words of classical origin (Greek and Latin). The main reason for this is that Latin was the *lingua academica* during the European renaissance; in other words, it was the international language of scholars. Even up until relatively recently, great works of science, such as Isaac Newton’s *Philosophiæ  Naturalis Principia Mathematica* (1687), were written in Latin. Where academic texts were written in English, words of classical origin were used for concepts and phenomena for which there was no equivalent in English.
+
+Although the *lingua academica* of today is English, writers of academic English still tend to use words which are derived from Latin, and also,  mainly through Latin, from Greek.
+
+-tx-
+ :-: | :-: | :-: |
+|everyday words |<br><br>→ |academic words |
+|a lot of<br> big<br>bring together<br>get rid of <br>not enough<br>story<br>thing<br>trouble<br> way (of doing)<br>worry |^^|considerable<br>significant<br>synthesise<br>eradicate<br>insufficient<br>anecdote<br>object<br>difficulty<br>method<br>concern |
+
+There are also some changes to grammatical words (though these are not of classical origin):
+
+-tx-
+| :-: | :-: | :-: |
+|everyday words |<br>→ |academic words |
+|not much research<br> not many studies<br>isn’t any evidence |^^|little research<br>few studies<br>no evidence |
+
+### 3. Cautious 
+
+Academic writers are careful about the claims they make: they take care not to appear certain where some doubt may exist, and they are careful not to over-generalise. An example of this kind of transformation can be seen below. The second sentence is in academic style:
+
+- *Drinking alcohol causes breast cancer in women. *<br>
+<font style='font-size:35'>⬇</font><br> *Some studies suggest that drinking alcohol increases the risk of breast cancer in women.*
+
+For more examples of this kind of language, refer to the section on *[[John Morley - Manchester Phrasebank 2018#Being Cautious|Expressing Caution]]*.
+
+### 4. Impersonal 
+
+In the interests of objectivity, academic writers tend to remove themselves from the writing. The focus is on ‘what’ happened, ‘how’ it was done, and ‘what’ was found. The ‘who’ (the writer) is not normally given very much attention. This is one of the reasons why personal pronouns (‘I’ and ‘we’) tend not to be used.  In addition, academic texts rarely address the reader directly and the pronoun normally used for this, ‘you’, is avoided. The second sentence is in academic style:
+
+- *You could say that Churchill made some catastrophic decisions early in the War. *<br>
+<font style='font-size:35'>⬇</font><br> *It can be said that Churchill made some catastrophic decisions early in the War.*
+
+There are some exceptions: in certain disciplines, it may be appropriate for a writer to explain their personal interest in the research area. In some disciplines, the researcher may participate in the research as a participant-observer. In these cases, ‘I’ will be used. The example below, which illustrates the former situation, is taken from a dissertation in History.
+
+*I became interested in $X$ after reading …… I hope to convey some of my fascination for the subject, as well as expressing my admiration of the artistic achievements of those involved.*
+
+In research undertaken by teams, for example in medicine and science, it is common for the research to be reported using the personal pronoun, e.g.  ‘we’.
+
+### 5. Nominalisation 
+
+There is a tendency for academic writers to transform verbs (actions) into nouns. In the example below, the verb ‘abandoned’ becomes the abstract noun ‘abandonment’.
+
+- *Unwanted Roman children were generally abandoned in a public place. *<br>
+<font style='font-size:35'>⬇</font><br>  *The abandonment of unwanted Roman children generally occurred in a public place.*
+
+As a result of this kind of transformation, academic writing is characterised by long noun phrase constructions, as in:  ‘the abandonment of unwanted Roman children’.  In certain cases, these nominalised forms can become long and complex:
+
+- *the effect of reducing aggressiveness by producing an ACTH-mediated condition of decreased androgen levels.*
+
+Although this kind of construction is considered normal in scientific writing, unless the reader is familiar with the constructions, it does make reading difficult as there are so many pieces of information to process in the one sentence. There is an argument that too much nominalisation should be discouraged.
+
+### 6. Rhetorical Questions 
+
+Questions to introduce significant new ideas are avoided, and are replaced with statements:
+
+- *Is the welfare system good or not? *<br>
+<font style='font-size:35'>⬇</font><br> *It is important to consider the effectiveness of the British welfare system.*
+
+However, setting out a list of research questions in the introductory section of a research report is quite common.
+
+### 7. Contracted Forms Avoided 
+
+Contracted forms (e.g. *it’s, don’t, isn’t, aren’t*) should not be used in academic writing. The only exception would be if you are transcribing a recorded conversation or interview.
+
+### 8. Precise and Detailed 
+
+Last of all, one of the most noticeable features of academic writing is that it is very precise and detailed. This relates to the setting out and development of the thinking and the ideas, as well as to the language used in the writing.
+
+## A Note on Style in Academic Presentations 
+
+In contrast to written style, the communicative style of academic presentations tends to be much more personal and familiar. The majority of the phrases listed below serve as useful ‘signposts’ for spoken academic presentations. ‘Signposts’ help the listeners follow where the talk is going. Notice how the personal pronouns (‘I’, ‘we’, and ‘you’) are used in most of these phrases.
+
+### Introducing the Presentation 
+
+-tx-
+| :- | :- | :- |
+|In this paper,  |I'd like to |report on a study which aimed to …<br>explore a very important aspect of ...<br>examine two important problems facing ...<br>describe some of the more recent developments in …|
+|^^|I’ll mainly focus on …||
+
+|This afternoon,  I'd like to |discuss ...<br>describe ...<br>  speak about ...<br>present my findings on …<br>address the question of …|
+| :- | :- |
+
+|The aim of my presentation is to   |assess …<br> discuss …<br>explore …<br>examine…<br>compare …<br>argue that …<br>critically evaluate …<br>offer a new model for …<br>address the question of …<br>explore the ways in which …<br>report on the findings of my study which …|
+| :- | :- |
+
+-tx-
+| :- | :-: | :- |
+|We know that  $X$ |is |fundamental to …<br>a leading cause of …<br>an important aspect of …|
+|^^|has<br>plays|a critical role in …<br>a pivotal role in …|
+
+|One of the most |pressing<br>important<br>interesting<br>challenging|problems in this area is ...<br>|
+| :- | :- | :- |
+
+### Defining and Organising the Topic 
+
+|There are |three main types of $X$ in ...<br>many different kinds of  ...|
+| :- | :- |
+
+- In this paper, I use the term ‘$X$’ to refer to …
+- In this presentation, I am using the term ‘$X$’ to refer to …
+- $X$ can best be treated under three headings. These are: ...
+- I've divided my presentation into three sections. The first section …
+
+### Indicating Sequence 
+
+|First of all, <br>To begin with,<br>In the first part of this paper,|I'd like to talk about ...<br>|`   `and then (I’ll) go on to  …<br>|
+| :- | :- | :- |
+
+- I’ll begin by …
+- I’ll then go on to …
+- Another important aspect of $X$ is ...
+- Finally, I’ll argue that …
+- Finally, I'd like to consider $X$.
+
+### Highlighting Statements 
+
+|There are two important    |causes of ...<br>reasons for ...<br>consequences of  ...|
+| :- | :- |
+
+- It is worth noting that …
+- It is important to stress that …
+- Perhaps the most interesting aspect of this is ...
+- What is important for us to recognise here, is that …
+
+### Referring to a Visual 
+
+|If we could |focus for a moment on Figure 1,  ...<br>turn for a moment to look at Table 2, |we can see that …<br>|
+| :- | :- | :- |
+
+- Here we can see that …
+- This can be clearly seen when we look at …
+- We can see this clearly in the following diagram:
+
+### Indicating Transition 
+
+|I'd like now to move on to |discuss …<br>examine …<br>consider …<br>address the question of …|
+| :- | :- |
+
+- Turning now to ...
+- Moving on to look at the relationship between …,
+- Having looked at ..., I'd now like to move on to discuss ...
+- Before I move on to consider $X$, I'd like to briefly look at ...
+
+### Concluding a Talk 
+
+|In this presentation,  I've |argued that …<br>shown that …<br>explained that …<br>  |
+| :- | :- |
+
+- So, to conclude, …
+- I’d like to conclude by saying that …
+- In conclusion, I'd like to suggest that ...
+- Are there any questions?
+- Does anyone have any questions?
+- That covers the main points. If you have any questions, I'll be happy to answer them.
+
+## A Note on Commonly Confused Words 
+
+Your spellchecker will only indicate words that are misspelt which it does not recognise. However, if the word that you have misspelt is correct when it has a different meaning, the spellchecker will not show you the correct form of the word you want. In these cases, the writer has to know the correct spelling. The list below contains words which are commonly misspelt, as well as words which may be spelt correctly but which are simply confused.
+
+### abbreviation/acronym 
+
+- An *abbreviation* is a shortened form of a word or phrase. Usually, but not always, it consists of a letter or group of letters taken from the word or phrase. *Dr*. and *Prof*. are common examples.
+- An *acronym* is an abbreviation formed from the initial components in a phrase or a word. These elements in turn form a new word: *NATO, Benelux, UNESCO.*
+
+### affect/effect 
+
+- *Affect* is a verb, e.g. *A affects B*;
+- *Effect* is a noun and is therefore, in its singular form, always used after an article/determiner (‘an’ or ‘the’/’this’), e.g. *The Greenhouse Effect*.
+
+### compliment/complement 
+
+- *Compliment* (verb) means to praise someone.
+- *Complement* (verb) means to complete or add something in a way that usually improves it.
+- Both words can also be used as nouns.
+
+### comprise/consist 
+
+Both words mean ‘to be made up of’, but only *consist* is accompanied by *of.*
+
+### discrete/discreet 
+
+- *Discrete* is an adjective which means ‘separate’ or ‘distinct’.
+- *Discreet* is an adjective which means ‘to keep silent or tactful about something’.
+
+### formerly/formally 
+
+- *Formerly* means ‘earlier’.
+- *Formally* means ‘conventionally’ or ‘officially’.
+
+### ie./e.g. 
+
+- *i.e*. is the abbreviation for *id est* which mean ‘that is’ or ‘in other words’.
+- *e.g*. is the abbreviation for *exempli gratia* which has the same meaning as ‘for example’ and ‘for instance’.
+
+### its/it's 
+
+- *its* – without an apostrophe - is a possessive determiner similar to 'my' or 'your' .
+- *it's* is a contracted form of  'it is' or 'it has' . Note, however, that contracted forms are avoided in academic writing.
+
+### later/latter 
+
+- *Later* is an adverb which means ‘at an advanced point of time’.
+- *Latter* is an adjective used to refer to an item listed in a text. It means ‘most recently mentioned’; in other words, the last item.
+
+### practice/practise 
+
+- In British English, *practice* is a noun and *practise* is a verb.
+- American English allows both spellings for both forms.
+
+### precede/proceed 
+
+- The verb *precede* means ‘to come before’.
+- The verb *proceed* means ‘to go forward’ or ‘to begin to carry out’.
+
+### principle/principal 
+
+- *Principle* is a noun which means ‘a basic belief, theory or rule’.
+- *Principal* is an adjective which means ‘main’ or ‘most important’; it can also refer to a head teacher of a school.
+
+### there/their 
+
+- *There* is used to indicate the existence of something, e.g. *There are two famous football teams in Manchester.*
+- The word  *their*  is used to indicate possession, i.e. if something belongs to someone or something.
+
+### prescribe/proscribe 
+
+- The verb *prescribe* means to advise or authorise the use of something.
+- The verb *proscribe* means to forbid or to restrict.
+
+## A Note on British and Us Spelling 
+
+The most common difference which is noticed in academic writing concerns verbs which end in *ise/yse* Br. or *ize/yze* US:
+
+- *analyse* Br.  v  *analyze* US.
+- *industrialise* Br. v  *industrialize* US.
+- *summarise* Br. v *summarize* US*.*
+
+This difference also affects the nouns derived from the verbs:
+
+- *organisation* Br.  v  *organization* US.
+- *globalisation* Br*.*  v  *globalization* US*.*
+- *colonisation* Br. v  *colonization* US.
+
+Another noticeable difference relates to words ending in *re*:
+
+- *centre* Br. v  *center* US.
+- *metre* Br. v   *meter* US.
+- *litre* Br. v  *liter* US.
+
+Below are some other differences. Can you see any patterns?
+
+|British |US |
+| :-: | :-: |
+|aeroplane<br>analogue<br>behaviour<br>catalogue<br>colour<br>connection<br>defence<br>dialogue<br>endeavour<br>encyclopaedia<br>fibre<br>foetus<br>instalment<br>labour<br>paediatric<br>plough<br>programme<br>rigour<br>sceptical<br>skilful<br>travelled<br>|airplane<br>analog<br>behavior<br>catalog<br>color<br>connexion<br>defense<br>dialog<br>endeavor<br>encyclopedia<br>fiber<br>fetus<br>installment<br>labor<br>pediatric<br>plow<br>program<br>rigor<br>skeptical<br>skillful<br>traveled<br>|
+
+If you are writing for a British university or a  British journal, you  should use the British spelling.
+
+## A Note on Punctuation 
+
+As the purpose of punctuation is to make written English easier to read and to make the meaning clear and unambiguous, good, accurate punctuation is important in academic writing.  The following notes highlight points of particular relevance to academic writing.
+
+### 1. Full Stop . 
+
+- To indicate the end of a sentence
+- To indicate an abbreviation such as *etc., et al.* (not always used)
+- To indicate an omission in a quoted text [ ...].
+
+### 2. Comma , 
+
+- To separate two main parts of a sentence (two clauses)  joined by words such as *and, or, but,*
+- To separate a dependent part of a sentence (beginning with words such as *although, when, because*) from the main part, particularly if the dependent part comes first in the sentence
+- To indicate additional information*, however relevant it may be,* in a sentence
+- To indicate a non-defining relative clause*, which simply provides additional* *information,* in a sentence
+- To separate items in a list such as: *apples, oranges, and pears* (note that the final comma before *and* is often omitted).
+
+### 3. Colon : 
+
+- **To introduce an explanation**: The reason the experiment failed was obvious: the equipment was faulty.
+- **To introduce a list**, particularly a grammatically complex list. See the example below under semi-colon
+- T**o introduce a direct quotatio**n, particularly a long one: Jones (2003) states that: ‘     ’.
+
+### 4. Semi-colon ; 
+
+- **To separate two sentences that are very closely connected in meaning** (optional, in place of a full stop):
+	- Some students prefer to write essays; others prefer to give presentations.
+- **To separate clearly items in a grammatically complex list:**
+	- For Aristotle, motion is of four kinds: (1) motion which ...; (2) motion which ...; (3) motion which ...; and (4) motion which...
+
+
+### 5. Quotation Marks ‘ ’ / “ ” 
+
+- To indicate a direct quotation
+- To highlight words or phrases used in a special or unusual way: *Quotation marks are also called ‘inverted commas’.*
+
+NB  Single quotation marks now seem to be more commonly used than double. For quotations within quotations, use double quotation marks inside single (or single inside double).
+
+### 6. Dash – 
+
+- Generally avoid in formal academic writing.  Replace by colon, semi-colon, or brackets, as appropriate.
+
+## A Note on Article Use 
+
+Article use in English is a very complex area. However, there are a few simple rules which will help you in many situations and these are explained below:
+
+### 1. Singular Countable Nouns 
+
+All singular countable nouns are always preceded by a small modifying word known in grammar as a determiner, and this is often an article (*a/an, the*). Countable words which are common in academic writing and which often cause problems for non-native speakers of English, include: *system, model, method, approach, group, problem, effect, level, investigation, sector, study, participant, condition, category*
+
+Note that even if these words are preceded by attributive nouns or adjectives, a determiner is still needed:
+
+- the greenhouse effect, the transport system, the control group
+- a high level, a systematic approach, a rigorous study, an exploratory investigation
+
+### 2. Plural Countable Nouns 
+
+If the writer is thinking about a specific group, then the definite article is normally used:   The books in this collection were published in the 19th or early 20th century.
+
+Otherwise no article is used:
+
+- Learners tend to remember new facts when they are contextualised.
+
+### 3. Uncountable Nouns 
+
+Uncountable nouns are not normally accompanied by an article:
+
+- Science has been defined as a systematic approach to answering questions.
+- Reliability is an important quality of any test.
+
+But if they are post-modified by  *of....,*  or  *which* …<br>the definite article is normally used:
+
+- The science of global warming is a complex and controversial area.
+- The reliability of this instrument is poor.
+- Chemistry is the science which addresses the composition and behaviour of matter.
+
+### 4. Names 
+
+Names and titles are not normally preceded by the definite article (*the*)
+- *Manchester University, Manchester*
+But this changes if the noun phrase contains a post-modifying structure (*of ...*)
+- *The University of Manchester,    The United States of America* or if they contain words like *organisation,* *association or institute*
+- *The World Health Organisation, The American Heart Association, The Royal Society. The SETI Institute*
+
+Apart from these simple rules, the other thing you need to do is to check how noun phrases are used in the texts that you read. Make a mental note of this as you read, or check back to the source text when you are writing.
+
+## A Note on Sentence Structure 
+
+### 1. Simple Sentences 
+
+In written English, all sentences contain a Subject → Verb structure. The subject always precedes the verb, except in questions where the order is reversed.
+
+|S |V | |
+| :-: | :- | :-: |
+|An electron |is |an elementary particle. |
+
+The subject may be one word, but it is usually a group of words centred around a noun. The verb, which can indicate an action, a state, or simply serve to link the subject to other information, may also consist of more than one word. Various other sentence elements may be placed before or after the Subject → Verb structure:
+
+| |S | V | |
+| :-: | :-: | :-: | :- |
+|Between 1933 and 1945, |restrictions |were placed     |on German academics. |
+
+It is common for the subject to consist of many words:
+
+|S |V | |
+| - | - | :- |
+|The information on various types of wasps and bees in the report |was |useful to environmentalists who were fighting the use of pesticides. |
+
+Sometimes, however, the subject and verb can just be one word each:
+
+|S |V | |
+| - | - | :- |
+|It |is |almost certain that a lower speed limit will result in fewer injuries to pedestrians. |
+
+These simple sentences always end with a full stop. In academic writing, however, many sentences are more complicated than this simple pattern.
+
+### 2. Complex Sentences 
+
+Many sentences contain more than one Subject → Verb structure, but in a complex sentence one of these parts (known grammatically as clauses) will convey the main meaning and will make sense by itself:
+
+-tx-
+| :-: | :- | :-: | :-: |
+|Dependent part ||Main part ||
+|S |V|S|V |
+|Although  findings of recent research | have shown X, |no controlled studies|have been reported.|
+
+The main part of the sentence is also known as the independent part.
+
+The main part of the sentence can also be placed before the dependent part.
+
+Main part
+
+-tx-
+|:-|:-|:-|
+|S|V| |
+|Oral societies |tend to be| more concerned with the present  |
+
+Dependent part
+
+-tx-
+|:-|:-|:-|:-|
+| |S|V| |
+|whereas|literate societies|have|a very definite awareness of the past.|
+
+The dependent part of complex sentence is usually preceded by a word or phrase such as: *although, even though, if, even if, when, because, as, since, whereas, while*  (refer to *subordinators* on the next page).
+
+### 3. Compound Sentences 
+
+Some sentences may have two   Subject → Verb structures and each of these convey meaning that can make sense by itself; in other words, there are two main parts.  The two parts may be joined by words like *and, or, but, so*, or by using a semi-colon (;) .
+
+|S |V | |
+| :-: | :- | :- |
+|Supporters of the ‘Great Divide’ theory |agree |that something is lost as well as gained when people become literate,  |
+
+| |S |V | |
+|:- | :-: | :-: | :- |
+|but|they |consider |it is worth losing some benefits in order to obtain many others. |
+
+### 4. Common Problems Relating to Sentence Structure 
+
+It is incorrect to write the dependent part of a complex sentence as a complete sentence with a full stop:
+
+- Whereas literate societies have a very definite awareness of the past.   X
+- Although a number of studies have been undertaken.   X
+
+It is incorrect to write two independent parts as one sentence without a joining word.
+
+- Supporters of the ‘Great Divide’ theory agree that something is lost as well as gained when                     people become literate, they consider it is worth losing some benefits in order to obtain many others. X
+
+## A Note on Words and Phrases Used to Connect Ideas 
+
+As well as using simple conjunctions (e.g. *and, but, or*) to link ideas, academic writers have available to them a broad range of more sophisticated words and phrases. Some of the more commonly-used ones are listed below.
+
+| |Words and phrases which link ideas across two sentences<sup>1</sup> |Words or phrases which precede a noun phrase<sup>2</sup> |Subordinators: express relationships within one sentence (with two clauses)<sup>3</sup> |
+| :- | :- | - | :- |
+|Addition |also<br>moreover<br>in addition<br>furthermore |in addition to | |
+|Adversativity |yet<br>however<br>nevertheless<br>on the other hand |despite<br>in spite of<br> |although<br>even though |
+|Aspect |in this respect<br>in other respects<br>from this perspective | | |
+|Clarification|that is<br>in other words | | |
+|Consequence |thus<br>hence<br>therefore<br>as a result<br>consequently | | |
+|Contrast|however<br>in contrast<br>on the other hand |unlike<br>in contrast to |while<br>whereas |
+|Illustration |for example<br>for instance<br> | | |
+|Reason | |due to<br>owing to<br>because of<br>on account of  |as<br>since<br>because |
+|Sequence |first<br>first of all<br>secondly<br>finally<br>in conclusion | | |
+
+1. **Words and phrases which link ideas across two sentences**<br>
+He did not sleep very much. *However*, he still managed to pass the exam.<br>
+He did not sleep very much; *however*, he still managed to pass the exam.
+
+2. **Words or phrases which precede a noun phrase**<br>
+*Despite* the lack of sleep, he still managed to pass the exam. <br>
+He still managed to pass the exam *despite* the lack of sleep.
+
+3. **Subordinators: express relationships within one sentence (with two clauses)**<br>
+*Even though* he was unable to sleep, he still managed to pass the exam. <br>
+He still managed to pass the exam *even though* he was unable to sleep.
+
+## A Note on Paragraph Structure 
+
+A pattern that can be identified in many well-written paragraphs is that of a controlling idea followed by supporting information.  The controlling idea, sometimes referred to as the *topic sentence*, introduces a new idea, topic, argument or piece of information into the main text. This is then either explained further or supported by subsequent sentences. This structure can be represented schematically thus:
+
+|Topic Sentence <br>new point, expressed in general terms) |
+| :- |
+|<br>Supporting Information which may include a combination of:<br>- statistics<br>- examples<br>- quotations<br>- a development in time<br>- an explanation or reason<br>- specific aspects or details<br>- an effect or consequence<br>- reference to previous research |
+
+It is important that the explanatory or supporting information in a paragraph should relate to the topic sentence. If new points or ideas are to be stated, then these should be treated in a separate paragraph. It is also important that the explanatory or supporting information should not repeat the general ideas expressed in the topic sentence.
+
+An example of the kind of paragraph structure suggested above is given below. Note the development from the general idea to the more detailed information. Also note the thematic linking, which is signalled by the words in bold, between the sentences. Each of these words and phrases links back to an idea introduced in the previous sentence. Here, the sentences have been separated.
+
+-tx-
+|:-|
+|Many children become interested in competitive sport at early ages.<br><br>Early involvement (prior to maturity) in competitive sport often exposes individuals to types of stress that may affect their growth, producing a disruption of the normal growth pattern (Wang, 1978; Brown, 1998).<br><br>Among cyclists the most potentially serious of these disorders is likely to be increased thoracic curvature.<br><br>Cycling alters the anatomical position of the spine (to a flexed position) particularly the thoracic spine, and exposes the anterior portion of the vertebral column to higher compression (Smith, 1998; Jones, 2002).|
+
+## A Note on the Writing Process 
+
+So far this document has been about ‘what we write’. This final section comprises a set of notes which are concerned with ‘how’ we write. It is organised into a series of helpful tips. Although only two pages are devoted to these ideas, together they have the potential to make a significant deference to the quality and quantity of your written output.
+
+### Tip No. 1. the Importance of Planning: 
+
+Research has shown that experienced writers plan extensively. Initially, planning may involve simply generating ideas and exploring the relationships between them schematically, as in the diagram to the right. At a more advanced stage of the planning process, a chapter outline of the thesis or dissertation will be necessary. This will become more detailed as you work on your study. You need to think of a writing plan as a road map. Without a map, you will probably lose your way or travel in circles.
+
+### Tip No. 2. Getting Started: 
+
+Many writers suffer from ‘writers’ block’; they find it difficult to get started. One way of overcoming this is to give yourself a short period of time (say four minutes), and without stopping, write whatever comes into your mind about the topic. The important thing to do is to keep writing, or if you are using a keyboard, to keep typing. Don’t worry about spelling of grammar – just keep producing words. You will be surprised at how much text you will produce, and how many ideas are generated in such a short time. Now you can begin to organise the ideas you have produced, ensuring that they are written in logically developed and grammatically correct sentences.
+
+### Tip No. 3. Be Regular: 
+
+You should timetable yourself so that you have a regular daily writing slot. This may seem obvious, but it is fundamental to ensuring the production of written text.  Timetable a writing period each day, and aim to produce some text every time. How much you produce will vary, and what you produce, even if it is just a few paragraphs, may only be in the initial draft stage. This is not so important. The important thing is that the writing becomes a part of your daily routine. Simply getting your body to sit in front of a computer at a certain time each day will produce results.
+
+### Tip No. 4. Keep a Notebook: 
+
+When we are writing up a major piece of work, many ideas and insights come to us when we are not actually writing. Often, some of the most insightful ideas emerge when we are in a non-focused cognitive state, such as when we are walking, running, or swimming. Unless you can capture these ideas soon after they come to you, they may be lost. A small notebook and a pen is probably the best way to capture these thoughts before they disappear. The notebook itself can become a place where you develop the ideas and even start to formulate how the ideas will be developed in textual form.
+
+### Tip No. 5. Understand the Recursive Process: 
+
+Writing at the academic level is not something we can do once and then leave. It is a recursive process. This means writers return to their initial texts, revising and redrafting them. This process is ongoing. In fact, many writers find it difficult to stop improving their writing, but with time being limited, they try to do as much as they can before the onset of a particular deadline. One thing we do know: successful writers write initial drafts, redraft, work on final drafts and then edit their work.
+
+### Tip No. 6. Read Your Own Writing: 
+
+Read what you have written back to yourself, out loud if necessary, and ask yourself: i) do I understand what I have written? ii) does it sound natural?  Reading your text out load is actually the best way of checking this. If what you have written doesn’t sound right to you when you do this, it is probably badly written. One famous French writer (Gustav Flaubert) used to shout out his manuscripts before sending them off to be published. He claimed that bad writing never passed this simple test.
+
+### Tip No. 7. Stand Back From Your Writing: 
+
+Think of yourself as a mountain climber. Most climbers, during a climb, can only see a few feet in front of their faces. They cannot see the whole mountain. They can see other mountains, but not the one they are climbing. To do this they need to move a few kilometres away. At such a distance, they can see the route they are planning and they can see how their planned route moves up the mountain. As a writer, you should ask yourself:  Is the route to the ‘top’ unbroken? Do all the minor ‘steps’ move upwards? Can the minor ‘steps’ be ‘carried out’ more clearly? The best way to create a sense of distance with your writing is with time:  Leave it a few days, or longer, and comeback to your writing with fresh eyes and with a better sense of the overall structure.
+
+### Tip No. 8. Talk About Your Writing: 
+
+Writing is a very solitary activity and we tend not to talk about it to others. This is quite strange given that we spend so many hours on this activity.  Asking another person to read some of what you have written and to give feedback can be a very useful experience; particularly if the feedback is reciprocal and both of you receive constructive criticism. It is worth bearing in mind that academic writers often receive their papers back from journal editors or publishers asking them to make changes. You might also consider forming a group of writers like yourself. Together you can read each other’s writing and share the feedback.
