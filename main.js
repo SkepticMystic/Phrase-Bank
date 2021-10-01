@@ -95,11 +95,15 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
         _super.prototype.renderSuggestion.call(this, item, el);
     };
     PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        console.log(item);
-        var activeView = getActiveView(this.plugin);
-        var activeEditor = activeView.editor;
-        var editorRange = activeEditor.getCursor('from');
-        activeEditor.replaceRange(item, editorRange);
+        try {
+            var activeView = getActiveView(this.plugin);
+            var activeEditor = activeView.editor;
+            var editorRange = activeEditor.getCursor('from');
+            activeEditor.replaceRange(item, editorRange);
+        }
+        catch (error) {
+            console.log(error);
+        }
     };
     return PBPhrasesFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
@@ -122,110 +126,175 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
     };
     PBSectionFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
-        this.updateSuggestionElForMode(item, el);
+        this.updateSuggestionElWithDesc(item, el);
     };
-    PBSectionFuzzySuggestModal.prototype.updateSuggestionElForMode = function (item, el) {
-        var indicatorEl = createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
-        el.insertAdjacentElement('afterbegin', indicatorEl);
+    PBSectionFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
+        el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
     };
     PBSectionFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
         console.log(item.section);
-        new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
+        if (!evt.shiftKey) {
+            new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
+        }
+        else {
+            var randI = Math.round(Math.random() * (item.phrases.length - 1));
+            var randPhrase = item.phrases[randI];
+            try {
+                this.close();
+                var activeView = getActiveView(this.plugin);
+                var activeEditor = activeView.editor;
+                var editorRange = activeEditor.getCursor('from');
+                activeEditor.replaceRange(randPhrase, editorRange);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
     };
     return PBSectionFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
 
-var PBSettingsTab = /** @class */ (function (_super) {
-    __extends(PBSettingsTab, _super);
-    function PBSettingsTab(app, plugin) {
+var PBSettingTab = /** @class */ (function (_super) {
+    __extends(PBSettingTab, _super);
+    function PBSettingTab(app, plugin) {
         var _this = _super.call(this, app, plugin) || this;
         _this.plugin = plugin;
         return _this;
     }
-    PBSettingsTab.prototype.display = function () {
+    PBSettingTab.prototype.display = function () {
         var _this = this;
-        var _a = this.plugin, settings = _a.settings, saveSettings = _a.saveSettings;
         var containerEl = this.containerEl;
+        var _a = this.plugin, settings = _a.settings, saveSettings = _a.saveSettings;
         containerEl.empty();
         containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
         new obsidian.Setting(containerEl)
-            .addText(function (text) {
-            text.setValue(settings.pbFilePath).onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            settings.pbFilePath = value;
-                            return [4 /*yield*/, saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+            .setName('Phrase Bank file path')
+            .setDesc('Path to your phrase bank.md file in your vault.')
+            .addText(function (text) { return text
+            .setValue(settings.pbFilePath)
+            .onChange(function (value) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        console.log('Secret: ' + value);
+                        settings.pbFilePath = value;
+                        return [4 /*yield*/, saveSettings()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        }); }); });
     };
-    return PBSettingsTab;
+    return PBSettingTab;
 }(obsidian.PluginSettingTab));
 
 var DEFAULT_SETTINGS = {
     pbFilePath: ''
 };
-var PhraseBankPlugin = /** @class */ (function (_super) {
-    __extends(PhraseBankPlugin, _super);
-    function PhraseBankPlugin() {
+var PBPlugin = /** @class */ (function (_super) {
+    __extends(PBPlugin, _super);
+    function PBPlugin() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    PhraseBankPlugin.prototype.onload = function () {
+    PBPlugin.prototype.onload = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var currFile, _a, _b;
             var _this = this;
-            return __generator(this, function (_c) {
-                switch (_c.label) {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
                     case 0:
-                        console.log('Loading Metadataframe plugin');
+                        console.log('Loading PhraseBank plugin');
                         return [4 /*yield*/, this.loadSettings()];
                     case 1:
-                        _c.sent();
+                        _a.sent();
                         this.addCommand({
-                            id: 'write-metadataframe',
-                            name: 'Write Metadataframe',
+                            id: 'phrase-bank-suggestor',
+                            name: 'Pick from Phrase Bank',
                             callback: function () { return new PBSectionFuzzySuggestModal(_this.app, _this, _this.pb, _this.settings).open(); }
                         });
-                        this.addSettingTab(new PBSettingsTab(this.app, this));
-                        currFile = this.app.vault.getAbstractFileByPath('Phrase Bank.md');
-                        _a = this;
-                        _b = this.mdToJSON;
-                        return [4 /*yield*/, this.app.vault.cachedRead(currFile)];
-                    case 2:
-                        _a.pb = _b.apply(this, [_c.sent()]);
-                        console.log(this.pb);
+                        this.addCommand({
+                            id: 'refresh-phrase-bank',
+                            name: 'Refresh Phrase Bank',
+                            callback: function () { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0: return [4 /*yield*/, this.refreshPB()];
+                                    case 1: return [2 /*return*/, _a.sent()];
+                                }
+                            }); }); }
+                        });
+                        this.addSettingTab(new PBSettingTab(this.app, this));
+                        // this.refreshPB()
+                        // this.pb = JSON.parse(readFileSync('C:\\Users\\rossk\\OneDrive\\1D Personal\\Programming\\Obsidian Plugins\\PB Vault\\.obsidian\\plugins\\Phrase-Bank\\phrasebank.json', 'utf-8'))
+                        this.pb = [];
+                        this.app.workspace.onLayoutReady(function () { return __awaiter(_this, void 0, void 0, function () {
+                            return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0: return [4 /*yield*/, this.refreshPB()];
+                                    case 1:
+                                        _a.sent();
+                                        return [2 /*return*/];
+                                }
+                            });
+                        }); });
                         return [2 /*return*/];
                 }
             });
         });
     };
-    PhraseBankPlugin.prototype.mdToJSON = function (content) {
+    PBPlugin.prototype.mdToJSON = function (content) {
+        var _a;
         var lines = content.split('\n');
         var pb = [];
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
             if (line.startsWith('## ')) {
+                // A new heading indicates a new section in the pb
                 var section = line.slice(3);
                 pb.push({ section: section, desc: '', keywords: [], phrases: [] });
             }
+            else if (line.startsWith('> ')) {
+                // Blockquotes indicate description
+                pb.last().desc = line.slice(2);
+            }
+            else if (line.startsWith('- ')) {
+                // Bullets indicates keywords
+                var kws = line.slice(2).split(',');
+                (_a = pb.last().keywords).push.apply(_a, kws);
+            }
             else if (line.trim() !== '') {
+                // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line);
             }
         }
         return pb;
     };
-    PhraseBankPlugin.prototype.refreshPB = function () {
-        // this.mdToJSON(pbFile)
+    PBPlugin.prototype.refreshPB = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var pbFilePathNorm, pbFile, content;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (this.settings.pbFilePath === '') {
+                            new obsidian.Notice('Please enter a path to the phrase bank.md file');
+                            return [2 /*return*/];
+                        }
+                        pbFilePathNorm = obsidian.normalizePath(this.settings.pbFilePath);
+                        pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm);
+                        return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
+                    case 1:
+                        content = _a.sent();
+                        this.pb = this.mdToJSON(content);
+                        new obsidian.Notice('Phrase Bank Refreshed!');
+                        console.log({ pb: this.pb, pbFilePathNorm: pbFilePathNorm, pbFile: pbFile });
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
-    PhraseBankPlugin.prototype.onunload = function () {
+    PBPlugin.prototype.onunload = function () {
         console.log('unloading plugin');
     };
-    PhraseBankPlugin.prototype.loadSettings = function () {
+    PBPlugin.prototype.loadSettings = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _a, _b, _c, _d;
             return __generator(this, function (_e) {
@@ -242,7 +311,7 @@ var PhraseBankPlugin = /** @class */ (function (_super) {
             });
         });
     };
-    PhraseBankPlugin.prototype.saveSettings = function () {
+    PBPlugin.prototype.saveSettings = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -254,7 +323,7 @@ var PhraseBankPlugin = /** @class */ (function (_super) {
             });
         });
     };
-    return PhraseBankPlugin;
+    return PBPlugin;
 }(obsidian.Plugin));
 
-module.exports = PhraseBankPlugin;
+module.exports = PBPlugin;

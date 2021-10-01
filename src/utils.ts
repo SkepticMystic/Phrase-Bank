@@ -1,6 +1,6 @@
 import { MarkdownView } from "obsidian";
-import PhraseBankPlugin from "src/main";
+import PBPlugin from "src/main";
 
-export function getActiveView(plugin: PhraseBankPlugin): MarkdownView {
+export function getActiveView(plugin: PBPlugin): MarkdownView {
     return plugin.app.workspace.getActiveViewOfType(MarkdownView);
 }
