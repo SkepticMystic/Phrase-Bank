@@ -1,7 +1,7 @@
-import { Plugin, TFile } from 'obsidian';
+import { normalizePath, Notice, Plugin, TFile } from 'obsidian';
 import { PBItem } from 'src/interfaces';
 import { PBSectionFuzzySuggestModal } from './section-suggester';
-import { PBSettingsTab } from './Settings';
+import { PBSettingTab } from './Settings';
 
 export interface Settings {
     pbFilePath: string
@@ -16,29 +16,36 @@ declare module "obsidian" {
     }
 }
 
-export default class PhraseBankPlugin extends Plugin {
+export default class PBPlugin extends Plugin {
     settings: Settings;
     pb: PBItem[];
 
     async onload() {
-        console.log('Loading Metadataframe plugin');
+        console.log('Loading PhraseBank plugin');
 
         await this.loadSettings();
 
         this.addCommand({
-            id: 'write-metadataframe',
-            name: 'Write Metadataframe',
+            id: 'phrase-bank-suggestor',
+            name: 'Pick from Phrase Bank',
             callback: () => new PBSectionFuzzySuggestModal(this.app, this, this.pb, this.settings).open()
         });
 
-        this.addSettingTab(new PBSettingsTab(this.app, this));
+        this.addCommand({
+            id: 'refresh-phrase-bank',
+            name: 'Refresh Phrase Bank',
+            callback: async () => await this.refreshPB()
+        });
+
+        this.addSettingTab(new PBSettingTab(this.app, this));
 
         // this.refreshPB()
         // this.pb = JSON.parse(readFileSync('C:\\Users\\rossk\\OneDrive\\1D Personal\\Programming\\Obsidian Plugins\\PB Vault\\.obsidian\\plugins\\Phrase-Bank\\phrasebank.json', 'utf-8'))
 
-        const currFile = this.app.vault.getAbstractFileByPath('Phrase Bank.md') as TFile
-        this.pb = this.mdToJSON(await this.app.vault.cachedRead(currFile))
-        console.log(this.pb)
+        this.pb = []
+        this.app.workspace.onLayoutReady(async () => {
+            await this.refreshPB()
+        })
     }
 
     mdToJSON(content: string) {
@@ -47,18 +54,38 @@ export default class PhraseBankPlugin extends Plugin {
 
         for (let line of lines) {
             if (line.startsWith('## ')) {
+                // A new heading indicates a new section in the pb
                 const section = line.slice(3)
                 pb.push({ section, desc: '', keywords: [], phrases: [] })
+            } else if (line.startsWith('> ')) {
+                // Blockquotes indicate description
+                pb.last().desc = line.slice(2)
+            } else if (line.startsWith('- ')) {
+                // Bullets indicates keywords
+                const kws = line.slice(2).split(',');
+                pb.last().keywords.push(...kws)
             } else if (line.trim() !== '') {
+                // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line)
             }
         }
         return pb
     }
 
-    refreshPB() {
+    async refreshPB() {
+        if (this.settings.pbFilePath === '') {
+            new Notice('Please enter a path to the phrase bank.md file');
+            return
+        }
+        const pbFilePathNorm = normalizePath(this.settings.pbFilePath)
+        const pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm) as TFile
+        const content = await this.app.vault.cachedRead(pbFile)
 
-        // this.mdToJSON(pbFile)
+        this.pb = this.mdToJSON(content)
+
+        new Notice('Phrase Bank Refreshed!')
+
+        console.log({ pb: this.pb, pbFilePathNorm, pbFile })
     }
 
     onunload() {
