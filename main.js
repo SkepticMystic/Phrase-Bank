@@ -143,10 +143,11 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
         return this.pb;
     };
     PBSectionFuzzySuggestModal.prototype.getItemText = function (item) {
-        return item.section;
+        return item.section + '|||' + item.keywords.join(', ');
     };
     PBSectionFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
+        el.innerText = el.innerText.split('|||')[0];
         this.updateSuggestionElWithDesc(item, el);
     };
     PBSectionFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
@@ -279,7 +280,7 @@ var PBPlugin = /** @class */ (function (_super) {
                             var resp, _a;
                             return __generator(this, function (_b) {
                                 switch (_b.label) {
-                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')];
+                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Databases/U%20Manchester%20Phrase%20Bank.md')];
                                     case 1:
                                         resp = _b.sent();
                                         _a = this;
@@ -316,7 +317,7 @@ var PBPlugin = /** @class */ (function (_super) {
             }
             else if (line.startsWith('- ')) {
                 // Bullets indicates keywords
-                var kws = line.slice(2).split(',');
+                var kws = line.slice(2).split(',').map(function (kw) { return kw.trim(); });
                 (_a = pb.last().keywords).push.apply(_a, kws);
             }
             else if (line.startsWith('%%')) ;
