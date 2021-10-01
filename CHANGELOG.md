@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.3...0.0.4) (2021-10-01)
+
+
+### Features
+
+* :sparkles: Ignore comments and tables (for now) ([7fc5e53](https://github.com/SkepticMystic/Phrase-Bank/commit/7fc5e53cc75dffc8f999c8fdee7cb38b60cf86cc))
+* :sparkles: Option to pull from remote PB ([e0eb5ec](https://github.com/SkepticMystic/Phrase-Bank/commit/e0eb5eca2590120cc2a02de436375b378850ea97))
+
+
+### Bug Fixes
+
+* :bug: Use remotePB with needing localPB ([4e9dfd2](https://github.com/SkepticMystic/Phrase-Bank/commit/4e9dfd228bc09cf506e88150498d2c973a472f21))
+
 ### [0.0.3](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.2...0.0.3) (2021-10-01)
 
 
