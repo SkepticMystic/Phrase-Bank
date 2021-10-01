@@ -28,7 +28,7 @@ export class PBSectionFuzzySuggestModal extends FuzzySuggestModal<PBItem> {
     }
 
     getItemText(item: PBItem): string {
-        return item.section + '|||' + item.keywords.join(', ');
+        return item.section + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
     }
 
     renderSuggestion(item: FuzzyMatch<PBItem>, el: HTMLElement) {
