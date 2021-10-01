@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.4...0.0.5) (2021-10-01)
+
+
+### Bug Fixes
+
+* :bug: Less strict on pbFilePaths, better promise awaiting ([4be12a1](https://github.com/SkepticMystic/Phrase-Bank/commit/4be12a13cba2deb77a68ff07b0bfc12f8fc6e300))
+
 ### [0.0.4](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.3...0.0.4) (2021-10-01)
 
 
