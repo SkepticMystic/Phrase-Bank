@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.8...0.0.9) (2021-10-01)
+
+
+### Features
+
+* :sparkles: `Shift + Enter` works to insert random phrase from selected section ([8faee66](https://github.com/SkepticMystic/Phrase-Bank/commit/8faee66455d3f504c368b636ef013d1545edf825))
+* :sparkles: Misc improvements. Actaul features are in other commits ([bbfaab5](https://github.com/SkepticMystic/Phrase-Bank/commit/bbfaab5948f42f07369c6e878f26154cd7cb9818))
+
+
+### Bug Fixes
+
+* :bug: Less harsh pbFile finding ([e55c813](https://github.com/SkepticMystic/Phrase-Bank/commit/e55c8130f591c607b0551893b1f5abc10cff9862))
+
 ### [0.0.8](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.7...0.0.8) (2021-10-01)
 
 
