@@ -74,10 +74,8 @@ export default class PBPlugin extends Plugin {
                 pb.last().keywords.push(...kws)
             } else if (line.startsWith('%%')) {
                 // Ignore comments
-
             } else if (line.startsWith('|')) {
                 // Ignore tables for now
-
             } else if (line.trim() !== '') {
                 // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line)
@@ -109,14 +107,19 @@ export default class PBPlugin extends Plugin {
 
     async buildLocalPBs() {
         const localPBs: PBItem[][] = []
-        this.settings.pbFilePaths.forEach(async (path) => {
-            const pbFilePathNorm = normalizePath(path)
-            const pbFile = this.app.vault.getAbstractFileByPath(pbFilePathNorm) as TFile
-            const content = await this.app.vault.cachedRead(pbFile)
-            console.log({ content })
-            localPBs.push(this.mdToJSON(content))
-        })
-
+        const currFile = this.app.workspace.getActiveFile()
+        await Promise.all([
+            this.settings.pbFilePaths.forEach(async (path) => {
+                const pbFilePathNorm = normalizePath(path)
+                const pbFile = this.app.metadataCache.getFirstLinkpathDest(pbFilePathNorm, currFile.path)
+                console.log({ pbFile })
+                if (pbFile) {
+                    const content = await this.app.vault.cachedRead(pbFile)
+                    console.log({ content })
+                    localPBs.push(this.mdToJSON(content))
+                }
+            })
+        ])
 
         return localPBs
     }
