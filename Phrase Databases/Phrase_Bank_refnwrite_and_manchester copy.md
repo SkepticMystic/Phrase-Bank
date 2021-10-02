@@ -1,6 +1,6 @@
-## Writing Introductions
+## Establishing the importance of the topic for the world or society
 
-> Establishing the importance of the topic for the world or society
+↑ Introduction
 
 X is a fundamental property of ...
 X is fast becoming a key instrument in ...
@@ -16,9 +16,9 @@ X is increasingly recognised as a serious, worldwide public health concern.
 X is an important component in the climate system, and plays a key role in Y.
 In the history of development economics, X has been thought of as a key factor in ...
 
-## Writing Introductions
+## Establishing the importance of the topic for the discipline
 
-> Establishing the importance of the topic for the discipline
+↑ Introduction
 
 A key aspect of X is ...
 X is a classic problem in ...
@@ -33,9 +33,9 @@ The issue of X has received considerable critical attention.
 X has been studied by many researchers using ...
 One of the most significant current discussions in legal and moral philosophy is ...
 
-## Writing Introductions
+## Establishing the importance of the topic (time frame given)
 
-> Establishing the importance of the topic (time frame given)
+↑ Introduction
 
 One of the most important events of the 1970s was ...
 Traditionally, Xs have subscribed to the belief that ...
@@ -51,9 +51,9 @@ X proved an important literary genre in the early Y community.
 The changes experienced by Xs over the past decade remain unprecedented.
 Xs are one of the most widely used groups of Y and have been extensively used for ...
 
-## Writing Introductions
+## Synopsis of literature
 
-> Synopsis of literature
+↑ Introduction
 
 Previous studies have reported ...
 Recent evidence suggests that ...
@@ -71,9 +71,9 @@ Xs were reported in the first models of Y (e.g., Smith, 1977; Smith and Patel, 1
 What we know about X is largely based upon empirical studies that investigate how ...
 Smith (1984: 217) shows how, in the past, research into X was mainly concerned with ...
 
-## Writing Introductions
+## Highlighting a problem
 
-> Highlighting a problem
+↑ Introduction
 
 However, a major problem with this kind of application is ...
 Lack of X has existed as a health problem for many years.
@@ -85,9 +85,9 @@ Despite its long clinical success, X has a number of problems in use.
 Questions have been raised about the safety of prolonged use of ...
 Along with this growth in X, however, there is increasing concern over ...
 
-## Writing Introductions
+## Highlighting a controversy in the field of study
 
-> Highlighting a controversy in the field of study
+↑ Introduction
 
 To date there has been little agreement on what ...
 One major issue in early X research concerned ...
@@ -106,9 +106,9 @@ The causes of X have been the subject of intense debate within the scientific co
 The issue of X has been a controversial and much disputed subject within the field of ...
 In the literature on X, the relative importance of Y has been subject to considerable debate.
 
-## Writing Introductions
+## Highlighting inadequacies of previous studies
 
-> Highlighting inadequacies of previous studies
+↑ Introduction
 
 Researchers have not treated X in much detail.
 Previous studies of X have not dealt with ...
@@ -127,9 +127,9 @@ However, these results were based upon data from over 30 years ago and it is unc
 Although extensive research has been carried out on X, no single study exists which ...
 X’s analysis does not take account of ... nor does she examine ...
 
-## Writing Introductions
+## Highlighting a knowledge gap in the field of study
 
-> Highlighting a knowledge gap in the field of study
+↑ Introduction
 
 What is not yet clear is the impact of X on ...
 No previous study has investigated X.
@@ -158,9 +158,9 @@ Despite this, very few studies have investigated the impact of X on ...
 Several studies have produced estimates of X (Smith, 2002; Jones, 2003), but there is still insufficient
 data for ...
 
-## Writing Introductions
+## Indicating the focus, aim, argument of a short paper
 
-> Indicating the focus, aim, argument of a short paper
+↑ Introduction
 
 This paper contests the claim that ...
 This paper will review the research conducted on ...
@@ -177,9 +177,9 @@ The central thesis of this paper is that ...
 The aim of the paper is to provide a conceptual theoretical framework based on...
 The purpose of this paper is to review recent research into the ...
 
-## Writing Introductions
+## Stating the purpose of research
 
-> Stating the purpose of research
+↑ Introduction
 
 The major objective of this study was to investigate ....
 The aim of this study was to clarify several aspects of ...
@@ -204,9 +204,9 @@ One purpose of this study was to assess the extent to which these factors were .
 This study seeks to obtain data which will help to address these research gaps.
 This study therefore set out to assess the effect of X ..., and the effect of ...
 
-## Writing Introductions
+## Research questions or hypotheses
 
-> Research questions or hypotheses
+↑ Introduction
 
 The central question in this dissertation asks how ...
 This research seeks to address the following questions:
@@ -216,9 +216,9 @@ The key research question of this study was whether or not ...
 This study aimed to address the following research questions:
 Another question is whether ...
 
-## Writing Introductions
+## Synopsis of the research design, method, source(s) of data
 
-> Synopsis of the research design, method, source(s) of data
+↑ Introduction
 
 Five works will be examined, all of which ...
 Data for this study were collected using ...
@@ -235,9 +235,9 @@ A holistic approach is utilised, integrating X, Y and Z material to establish ..
 The research data in this thesis is drawn from four main sources: ...
 The study was conducted in the form of a survey, with data being gathered via ...
 
-## Writing Introductions
+## Indicating significance
 
-> Indicating significance
+↑ Introduction
 
 This project provided an important opportunity to advance the understanding of ....
 This study provides an exciting opportunity to advance our knowledge of ...
@@ -248,9 +248,9 @@ The study offers some important insights into ...
 This study aims to contribute to this growing area of research by exploring ...
 There are several important areas where this study makes an original contribution to ...
 
-## Writing Introductions
+## Indicating limitations
 
-> Indicating limitations
+↑ Introduction
 
 The thesis does not engage with ...
 Due to practical constraints, this paper cannot provide a comprehensive review of ...
@@ -259,9 +259,9 @@ The reader should bear in mind that the study is based on ...
 Another potential problem is that the scope of my thesis may be too broad.
 A full discussion of X lies beyond the scope of this study.
 
-## Writing Introductions
+## Giving reasons for personal Interest
 
-> Giving reasons for personal Interest
+↑ Introduction
 
 My main reason for choosing this topic is personal interest.
 I became interested in Xs after reading ...
@@ -269,9 +269,9 @@ This project was conceived during my time working for X. As a medical advisor, I
 I have worked closely with X for many years and ...
 It is my experience of working with X that has driven this research.
 
-## Writing Introductions
+## Outlining the structure
 
-> Outlining the structure
+↑ Introduction
 
 The main questions/issues addressed in this paper are: a), b and c).
 This paper has been divided into four parts. The first part deals with ...
@@ -293,9 +293,9 @@ in order to ...
 Finally, the conclusion gives a brief summary and critique of the findings.
 Finally, areas for further research are identified.
 
-## Writing Introductions
+## Explaining Keywords (refer to Defining Terms)
 
-> Explaining Keywords (refer to Defining Terms)
+↑ Introduction
 
 Throughout this paper, the term X will refer to ...
 Throughout this dissertation, the term X will be used to refer to ...
@@ -304,9 +304,9 @@ According to Smith (2002), X can be defined as follows: “...”
 The term X is a relatively new name for ..., commonly referred to as ...
 While a variety of definitions of the term X have been suggested, this paper will use the definition first suggested by Smith (1968) who saw it as ...
 
-## Referring to Literature
+## General descriptions of the relevant literature
 
-> General descriptions of the relevant literature
+↑ Referring to Literature
 
 A large and growing body of literature has investigated ...
 More recent attention has focused on the provision of ...

@@ -1,5 +1,5 @@
 import { App, FuzzyMatch, FuzzySuggestModal } from "obsidian";
-import { PBSectionFuzzySuggestModal } from "src/section-suggester";
+import { PBPhraseTypeFuzzySuggestModal } from "src/phraseType-only-suggester";
 import PBPlugin, { Settings } from "src/main";
 import { getActiveView } from "src/utils";
 
@@ -32,7 +32,7 @@ export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
     onChooseItem(item: string, evt: MouseEvent | KeyboardEvent): void {
         if (item === 'BACK') {
             this.close()
-            new PBSectionFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open()
+            new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open()
         } else {
             try {
                 const activeView = getActiveView(this.plugin);

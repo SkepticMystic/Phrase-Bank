@@ -1,6 +1,6 @@
 ## General Introduction
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - introduction
 - tradition
@@ -8,82 +8,82 @@
 - relevance
 - intro
 
-Research on XX has a long tradition
-For decades, one of the most popular ideas in XX literature is the idea that XX
-Recent theoretical developments have revealed that XX
-A common strategy used to study XX is to XX
-This research constitutes a relatively new area which has emerged from XX
-These approaches have been influential in the field because of XX
-In the past several decades, XX have played an important role in XX
-There are growing appeals for XX
-This is the field of study that deals with XX
-Most of the theories of XX are however focused on explaining XX
-There are three major theoretical and conceptual frameworks for XX
-The field has gradually broadened as XX
-This field of study is sometimes referred as XX
-This has been widely adopted in the field of XX
-This thesis considers the field of XX as the main subject of its study
-One of the major topics to be investigated in this field is XX
-This is now a mature field which is now being spun out into commercial applications XX
-This field is maturing, with a wealth of well-understood methods and algorithms XX
-This field closely follows the paradigm of XX
-The field has met with great success in many problems XX
-The field only really took off in the late XX as it became more accessible to XX
-This is not particularly new and has been used for many years in the field of XX
-This field closely follows the paradigm of XX
-Widely considered to be a good way to XX
-This has been widely adopted in the field of XX
-This is more widely used at the time of XX
+Research on X has a long tradition
+For decades, one of the most popular ideas in X literature is the idea that X
+Recent theoretical developments have revealed that X
+A common strategy used to study X is to X
+This research constitutes a relatively new area which has emerged from X
+These approaches have been influential in the field because of X
+In the past several decades, X have played an important role in X
+There are growing appeals for X
+This is the field of study that deals with X
+Most of the theories of X are however focused on explaining X
+There are three major theoretical and conceptual frameworks for X
+The field has gradually broadened as X
+This field of study is sometimes referred as X
+This has been widely adopted in the field of X
+This thesis considers the field of X as the main subject of its study
+One of the major topics to be investigated in this field is X
+This is now a mature field which is now being spun out into commercial applications X
+This field is maturing, with a wealth of well-understood methods and algorithms X
+This field closely follows the paradigm of X
+The field has met with great success in many problems X
+The field only really took off in the late X as it became more accessible to X
+This is not particularly new and has been used for many years in the field of X
+This field closely follows the paradigm of X
+Widely considered to be a good way to X
+This has been widely adopted in the field of X
+This is more widely used at the time of X
 This phenomenon has been widely observed
-A common technique is to XX
-This is a technique common in XX
-There are several common kinds of XX
+A common technique is to X
+This is a technique common in X
+There are several common kinds of X
 
 
 ## Problem definition
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - problem
 - shortcoming
 - need for improvement
 
-This seems to be a common problem in XX
-This leads to myriad problems in XX
-The main problem is that XX
-There is a further problem with XX
-One primary problem with XX is that XX
-The methods are not without their problems as will be discussed in XX
-The foremost problems are the facts that XX
-This makes up for the problem of XX
-This seems to be a common problem in XX
-This is a complex problem and to simplify it requires XX
-A challenging problem which arises in this domain is XX
-These problems are difficult to handle XX
-This is typically a complex problem XX
-A well-known problem with XX is that it does not take into account the XX
-One of the problems is that it considers only the XX
-The key problem with this technique is XX
-It is usually an ill-posed problem in the case of XX
-This problem is well-posed and does not require to impose XX
-This appears as a more straightforward problem compared to the XX
-This turns out to be even more problematic because XX
-The problem with such an implementation is that XX
-This poses some problems when carrying out the XX
-This problem has attracted more attention in the field of XX
-This is a basic chicken-and-egg problem because XX
-Unfortunately, this approach results in problems related to XX
-These constraints make the problem difficult to XX
+This seems to be a common problem in X
+This leads to myriad problems in X
+The main problem is that X
+There is a further problem with X
+One primary problem with X is that X
+The methods are not without their problems as will be discussed in X
+The foremost problems are the facts that X
+This makes up for the problem of X
+This seems to be a common problem in X
+This is a complex problem and to simplify it requires X
+A challenging problem which arises in this domain is X
+These problems are difficult to handle X
+This is typically a complex problem X
+A well-known problem with X is that it does not take into account the X
+One of the problems is that it considers only the X
+The key problem with this technique is X
+It is usually an ill-posed problem in the case of X
+This problem is well-posed and does not require to impose X
+This appears as a more straightforward problem compared to the X
+This turns out to be even more problematic because X
+The problem with such an implementation is that X
+This poses some problems when carrying out the X
+This problem has attracted more attention in the field of X
+This is a basic chicken-and-egg problem because X
+Unfortunately, this approach results in problems related to X
+These constraints make the problem difficult to X
 Most of the research in this field is aimed at solving this problem.
 This remains an open problem in the area.
 This problem has received substantial interest.
-These examples highlight the problem that XX
-The main practical problem that confronts us is XX
+These examples highlight the problem that X
+The main practical problem that confronts us is X
 
 
 ## Gaps in literature
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - gap
 - insufficient existing research
@@ -100,23 +100,23 @@ The main practical problem that confronts us is XX
 - limitions of previous work
 - limitions of existing work
 
-There is no previous research using XX approach.
-As far as we know, no previous research has investigated XX
-There has been less previous evidence for XX
-Other studies have failed to XX
-To our knowledge, no study has yielded XX
-No study to date has examined XX
-Only a few studies have shown XX
-However, XX has rarely been studied directly.
-Moreover, few studies have focussed on XX
-In particular no study, to our knowledge, has considered XX
+There is no previous research using X approach.
+As far as we know, no previous research has investigated X
+There has been less previous evidence for X
+Other studies have failed to X
+To our knowledge, no study has yielded X
+No study to date has examined X
+Only a few studies have shown X
+However, X has rarely been studied directly.
+Moreover, few studies have focussed on X
+In particular no study, to our knowledge, has considered X
 
 
 ## Problem solution
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
-- imrovement
+- improvement
 - solution
 - enhancement
 - our ways
@@ -125,53 +125,53 @@ In particular no study, to our knowledge, has considered XX
 - our contribution
 - benefit
 
-One way to overcome these problems is to XX
+One way to overcome these problems is to X
 There are many alternative methods are available for solving these problems.
-In order to rectify the problem of XX
-A solution to this problem is proposed in XX
-One approach to solve this problem involves the use of XX
-An alternative approach to the problem is XX
+In order to rectify the problem of X
+A solution to this problem is proposed in X
+One approach to solve this problem involves the use of X
+An alternative approach to the problem is X
 This can be applied to solve these problems.
-A number of works have shown that this problem can be overcome by using XX
+A number of works have shown that this problem can be overcome by using X
 A large number of alternative approaches have been developed over the last few decades to ++
-To overcome this problem, in the next section we demonstrate XX
-One way to overcome this problem is to XX
-To overcome this problem, some approaches have been made XX
-One way of recovering from this problem could be to XX
-This has been proposed to surmount the problems caused by XX
-A different approach to the traditional problem is given in XX
+To overcome this problem, in the next section we demonstrate X
+One way to overcome this problem is to X
+To overcome this problem, some approaches have been made X
+One way of recovering from this problem could be to X
+This has been proposed to surmount the problems caused by X
+A different approach to the traditional problem is given in X
 A whole range of different approaches to the problem are available.
-These techniques have potential to solve contemporary problems in XX
-We should tailor specific solutions to specific problems XX
-The standard solution to the problem is based on XX
-The solution proposed here addresses only the problem of XX
-There are techniques that have been developed to solve this problem XX
-This problem is usually overcome by XX
-There have been several attempts to solve the problem XX
-There exist many methods for dealing with this problem XX
-Broadly speaking, the problem can be addressed by XX
-One of the simplest ways of tackling this problem is XX
+These techniques have potential to solve contemporary problems in X
+We should tailor specific solutions to specific problems X
+The standard solution to the problem is based on X
+The solution proposed here addresses only the problem of X
+There are techniques that have been developed to solve this problem X
+This problem is usually overcome by X
+There have been several attempts to solve the problem X
+There exist many methods for dealing with this problem X
+Broadly speaking, the problem can be addressed by X
+One of the simplest ways of tackling this problem is X
 This problem has been largely studied and many viable solutions have been found.
 In general, this problem can be tackled in two different ways.
 Other approaches have been shown to cope with the problem more efficiently.
 We will review the main approaches to solve this problem.
 Recently, a more general solution has been proposed for this problem.
 Both these works provide a solution to the problem.
-Recent methods focus on overcoming the problems by proposing different schemes for XX
+Recent methods focus on overcoming the problems by proposing different schemes for X
 This strategy is not uncommon in this kind of problems.
 We can apply our algorithm to solve this difficult problem.
-This is how the problem can be tackled XX
+This is how the problem can be tackled X
 We have developed this generic method to solve a variety of problems.
 We will now demonstrate our method on some specific problems.
 Here we solve several problems simultaneously.
-We have undergone a rethinking of the problem by XX
-A possible solution to the problem at hand is XX
-It is clear that the problem could be easily tackled by XX
+We have undergone a rethinking of the problem by X
+A possible solution to the problem at hand is X
+It is clear that the problem could be easily tackled by X
 
 
 ## Study motivation
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - motive
 - our interest
@@ -180,22 +180,22 @@ It is clear that the problem could be easily tackled by XX
 - this publication
 - study motivation
 
-It is of interest to know whether XX still hold true.
-It would be of special interest toXX
-We therefore analyzed XX and investigated whether XX
-For this study, it was of interest to investigate XX
-We investigated whether XX can be partly explained by XX
-To examine the impact of XX, we tested XX
-We have investigated the effect of XX
-We characterize different aspects of XX
-One way to investigate XX was to XX
-A new approach is therefore needed for XX
-To illuminate this uncharted area, we examined XX
+It is of interest to know whether X still hold true.
+It would be of special interest toX
+We therefore analyzed X and investigated whether X
+For this study, it was of interest to investigate X
+We investigated whether X can be partly explained by X
+To examine the impact of X, we tested X
+We have investigated the effect of X
+We characterize different aspects of X
+One way to investigate X was to X
+A new approach is therefore needed for X
+To illuminate this uncharted area, we examined X
 
 
 ## Aims & objectives
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - goal
 - objective
@@ -203,34 +203,34 @@ To illuminate this uncharted area, we examined XX
 - aim
 - overall
 
-The aim is to develop more sophisticated methods for XX
-The aim of this work is to develop XX
-The aims in this chapter are twofold: First XX, Second XX
-For our first goal, we focus on two problems XX
-The aim here is to investigate XX
-The overall goal of this work was to XX
-This project aims to develop an overarching framework to XX
-The aim of the experiment is to compare XX
-The ultimate goal is to produce a XX
-The overall goal of this thesis was to pursue XX
+The aim is to develop more sophisticated methods for X
+The aim of this work is to develop X
+The aims in this chapter are twofold: First X, Second X
+For our first goal, we focus on two problems X
+The aim here is to investigate X
+The overall goal of this work was to X
+This project aims to develop an overarching framework to X
+The aim of the experiment is to compare X
+The ultimate goal is to produce a X
+The overall goal of this thesis was to pursue X
 After defining the problem we explain the goals of the thesis.
-With this aim in mind, in this paper we present a new method for XX
-Our research aims at finding a solution for this challenging problem of XX
-There is no overall goal, apart from XX
-We examine some previous work and propose a new method for XX
-There are too many simultaneous goals making it difficult to XX
-One of the major aims of this work was to create XX
-The main objective is to investigate methods for improving XX
-The objectives can be restated in the light of XX
-The objective is to devise and implement a system for XX
-The objectives were partially met by developing a method to XX
-The objective is to demonstrate the feasibility of XX
-One of the objectives is to improve the XX
+With this aim in mind, in this paper we present a new method for X
+Our research aims at finding a solution for this challenging problem of X
+There is no overall goal, apart from X
+We examine some previous work and propose a new method for X
+There are too many simultaneous goals making it difficult to X
+One of the major aims of this work was to create X
+The main objective is to investigate methods for improving X
+The objectives can be restated in the light of X
+The objective is to devise and implement a system for X
+The objectives were partially met by developing a method to X
+The objective is to demonstrate the feasibility of X
+One of the objectives is to improve the X
 
 
 ## Significance and advantages of your work
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - importance
 - benefit
@@ -242,43 +242,43 @@ One of the objectives is to improve the XX
 - relevance
 - relevant
 
-This thesis documents several key contributions made to the fields of XX
-This thesis has made a number of significant contributions to the field of XX
+This thesis documents several key contributions made to the fields of X
+This thesis has made a number of significant contributions to the field of X
 The contributions made here have wide applicability.
 The contributions made should be of wide interest.
-The first main contribution proposed in this field is a XX
-The contributions of this work are presented as follows: XX
-The main achievements, including contributions to the field can be summarised as follows: XX
+The first main contribution proposed in this field is a X
+The contributions of this work are presented as follows: X
+The main achievements, including contributions to the field can be summarised as follows: X
 We summarize the main contributions of this thesis.
-The key contribution of this work is the solution it provides XX
-It has numerous advantages as explained here XX
-It has significant benefits in terms of XX
-There is a clear advantage in following the methods of XX
-This has particular advantages over other XX
-All of these advantages make it particularly valuable in XX
-One of the primary benefits of this algorithm is XX
-This gives a significant advantage because XX
-These point out the advantages and practicability of XX
-One of the key benefits of the algorithm is XX
-The main advantage compared to previous method is XX
+The key contribution of this work is the solution it provides X
+It has numerous advantages as explained here X
+It has significant benefits in terms of X
+There is a clear advantage in following the methods of X
+This has particular advantages over other X
+All of these advantages make it particularly valuable in X
+One of the primary benefits of this algorithm is X
+This gives a significant advantage because X
+These point out the advantages and practicability of X
+One of the key benefits of the algorithm is X
+The main advantage compared to previous method is X
 This present some practical advantages.
 The main advantage is the simplified pattern.
-One practical advantage of the method is that it can be used in XX
-The advantage becomes all the more significant when XX
-In comparison with other techniques, this method has the advantage of XX
-The most important advantage of this method is that it can perform very well in XX
-It yielded significant speed advantages when XX
-The benefit of using the XX is expected to XX
-The main advantage is that we are able to XX
-To give some idea of the benefits of this method XX
-The additional advantage of using this method is that it results in XX
-This is an important advantage of this algorithm XX
+One practical advantage of the method is that it can be used in X
+The advantage becomes all the more significant when X
+In comparison with other techniques, this method has the advantage of X
+The most important advantage of this method is that it can perform very well in X
+It yielded significant speed advantages when X
+The benefit of using the X is expected to X
+The main advantage is that we are able to X
+To give some idea of the benefits of this method X
+The additional advantage of using this method is that it results in X
+This is an important advantage of this algorithm X
 These are the main advantages of this method.
 
 
 ## Previous literature
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - gap
 - insufficient existing research
@@ -295,53 +295,53 @@ These are the main advantages of this method.
 - limitions of previous work
 - limitions of existing work
 
-The literature review shows that XX
-Previous research showed XX
-Seminal contributions have been made by XX
-A series of recent studies has indicated that XX
-Several theories have been proposed to XX, some focusing on XX, others on XX
-There has been numerous studies to investigate XX
-This has been used in several studies to assess XX
-Previous studies have shown XX
-Several studies suggest that XX
-This has also been explored in prior studies by XX
-Prior research suggests that XX
-Previous studies have emphasized XX
-The majority of prior research has applied XX
-Most early studies as well as current work focus on XX
-For instance, the following studies were conducted on XX
-Studies of XXare well documented, it is also well acknowledged that XX
-A number of authors have recognized XX
-Some authors have also suggested that  XX
-Some authors have driven the further development of XX
+The literature review shows that X
+Previous research showed X
+Seminal contributions have been made by X
+A series of recent studies has indicated that X
+Several theories have been proposed to X, some focusing on X, others on X
+There has been numerous studies to investigate X
+This has been used in several studies to assess X
+Previous studies have shown X
+Several studies suggest that X
+This has also been explored in prior studies by X
+Prior research suggests that X
+Previous studies have emphasized X
+The majority of prior research has applied X
+Most early studies as well as current work focus on X
+For instance, the following studies were conducted on X
+Studies of Xare well documented, it is also well acknowledged that X
+A number of authors have recognized X
+Some authors have also suggested that  X
+Some authors have driven the further development of X
 This has been discussed by a great number of authors in literature.
-For example, research has provided evidence for XX
-The authors bring some information about the background of the problem, XX
-As has been previously reported in the literature, XX
-A large number of existing studies in the broader literature have examined XX
-The literature review shows that XX
-There exists a considerable body of literature on XX
-In short, the literature pertaining to XX strongly suggests that XX
-Over time, an extensive literature has developed on XX
-This section presents a review of recent literature on XX
-This paper begins with a short review of the literature regarding the XX
+For example, research has provided evidence for X
+The authors bring some information about the background of the problem, X
+As has been previously reported in the literature, X
+A large number of existing studies in the broader literature have examined X
+The literature review shows that X
+There exists a considerable body of literature on X
+In short, the literature pertaining to X strongly suggests that X
+Over time, an extensive literature has developed on X
+This section presents a review of recent literature on X
+This paper begins with a short review of the literature regarding the X
 Several methods are reported in the literature to address this issue.
-There is a wide choice of XX available in the literature.
-This section reviews the literature related to XX
-It was reported in literature that XX
-A recent study by XX concluded that XX
-In the light of reported XX it is conceivable that XX
-The method introduced by XX has the advantage that XX
-One method employed by XX is XX
-A more comprehensive description can be found in XX
-For example, recent research suggests that XX
-This was successfully established as described by XX
-The author employed a XX methodology which prescribes the use of XX
+There is a wide choice of X available in the literature.
+This section reviews the literature related to X
+It was reported in literature that X
+A recent study by X concluded that X
+In the light of reported X it is conceivable that X
+The method introduced by X has the advantage that X
+One method employed by X is X
+A more comprehensive description can be found in X
+For example, recent research suggests that X
+This was successfully established as described by X
+The author employed a X methodology which prescribes the use of X
 
 
 ## Limitations of previous research
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - gap
 - insufficient existing research
@@ -358,44 +358,44 @@ The author employed a XX methodology which prescribes the use of XX
 - limitions of previous work
 - limitions of existing work
 
-A number of questions regarding XX remain to be addressed.
-A closer look to the literature on XX, however, reveals a number of gaps and shortcomings.
-This question has previously never been addressed becauseXX
-Most studies have relied on XX
-Previous studies by XX cannot be considered as conclusive because XX
-Previous studies have almost exclusively focused on XX
-This has been previously assessed only to a very limited extent because XX
-In the present studies XX were constrained to XX
-In previous studies were limited to XX
-Although results appear consistent with prior research, they appear inconsistent with XX
-These are previously unstudied because XX
-As far as we know, no previous research has investigated XX
-Moreover, although research has illuminated XX no study to date has examined XX
-Despite decades of research, this continues to be debated among XX
+A number of questions regarding X remain to be addressed.
+A closer look to the literature on X, however, reveals a number of gaps and shortcomings.
+This question has previously never been addressed becauseX
+Most studies have relied on X
+Previous studies by X cannot be considered as conclusive because X
+Previous studies have almost exclusively focused on X
+This has been previously assessed only to a very limited extent because X
+In the present studies X were constrained to X
+In previous studies were limited to X
+Although results appear consistent with prior research, they appear inconsistent with X
+These are previously unstudied because X
+As far as we know, no previous research has investigated X
+Moreover, although research has illuminated X no study to date has examined X
+Despite decades of research, this continues to be debated among X
 This section points out some of the problems encountered in the extant research.
-Although there are many studies, the research in XX remains limited.
-However, the existing research has many problems in representing XX
-The literature on XX is less consistent
-Historically, there has been a great deal of confusion in the literature regarding XX
+Although there are many studies, the research in X remains limited.
+However, the existing research has many problems in representing X
+The literature on X is less consistent
+Historically, there has been a great deal of confusion in the literature regarding X
 This approach remains briefly addressed in the literature.
-These are rarely analyzed in the literature as XX
-There are key questions and notions that are still not discussed in the literature XX
-This is not clearly presented in the literature because XX
-This paper addresses the need for XX, so far lacking in the scientific literature.
-To fill this literature gap, this paper identifies XX
-Only a few works in literature demonstrate XX
+These are rarely analyzed in the literature as X
+There are key questions and notions that are still not discussed in the literature X
+This is not clearly presented in the literature because X
+This paper addresses the need for X, so far lacking in the scientific literature.
+To fill this literature gap, this paper identifies X
+Only a few works in literature demonstrate X
 Although studies have been conducted by many authors, this problem is still insufficiently explored.
-To our knowledge, no prior studies have examined XX
-However, the existing research has many problems in XX
-Therefore, important issue in the literature is XX
-However, we argue that previous literature suffers from certain weaknesses: XX
-Previous research can only be considered a first step towards a more profound understanding of XX
-The previous studies reveal that XX are usually the most problematic to XX
+To our knowledge, no prior studies have examined X
+However, the existing research has many problems in X
+Therefore, important issue in the literature is X
+However, we argue that previous literature suffers from certain weaknesses: X
+Previous research can only be considered a first step towards a more profound understanding of X
+The previous studies reveal that X are usually the most problematic to X
 
 
 ## Research questions
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - overall question
 - goal
@@ -407,36 +407,36 @@ The previous studies reveal that XX are usually the most problematic to XX
 - hypothesis
 - proposition
 
-More specific research questions will be introduced and investigated in XX
-A further question is whether XX
-Finally, another promising line of research would be XX
-The study addresses several further questions on XX
-Some of the interesting questions in this context are XX
-In order to address the questions outlined above, we report here XX
-These questions are of central interest as much recent research in XX
-Furthermore, XX is arguably an important question to be addressed.
-The question now is how XX can be used to explain XX
-Study addresses the research question XX
-In order to properly address this question, we XX
-An important question associated with XX is XX
-A critical open question is whether XX
-A still unsolved question is whether XX
-This remains an open question as XX
-This question has previously never been addressed because XX
-This study offers a test of XX research question
-Study addresses the research question XX
-Even in general XX research strategies is needed to explain XX
-The researcher should be interested here in XX
-Many questions remain unanswered XX
-There are some potentially open questions about the validity of XX
-The question that then naturally arises is XX
-The question then becomes how best to defineXX
-This was an important question to study as XX
+More specific research questions will be introduced and investigated in X
+A further question is whether X
+Finally, another promising line of research would be X
+The study addresses several further questions on X
+Some of the interesting questions in this context are X
+In order to address the questions outlined above, we report here X
+These questions are of central interest as much recent research in X
+Furthermore, X is arguably an important question to be addressed.
+The question now is how X can be used to explain X
+Study addresses the research question X
+In order to properly address this question, we X
+An important question associated with X is X
+A critical open question is whether X
+A still unsolved question is whether X
+This remains an open question as X
+This question has previously never been addressed because X
+This study offers a test of X research question
+Study addresses the research question X
+Even in general X research strategies is needed to explain X
+The researcher should be interested here in X
+Many questions remain unanswered X
+There are some potentially open questions about the validity of X
+The question that then naturally arises is X
+The question then becomes how best to defineX
+This was an important question to study as X
 
 
 ## Research to be explored
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - call for further research
 - more research is required
@@ -444,18 +444,18 @@ This was an important question to study as XX
 - future research
 - future studies
 
-A more systematic and theoretical analysis is required for XX
-As the authors note earlier, more work is necessary toXX
-Additional studies to understand more completely the key tenets of XX are required.
-The unexpected findings signal the need for additional studies to understand more about XX
-This paper addresses XX, so far lacking in the scientific literature.
-A new approach is therefore needed for XX
-One of the tough challenges for all researchers in this domain is XX
+A more systematic and theoretical analysis is required for X
+As the authors note earlier, more work is necessary toX
+Additional studies to understand more completely the key tenets of X are required.
+The unexpected findings signal the need for additional studies to understand more about X
+This paper addresses X, so far lacking in the scientific literature.
+A new approach is therefore needed for X
+One of the tough challenges for all researchers in this domain is X
 
 
 ## Experimental setup
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - research design
 - methodology
@@ -464,32 +464,32 @@ One of the tough challenges for all researchers in this domain is XX
 - calibration
 - methodological setup
 
-This experimental design was employed because XX
-In the course of the experiment, XX played an important role.
-The experiments were performed with XX
-This was experimentally investigated by XX
-Most experiments have been carried out with XX
-The main focus of the experiments was to calculate XX
-Prior to each experiment XX
-The experiments are completely based on XX
-In our preliminary experiments we estimated that XX
-In this experiment, we introduced a XX
-Methods were based on previous experiments XX
-This proceeds in two stages: XX
-After a series of experiments it was found that XX
-Therefore, in this experiment we define goals as XX
-In this experiment, we introduced a XX
-We consider the setup generic, however, XX
-This was designed to acquire approximately XX
-These were designed in such a way that XX
-This experimental design was employed because XX
-This was specifically designed for XX
-This was designed to acquire approximately XX
+This experimental design was employed because X
+In the course of the experiment, X played an important role.
+The experiments were performed with X
+This was experimentally investigated by X
+Most experiments have been carried out with X
+The main focus of the experiments was to calculate X
+Prior to each experiment X
+The experiments are completely based on X
+In our preliminary experiments we estimated that X
+In this experiment, we introduced a X
+Methods were based on previous experiments X
+This proceeds in two stages: X
+After a series of experiments it was found that X
+Therefore, in this experiment we define goals as X
+In this experiment, we introduced a X
+We consider the setup generic, however, X
+This was designed to acquire approximately X
+These were designed in such a way that X
+This experimental design was employed because X
+This was specifically designed for X
+This was designed to acquire approximately X
 
 
 ## Data collection (quantitative)
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - data collection
 - sample
@@ -498,37 +498,37 @@ This was designed to acquire approximately XX
 - sampling
 - data obtainment
 
-There were XX participants in this sample.
-Participants first provided informed consent about XX
-We performed additional data collection with XX
-For this study, we analyzed the data collected from XX
-The data are less clear-cut than XX
-Data were collected and maintained by XX
-For this purpose, we employ survey data collected from XX
-The application employs data obtained from XX
-The analyzed data included: XX
-The procedures of handling the data followed the suggestions of XX
-Subsequently, XX were then used to elicit further data.
-The experimental data on XX is very scarce.
-The data in this work consists of XX
-Survey data were collected from XX
-This study used different data collection methods such as XX
-The quality can be enhanced by providing additional data forXX
-Such data are prone to XX
-We utilize secondary data from XX
-The data was divided into XX
-Participants in the first data collection were XX
-The sample was heterogeneous with respect to XX
-The sample size in this study was not considered large enough forXX
-We cannot deny the presence of some sample selection biases because XX
-The sample of respondents included XX
-The researchers pooled samples to XX
-The sample strategy was the same as forXX
+There were X participants in this sample.
+Participants first provided informed consent about X
+We performed additional data collection with X
+For this study, we analyzed the data collected from X
+The data are less clear-cut than X
+Data were collected and maintained by X
+For this purpose, we employ survey data collected from X
+The application employs data obtained from X
+The analyzed data included: X
+The procedures of handling the data followed the suggestions of X
+Subsequently, X were then used to elicit further data.
+The experimental data on X is very scarce.
+The data in this work consists of X
+Survey data were collected from X
+This study used different data collection methods such as X
+The quality can be enhanced by providing additional data forX
+Such data are prone to X
+We utilize secondary data from X
+The data was divided into X
+Participants in the first data collection were X
+The sample was heterogeneous with respect to X
+The sample size in this study was not considered large enough forX
+We cannot deny the presence of some sample selection biases because X
+The sample of respondents included X
+The researchers pooled samples to X
+The sample strategy was the same as forX
 
 
 ## Data analysis (quantitative)
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - analysis
 - empirical analysis
@@ -537,70 +537,70 @@ The sample strategy was the same as forXX
 - insight
 - trend
 
-However, there are trends in our data to suggest that XX
-The trend values were then subjected to XX
-We analysed data as a function of XX
-We used an established technique, namely XX, to analyse XX
-This showed a judgement error of XX
-To investigate this statistically, we calculated XX
-A XX test was used to determine the significance of data
-Our data show that there is XX
-Our data suggest that XX which may be based partly on XX
-Data also revealed a significant XX
-Our data also address the XX
-Data were analyzed and correlated with XX
-The data are presented in Table XX
-However, according to our data XX
-We undertake the empirical analysis using data collected in XX
-The data is analyzed from different points of view such as XX
-The data reveals significant differences in XX
-Thus, the data supports the premise that XX
-Results provides a good fit to the data XX
-We compared the results with the original data in ways XX
-The evaluation of the data is shown in XX
-We explicitly accounted for XX
-Missing values were replaced using XX
-This analysis was confined to XX
-The evaluation of the data presented in this work leads to XX
+However, there are trends in our data to suggest that X
+The trend values were then subjected to X
+We analysed data as a function of X
+We used an established technique, namely X, to analyse X
+This showed a judgement error of X
+To investigate this statistically, we calculated X
+A X test was used to determine the significance of data
+Our data show that there is X
+Our data suggest that X which may be based partly on X
+Data also revealed a significant X
+Our data also address the X
+Data were analyzed and correlated with X
+The data are presented in Table X
+However, according to our data X
+We undertake the empirical analysis using data collected in X
+The data is analyzed from different points of view such as X
+The data reveals significant differences in X
+Thus, the data supports the premise that X
+Results provides a good fit to the data X
+We compared the results with the original data in ways X
+The evaluation of the data is shown in X
+We explicitly accounted for X
+Missing values were replaced using X
+This analysis was confined to X
+The evaluation of the data presented in this work leads to X
 
 
 ## Statistical testing
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - testing
 - statistically significant
 - data interpretation
 - statistical analysis
 
-We explored these effects statistically by XX
-Statistical analyses was performed by using the XX applying a significance level of XX
-The results were statistically significant when compared using XX
+We explored these effects statistically by X
+Statistical analyses was performed by using the X applying a significance level of X
+The results were statistically significant when compared using X
 This was normally distributed throughout the study population.
-This distribution resulted in XX
-Significant differences in the XX remained.
-This was the only parameter that had a statistically significant correlation with XX
-We used XX statistics to report XX
-This had a statistically significant impact on XX
-The correlation between XX and XX is positive and statistically significant at XX
-We calculate XX statistic to test the null hypothesis that XX
-As shown in Table XX are statistically significant at all levels.
-We can clearly see that the estimated values are positive and statistically significant at XX
-This revealed no statistical differences on XX
-The test for XX found no significant differences.
-Our results show a statistically significant improvement in XX
-All differences in performance were statistically significant in XX
-The method achieves a statistically significant improvement compared to XX
-In order to obtain statistically representative XX it is required to XX
-To investigate this statistically, we calculated XX
-Descriptive statistics were calculated for all variables used in the study using XX
-The significance testing was based on XX
-All statistical analyses were performed using XX
+This distribution resulted in X
+Significant differences in the X remained.
+This was the only parameter that had a statistically significant correlation with X
+We used X statistics to report X
+This had a statistically significant impact on X
+The correlation between X and X is positive and statistically significant at X
+We calculate X statistic to test the null hypothesis that X
+As shown in Table X are statistically significant at all levels.
+We can clearly see that the estimated values are positive and statistically significant at X
+This revealed no statistical differences on X
+The test for X found no significant differences.
+Our results show a statistically significant improvement in X
+All differences in performance were statistically significant in X
+The method achieves a statistically significant improvement compared to X
+In order to obtain statistically representative X it is required to X
+To investigate this statistically, we calculated X
+Descriptive statistics were calculated for all variables used in the study using X
+The significance testing was based on X
+All statistical analyses were performed using X
 
 
 ## Assumptions
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - assumptions
 - implicit in the model
@@ -608,24 +608,24 @@ All statistical analyses were performed using XX
 - pre-assumption
 - underlying assumption
 
-Such a potentially unrealistic assumption arises from the fact that XX
-Based on these assumptions, hypotheses were developed: XX
-Based on these assumptions, XX have been treated as XX
-This is based on assumptions that XX
-These assumptions are generally accepted these daysXX
-The fundamental assumptions of the models are: XX
-This assumption is supported by the fact that XX
-Under certain assumptions, XX can be construed as XX
-These assumptions result in XX
-This assumption might be addressed in future studies by XX
-This compilation of research assumptions should result in XX
-These assumptions have been disproved by XX
-According to XX assumption, the study reports faithfully XX
+Such a potentially unrealistic assumption arises from the fact that X
+Based on these assumptions, hypotheses were developed: X
+Based on these assumptions, X have been treated as X
+This is based on assumptions that X
+These assumptions are generally accepted these daysX
+The fundamental assumptions of the models are: X
+This assumption is supported by the fact that X
+Under certain assumptions, X can be construed as X
+These assumptions result in X
+This assumption might be addressed in future studies by X
+This compilation of research assumptions should result in X
+These assumptions have been disproved by X
+According to X assumption, the study reports faithfully X
 
 
 ## Remit of the experiment
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - remit
 - sufficient
@@ -633,27 +633,27 @@ According to XX assumption, the study reports faithfully XX
 - experiment
 - saturation
 
-For the current work, it is sufficient to point out that XX
-Because we were interested in XX, we considered only XX
-This was sufficient to XX
-This is sufficiently generic to be adapted to other XX
+For the current work, it is sufficient to point out that X
+Because we were interested in X, we considered only X
+This was sufficient to X
+This is sufficiently generic to be adapted to other X
 This is generally sufficient to produce good results.
-Still, results might be sufficient, especially in XX
+Still, results might be sufficient, especially in X
 This was not possible due to insufficient observations.
-After a series of experiments XX was considered as sufficient.
-It has been proven that XX must be sufficient to XX
-This was not sensitive enough to XX
-This study cannot be considered large enough for XX
-This is simpler and usually sufficient to XX
-It turns out that it is sufficiently accurate for XX
-There is in fact sufficient information present in XX
-This is considered sufficiently unique for XX
+After a series of experiments X was considered as sufficient.
+It has been proven that X must be sufficient to X
+This was not sensitive enough to X
+This study cannot be considered large enough for X
+This is simpler and usually sufficient to X
+It turns out that it is sufficiently accurate for X
+There is in fact sufficient information present in X
+This is considered sufficiently unique for X
 This is enough to get a sufficiently accurate solution
 
 
 ## Findings & Results
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - findings
 - insight
@@ -662,45 +662,45 @@ This is enough to get a sufficiently accurate solution
 - central findings
 - empirical data
 
-From the short review above, key findings emerge: XX
-We describe the results of XX, which show XX
-This suggests that XX
-We showed that XX
-Our findings on XX at least hint that XX
-This is an important finding in the understanding of the XX
-The present study confirmed the findings about XX
-Another promising finding was that XX
-Our results demonstrated that XX
-This result highlights that little is known about the XX
-A further novel finding is that XX
-Together, the present findings confirm XX
-The implications of these findings are discussed in XX
-The results demonstrate two things. First, XX. Second, XX
-The results of the experiment found clear support for the XX
-This analysis found evidence for XX
-Planned comparisons revealed that XX
-Our results casts a new light on XX
+From the short review above, key findings emerge: X
+We describe the results of X, which show X
+This suggests that X
+We showed that X
+Our findings on X at least hint that X
+This is an important finding in the understanding of the X
+The present study confirmed the findings about X
+Another promising finding was that X
+Our results demonstrated that X
+This result highlights that little is known about the X
+A further novel finding is that X
+Together, the present findings confirm X
+The implications of these findings are discussed in X
+The results demonstrate two things. First, X. Second, X
+The results of the experiment found clear support for the X
+This analysis found evidence for X
+Planned comparisons revealed that X
+Our results casts a new light on X
 This section summarises the findings and contributions made.
 It performs well, giving good results.
-This gives clearly better results than XX
-The results confirm that this a good choice for XX
-From the results, it is clear that XX
+This gives clearly better results than X
+The results confirm that this a good choice for X
+From the results, it is clear that X
 In this section, we will illustrate some experimental results.
-This delivers significantly better results due to XX
-The result now provides evidence to XX
+This delivers significantly better results due to X
+The result now provides evidence to X
 It leads to good results, even if the improvement is negligible.
 This yields increasingly good results on data.
-The result of this analysis is then compared with the XX
-The applicability of these new results are then tested on XX
+The result of this analysis is then compared with the X
+The applicability of these new results are then tested on X
 This is important to correctly interpret the results.
-The results are substantially better than XX
-The results lead to similar conclusion where XX
-Superior results are seen for XX
-From these results it is clear that XX
-Extensive results carried out show that this method improves XX
+The results are substantially better than X
+The results lead to similar conclusion where X
+Superior results are seen for X
+From these results it is clear that X
+Extensive results carried out show that this method improves X
 We obtain good results with this simple method.
 However, even better results are achieved when using our algorithm.
-It is worth discussing these interesting facts revealed by the results of  XX
+It is worth discussing these interesting facts revealed by the results of  X
 Overall, our method was the one that obtained the most robust results.
 Slightly superior results are achieved with our algorithm.
 The result is equal to or better than a result that is currently accepted.
@@ -708,7 +708,7 @@ The result is equal to or better than a result that is currently accepted.
 
 ## Comparison with prior studies
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - comparison
 - beyond previous research
@@ -717,61 +717,61 @@ The result is equal to or better than a result that is currently accepted.
 
 The results demonstrated in this chapter match state of the art methods.
 Here we compare the results of the proposed method with those of the traditional methods.
-These results go beyond previous reports, showing that XX
-In line with previous studies XX
-This result ties well with previous studies wherein XX
-Contrary to the findings of XX we did not find XX
-They have demonstrated that XX
-Others have shown that XX improves XX
-By comparing the results from XX, we hope to determine XX
-However, in line with the ideas of XX, it can be concluded that XX
-When comparing our results to those of older studies, it must be pointed out that XX
-We have verified that using XX produces similar results
-Overall these findings are in accordance with findings reported by XX
-Even though we did not replicate the previously reported XX, our results suggest that XX
-A similar conclusion was reached by XX
-However, when comparing our results to those of older studies, it must be pointed out XX
-This is consistent with what has been found in previous XX
-A similar pattern of results was obtained in XX
+These results go beyond previous reports, showing that X
+In line with previous studies X
+This result ties well with previous studies wherein X
+Contrary to the findings of X we did not find X
+They have demonstrated that X
+Others have shown that X improves X
+By comparing the results from X, we hope to determine X
+However, in line with the ideas of X, it can be concluded that X
+When comparing our results to those of older studies, it must be pointed out that X
+We have verified that using X produces similar results
+Overall these findings are in accordance with findings reported by X
+Even though we did not replicate the previously reported X, our results suggest that X
+A similar conclusion was reached by X
+However, when comparing our results to those of older studies, it must be pointed out X
+This is consistent with what has been found in previous X
+A similar pattern of results was obtained in X
 The findings are directly in line with previous findings
-These basic findings are consistent with research showing that XX
-Other results were broadly in line with XX
+These basic findings are consistent with research showing that X
+Other results were broadly in line with X
 
 
 ## Limitations of your work
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - limitations
 - restrictions
 - limited by
 - unfortunately
 
-Because of the lack of XX we decided to not investigate XX
-One concern about the findings of XX was that XX
-Because of this potential limitation, we treat XX
-The limitations of the present studies naturally include XX
-Regarding the limitations of XX, it could be argued that XX
-Another limitation of this XX
-This limitation is apparent in many XX
-Another limitation in XX involves the issue of XX
-The main limitation is the lack of XX
+Because of the lack of X we decided to not investigate X
+One concern about the findings of X was that X
+Because of this potential limitation, we treat X
+The limitations of the present studies naturally include X
+Regarding the limitations of X, it could be argued that X
+Another limitation of this X
+This limitation is apparent in many X
+Another limitation in X involves the issue of X
+The main limitation is the lack of X
 One limitation is found in this case.
-One limitation of these methods however is that they XX
-It presents some limitations such as XX
-Although widely accepted, it suffers from some limitations due to XX
-An apparent limitation of the method is XX
+One limitation of these methods however is that they X
+It presents some limitations such as X
+Although widely accepted, it suffers from some limitations due to X
+An apparent limitation of the method is X
 There are several limitations to this approach.
-One limitation of our implementation is that it is XX
-A major source of limitation is due to XX
-The approach utilised suffers from the limitation that XX
-The limitations are becoming clear XX
-It suffers from the same limitations associated with a XX
+One limitation of our implementation is that it is X
+A major source of limitation is due to X
+The approach utilised suffers from the limitation that X
+The limitations are becoming clear X
+It suffers from the same limitations associated with a X
 
 
 ## Causal arguments
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - explanandum
 - explanans
@@ -783,33 +783,33 @@ It suffers from the same limitations associated with a XX
 - fundamental cause
 - independent variable
 
-A popular explanation of XX is that XX
-It is by now generally accepted that XX
-A popular explanation is that XX
-As it is not generally agreed that XX
+A popular explanation of X is that X
+It is by now generally accepted that X
+A popular explanation is that X
+As it is not generally agreed that X
 These are very small and difficult to observe.
-It is important to highlight the fact that XX
-It is notable that XX
-An important question associated with XX is XX
-This did not impair the XX
-This is important because there is XX
-This implies that XX is associated with XX
-This is indicative for lack of XX
-This will not be biased by XX
-There were also some important differences in XX
-It is interesting to note that, XX
-It is unlikely that XX
-This may alter or improve aspects of XX
-In contrast, this makes it possible to XX
-This is particularly important when investigating XX
-This has been used to successfully account for XX
-This introduces a possible confound in XX
-This was included to verify that XX
+It is important to highlight the fact that X
+It is notable that X
+An important question associated with X is X
+This did not impair the X
+This is important because there is X
+This implies that X is associated with X
+This is indicative for lack of X
+This will not be biased by X
+There were also some important differences in X
+It is interesting to note that, X
+It is unlikely that X
+This may alter or improve aspects of X
+In contrast, this makes it possible to X
+This is particularly important when investigating X
+This has been used to successfully account for X
+This introduces a possible confound in X
+This was included to verify that X
 
 
 ## Speculations
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - suspect
 - assume
@@ -819,32 +819,32 @@ This was included to verify that XX
 - unclear
 - unanswered
 
-However, we acknowledge that there are considerable discussions among researchers as to XX
-We speculate that this might be due to XX
-There are reasons to doubt this explanation of XX
-It remains unclear to which degree XX are attributed to XX
-However, XX does seem to improve XX
-This does seem to depend on XX
-It is important to note, that the present evidence relies on XX
-The results show that XX does not seem to impact the XX
-However, the extent to which it is possible to XX is unknown
-Alternatively, it could simply mean that XX
-It is difficult to explain such results within the context of XX
-It is unclear whether this is a suitable for XX
-This appears to be a case of XX
-From this standpoint, XX can be considered as XX
-To date, XXremain unknown
-Under certain assumptions, this can be construed as XX
-Because of this potential limitation, we treat XX
+However, we acknowledge that there are considerable discussions among researchers as to X
+We speculate that this might be due to X
+There are reasons to doubt this explanation of X
+It remains unclear to which degree X are attributed to X
+However, X does seem to improve X
+This does seem to depend on X
+It is important to note, that the present evidence relies on X
+The results show that X does not seem to impact the X
+However, the extent to which it is possible to X is unknown
+Alternatively, it could simply mean that X
+It is difficult to explain such results within the context of X
+It is unclear whether this is a suitable for X
+This appears to be a case of X
+From this standpoint, X can be considered as X
+To date, Xremain unknown
+Under certain assumptions, this can be construed as X
+Because of this potential limitation, we treat X
 In addition, several questions remain unanswered.
-At this stage of understanding, we believeXX
-Therefore, it remains unclear whether XX
-This may explain why XX
+At this stage of understanding, we believeX
+Therefore, it remains unclear whether X
+This may explain why X
 
 
 ## Deductive Arguments
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - logically
 - therefore
@@ -852,20 +852,20 @@ This may explain why XX
 - necessarily
 - deduction
 
-A difference between these XX can only be attributable to XX
-Nonetheless, we believe that it is well justified to XX
-This may raise concerns about XX which can be addressed by XX
-As discussed, this is due to the fact that XX
+A difference between these X can only be attributable to X
+Nonetheless, we believe that it is well justified to X
+This may raise concerns about X which can be addressed by X
+As discussed, this is due to the fact that X
 Results demonstrate that this is not necessarily true.
-These findings support the notion that XX is not influenced by XX
-This may be the reason why we did not find XX
-In order to test whether this is equivalent across XX, we XX
-Therefore, XX can be considered to be equivalent for XX
+These findings support the notion that X is not influenced by X
+This may be the reason why we did not find X
+In order to test whether this is equivalent across X, we X
+Therefore, X can be considered to be equivalent for X
 
 
 ## Overall Summary & Conclusion
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - conclude
 - in summary
@@ -874,51 +874,51 @@ Therefore, XX can be considered to be equivalent for XX
 - we have shown
 - conclusion
 
-The paper concludes by arguing XX
-On this basis, we conclude that XX
-The authors concluded that XX is not confined to XX
-This allows the conclusion that XX
-The findings of this study can be understood as XX
-This may be considered a promising aspect of XX
-This may be considered a further validation of XX
-Remaining issues are subject of XX
-In summary, this paper argued that XX
-This aspect of the research suggested that XX
-In conclusion, XX seems to improve XX
-In summary, this paper argued that XX
-In conclusion, it would appear that XX
-The analysis leads to the following conclusions: XX
-It is difficult to arrive at any conclusions with regard to XX
-The main conclusion that can be drawn is that XX
-The present findings confirm XX
-As we have argued elsewhere XX may be considered a promising aspect of XX
-Ideally, these findings should be replicated in a study where XX
-By using XX we tested the hypothesis that XX
-In conclusion, XX seems to improve XX
-Broadly translated our findings indicate that XX
-This is an important finding in the understanding of the XX
-More generally, these basic findings are consistent with research showing that XX
-In addition, these findings provide additional information about XX
-Despite the limitations these are valuable in light of XX
-Overall, our results demonstrate a strong effect of XX
-Nevertheless, we found XX
-To our knowledge, this is the first report of XX
-Our results on XX are broadly consistent with XX
-The broad implication of the present research is that XX
-This conclusion follows from the fact that XX
-Collectively, our results appear consistent with XX
-Importantly, our results provide evidence for XX
-Results provide a basis for XX
-This experiment adds to a growing corpus of research showing XX
-Our data indicate that XX; a result that casts a new light on XX
-These findings provide a potential mechanism for XX
-We have shown that XX
-Our data suggest that we still have a long way to go to XX
+The paper concludes by arguing X
+On this basis, we conclude that X
+The authors concluded that X is not confined to X
+This allows the conclusion that X
+The findings of this study can be understood as X
+This may be considered a promising aspect of X
+This may be considered a further validation of X
+Remaining issues are subject of X
+In summary, this paper argued that X
+This aspect of the research suggested that X
+In conclusion, X seems to improve X
+In summary, this paper argued that X
+In conclusion, it would appear that X
+The analysis leads to the following conclusions: X
+It is difficult to arrive at any conclusions with regard to X
+The main conclusion that can be drawn is that X
+The present findings confirm X
+As we have argued elsewhere X may be considered a promising aspect of X
+Ideally, these findings should be replicated in a study where X
+By using X we tested the hypothesis that X
+In conclusion, X seems to improve X
+Broadly translated our findings indicate that X
+This is an important finding in the understanding of the X
+More generally, these basic findings are consistent with research showing that X
+In addition, these findings provide additional information about X
+Despite the limitations these are valuable in light of X
+Overall, our results demonstrate a strong effect of X
+Nevertheless, we found X
+To our knowledge, this is the first report of X
+Our results on X are broadly consistent with X
+The broad implication of the present research is that X
+This conclusion follows from the fact that X
+Collectively, our results appear consistent with X
+Importantly, our results provide evidence for X
+Results provide a basis for X
+This experiment adds to a growing corpus of research showing X
+Our data indicate that X; a result that casts a new light on X
+These findings provide a potential mechanism for X
+We have shown that X
+Our data suggest that we still have a long way to go to X
 
 
 ## Future work
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - call for further research
 - more research is required
@@ -929,49 +929,49 @@ Our data suggest that we still have a long way to go to XX
 - future studies
 - remaining questions
 
-Future research should consider the potential effects of XX more carefully, for example XX
+Future research should consider the potential effects of X more carefully, for example X
 This assumption might be addressed in future studies.
-Future research on XX might extend the explanations of XX
-This is very much the key component in future attempts to overcome XX
-In future work, investigating XX might prove important.
+Future research on X might extend the explanations of X
+This is very much the key component in future attempts to overcome X
+In future work, investigating X might prove important.
 This is desirable for future work.
 Future investigations are necessary to validate the kinds of conclusions that can be drawn from this study.
-Future studies could fruitfully explore this issue further by XX
-Future research is needed to delimitate XX
-It will be important that future research investigate XX
-It is a question of future research to investigate XX
-We believe that apart from looking for XX, future research should look for XX
-Regardless, future research could continue to explore XX
+Future studies could fruitfully explore this issue further by X
+Future research is needed to delimitate X
+It will be important that future research investigate X
+It is a question of future research to investigate X
+We believe that apart from looking for X, future research should look for X
+Regardless, future research could continue to explore X
 This is an issue for future research to explore.
-Future studies could investigate the association between XX
-Future studies should aim to replicate results in a larger XX
- Future research should be devoted to the development of XX
+Future studies could investigate the association between X
+Future studies should aim to replicate results in a larger X
+ Future research should be devoted to the development of X
 This may constitute the object of future studies.
-Future research could examine XX
-Interesting research questions for future research that can be derived from XX
-In future research, more research is needed to apply and test XX
+Future research could examine X
+Interesting research questions for future research that can be derived from X
+In future research, more research is needed to apply and test X
 This is an interesting topic for future work.
-Future research should further develop and confirm these initial findings by XX
-Future research should certainly further test whether XX
-As also recommended above, future research should XX
-Future research should examine strategically XX
-Future research might apply XX
-In addition, XX might prove an important area for future research.
+Future research should further develop and confirm these initial findings by X
+Future research should certainly further test whether X
+As also recommended above, future research should X
+Future research should examine strategically X
+Future research might apply X
+In addition, X might prove an important area for future research.
 A number of recommendations for future research are given.
-Therefore, future research should be conducted in more realistic settings to XX
-Further research on XX issue is warranted.
-Further work is certainly required to disentangle these complexities in XX
+Therefore, future research should be conducted in more realistic settings to X
+Further research on X issue is warranted.
+Further work is certainly required to disentangle these complexities in X
 Looking forward, further attempts could prove quite beneficial to the literature.
 Further research is needed to confirm this novel finding.
-These result warrant further investigation via XX
+These result warrant further investigation via X
 This provides a good starting point for discussion and further research.
-Further studies should investigate XX
-The possibility of XX warrants further investigation.
+Further studies should investigate X
+The possibility of X warrants further investigation.
 
 
 ## Acknowledgments
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - grateful
 - thankful
@@ -1001,7 +1001,7 @@ The authors thank __ for discussions on __
 
 ## Appendix
 
-> (source: ref-n-write)
+%%(source: ref-n-write)%%
 
 - epilogue
 - outro
