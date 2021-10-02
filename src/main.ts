@@ -60,12 +60,12 @@ export default class PBPlugin extends Plugin {
         const pb: PBItem[] = [];
 
         for (let line of lines) {
-            if (pb.length === 0 && !line.startsWith('## ')) {
-                // Skip all lines until the first level 2 heading
+            if (pb.length === 0 && !line.startsWith('### ')) {
+                // Skip all lines until the first level 3 heading
             }
-            else if (line.startsWith('## ')) {
+            else if (line.startsWith('### ')) {
                 // A new heading indicates a new section in the pb
-                const section = line.slice(3)
+                const section = line.slice(4)
                 pb.push({
                     fileName,
                     phraseType: section,
