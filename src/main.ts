@@ -1,7 +1,7 @@
 import { Notice, Plugin } from 'obsidian';
 import { PBItem } from 'src/interfaces';
 import { removeDuplicates } from 'src/utils';
-import { PBSectionFuzzySuggestModal } from './section-suggester';
+import { PBPhraseTypeOrGroupsFuzzySuggestModal } from './phraseType-or-groups-suggester';
 import { PBSettingTab } from './Settings';
 
 export interface Settings {
@@ -32,7 +32,7 @@ export default class PBPlugin extends Plugin {
         this.addCommand({
             id: 'phrase-bank-suggestor',
             name: 'Pick from Phrase Bank',
-            callback: () => new PBSectionFuzzySuggestModal(this.app, this, this.pb, this.settings).open()
+            callback: () => new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this, this.pb, this.settings).open()
         });
 
         this.addCommand({
@@ -58,19 +58,35 @@ export default class PBPlugin extends Plugin {
     mdToJSON(content: string, fileName: string) {
         const lines = content.split('\n');
         const pb: PBItem[] = [];
-        console.log({ lines })
 
         for (let line of lines) {
             if (pb.length === 0 && !line.startsWith('## ')) {
                 // Skip all lines until the first level 2 heading
-            } else if (line.startsWith('## ')) {
+            }
+            else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 const section = line.slice(3)
-                pb.push({ fileName, section, desc: '', keywords: [], phrases: [] })
-            } else if (line.startsWith('> ')) {
+                pb.push({
+                    fileName,
+                    phraseType: section,
+                    groups: [],
+                    desc: '',
+                    keywords: [],
+                    phrases: []
+                })
+            }
+            else if (line.startsWith('!') || line.startsWith('↑')) {
+                // Groups start with '!' or '↑'
+                const groups = line.split(/!|↑/)[1].trim().split(',')
+                groups.forEach(group => {
+                    pb.last().groups.push({ name: group.trim(), keywords: [] })
+                })
+            }
+            else if (line.startsWith('>')) {
                 // Blockquotes indicate description
-                pb.last().desc = line.slice(2)
-            } else if (line.startsWith('- ')) {
+                pb.last().desc = line.split('>')[1].trim()
+            }
+            else if (line.startsWith('- ')) {
                 // Bullets indicates keywords
                 const kws = line.slice(2).split(',').map(kw => kw.trim());
                 pb.last().keywords.push(...kws)
@@ -90,14 +106,17 @@ export default class PBPlugin extends Plugin {
         const globalPB: PBItem[] = [];
         localPBs.forEach(localPB => {
             localPB.forEach(pbItem => {
-                const existingPBSection = globalPB.findIndex(pb => pb.section === pbItem.section)
-                if (existingPBSection > -1) {
-                    globalPB[existingPBSection].phrases = removeDuplicates([...globalPB[existingPBSection].phrases, ...pbItem.phrases])
-                    globalPB[existingPBSection].keywords = removeDuplicates([...globalPB[existingPBSection].keywords, ...pbItem.keywords])
+                const existingI = globalPB.findIndex(pb => pb.phraseType === pbItem.phraseType)
+                if (existingI > -1) {
+                    globalPB[existingI].phrases = removeDuplicates([...globalPB[existingI].phrases, ...pbItem.phrases])
+                    globalPB[existingI].keywords = removeDuplicates([...globalPB[existingI].keywords, ...pbItem.keywords])
                     // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
                     // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
-                    if (globalPB[existingPBSection].desc === '') {
-                        globalPB[existingPBSection].desc = pbItem.desc
+                    if (globalPB[existingI].desc === '') {
+                        globalPB[existingI].desc = pbItem.desc
+                    }
+                    if (globalPB[existingI].fileName !== pbItem.fileName) {
+                        globalPB[existingI].fileName = globalPB[existingI].fileName + ` ${pbItem.fileName}`
                     }
                 } else {
                     globalPB.push({ ...pbItem })

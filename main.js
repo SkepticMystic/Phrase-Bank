@@ -105,6 +105,66 @@ function removeDuplicates(a) {
     return result;
 }
 
+var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
+    __extends(PBPhraseTypeFuzzySuggestModal, _super);
+    function PBPhraseTypeFuzzySuggestModal(app, plugin, pb, settings) {
+        var _this = _super.call(this, app) || this;
+        _this.app = app;
+        _this.plugin = plugin;
+        _this.pb = __spreadArray(__spreadArray([], pb, true), [{ phraseType: 'BACK', fileName: '', desc: '', groups: [], keywords: [], phrases: [] }], false);
+        _this.settings = settings;
+        _this.scope.register(['Shift'], 'Enter', function (evt) {
+            // @ts-ignore
+            _this.chooser.useSelectedItem(evt);
+            return false;
+        });
+        return _this;
+    }
+    PBPhraseTypeFuzzySuggestModal.prototype.getItems = function () {
+        return this.pb;
+    };
+    PBPhraseTypeFuzzySuggestModal.prototype.getItemText = function (item) {
+        return item.phraseType + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
+    };
+    PBPhraseTypeFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
+        _super.prototype.renderSuggestion.call(this, item, el);
+        el.innerText = el.innerText.split('|||')[0];
+        this.updateSuggestionElWithDesc(item, el);
+    };
+    PBPhraseTypeFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
+        if (item.item.desc) {
+            el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
+        }
+    };
+    PBPhraseTypeFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
+        if (item.phraseType === 'BACK') {
+            this.close();
+            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
+        }
+        else {
+            if (!evt.shiftKey) {
+                this.close();
+                new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
+            }
+            else {
+                var randI = Math.floor(Math.random() * (item.phrases.length - 1));
+                var randPhrase = item.phrases[randI];
+                try {
+                    this.close();
+                    var activeView = getActiveView(this.plugin);
+                    var activeEditor = activeView.editor;
+                    var editorRange = activeEditor.getCursor('from');
+                    activeEditor.replaceRange(randPhrase, editorRange);
+                }
+                catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+    };
+    return PBPhraseTypeFuzzySuggestModal;
+}(obsidian.FuzzySuggestModal));
+
 var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhrasesFuzzySuggestModal, _super);
     function PBPhrasesFuzzySuggestModal(app, plugin, phrases, settings) {
@@ -127,7 +187,7 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
         if (item === 'BACK') {
             this.close();
-            new PBSectionFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
+            new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
         }
         else {
             try {
@@ -144,9 +204,9 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     return PBPhrasesFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
 
-var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
-    __extends(PBSectionFuzzySuggestModal, _super);
-    function PBSectionFuzzySuggestModal(app, plugin, pb, settings) {
+var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
+    __extends(PBPhraseTypeOrGroupsFuzzySuggestModal, _super);
+    function PBPhraseTypeOrGroupsFuzzySuggestModal(app, plugin, pb, settings) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.plugin = plugin;
@@ -159,41 +219,63 @@ var PBSectionFuzzySuggestModal = /** @class */ (function (_super) {
         });
         return _this;
     }
-    PBSectionFuzzySuggestModal.prototype.getItems = function () {
-        return this.pb;
+    PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.getItems = function () {
+        var groups = this.pb.map(function (item) { return item.groups; }).flat(3);
+        var noDupGroups = [];
+        groups.forEach(function (group) {
+            if (!noDupGroups.some(function (g) { return g.name === group.name; })) {
+                noDupGroups.push(group);
+            }
+        });
+        return __spreadArray(__spreadArray([], this.pb, true), noDupGroups, true);
     };
-    PBSectionFuzzySuggestModal.prototype.getItemText = function (item) {
-        return item.section + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
+    PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.getItemText = function (item) {
+        if (item.phraseType) {
+            return item.phraseType + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
+        }
+        else if (item.name) {
+            return '📂 ' + item.name;
+        }
     };
-    PBSectionFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
+    PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
         el.innerText = el.innerText.split('|||')[0];
         this.updateSuggestionElWithDesc(item, el);
     };
-    PBSectionFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
-        el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
-    };
-    PBSectionFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        console.log(item.section);
-        if (!evt.shiftKey) {
-            new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
-        }
-        else {
-            var randI = Math.floor(Math.random() * (item.phrases.length - 1));
-            var randPhrase = item.phrases[randI];
-            try {
-                this.close();
-                var activeView = getActiveView(this.plugin);
-                var activeEditor = activeView.editor;
-                var editorRange = activeEditor.getCursor('from');
-                activeEditor.replaceRange(randPhrase, editorRange);
-            }
-            catch (error) {
-                console.log(error);
-            }
+    PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
+        if (item.item.desc) {
+            el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
         }
     };
-    return PBSectionFuzzySuggestModal;
+    PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
+        if (item.phraseType) {
+            if (!evt.shiftKey) {
+                new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
+            }
+            else {
+                var randI = Math.floor(Math.random() * (item.phrases.length - 1));
+                var randPhrase = item.phrases[randI];
+                try {
+                    this.close();
+                    var activeView = getActiveView(this.plugin);
+                    var activeEditor = activeView.editor;
+                    var editorRange = activeEditor.getCursor('from');
+                    activeEditor.replaceRange(randPhrase, editorRange);
+                }
+                catch (error) {
+                    console.log(error);
+                }
+            }
+        }
+        else if (item.name) {
+            console.log(item.name);
+            var filteredPB = this.pb.filter(function (pbItem) { return pbItem.groups.some(function (group) { return group.name === item.name; }); });
+            console.log({ filteredPB: filteredPB });
+            this.close();
+            new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, filteredPB, this.settings).open();
+        }
+    };
+    return PBPhraseTypeOrGroupsFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
 
 var PBSettingTab = /** @class */ (function (_super) {
@@ -280,7 +362,7 @@ var PBPlugin = /** @class */ (function (_super) {
                         this.addCommand({
                             id: 'phrase-bank-suggestor',
                             name: 'Pick from Phrase Bank',
-                            callback: function () { return new PBSectionFuzzySuggestModal(_this.app, _this, _this.pb, _this.settings).open(); }
+                            callback: function () { return new PBPhraseTypeOrGroupsFuzzySuggestModal(_this.app, _this, _this.pb, _this.settings).open(); }
                         });
                         this.addCommand({
                             id: 'refresh-phrase-bank',
@@ -323,18 +405,31 @@ var PBPlugin = /** @class */ (function (_super) {
         var _a;
         var lines = content.split('\n');
         var pb = [];
-        console.log({ lines: lines });
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
             if (pb.length === 0 && !line.startsWith('## ')) ;
             else if (line.startsWith('## ')) {
                 // A new heading indicates a new section in the pb
                 var section = line.slice(3);
-                pb.push({ fileName: fileName, section: section, desc: '', keywords: [], phrases: [] });
+                pb.push({
+                    fileName: fileName,
+                    phraseType: section,
+                    groups: [],
+                    desc: '',
+                    keywords: [],
+                    phrases: []
+                });
             }
-            else if (line.startsWith('> ')) {
+            else if (line.startsWith('!') || line.startsWith('↑')) {
+                // Groups start with '!' or '↑'
+                var groups = line.split(/!|↑/)[1].trim().split(',');
+                groups.forEach(function (group) {
+                    pb.last().groups.push({ name: group.trim(), keywords: [] });
+                });
+            }
+            else if (line.startsWith('>')) {
                 // Blockquotes indicate description
-                pb.last().desc = line.slice(2);
+                pb.last().desc = line.split('>')[1].trim();
             }
             else if (line.startsWith('- ')) {
                 // Bullets indicates keywords
@@ -354,14 +449,17 @@ var PBPlugin = /** @class */ (function (_super) {
         var globalPB = [];
         localPBs.forEach(function (localPB) {
             localPB.forEach(function (pbItem) {
-                var existingPBSection = globalPB.findIndex(function (pb) { return pb.section === pbItem.section; });
-                if (existingPBSection > -1) {
-                    globalPB[existingPBSection].phrases = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingPBSection].phrases, true), pbItem.phrases, true));
-                    globalPB[existingPBSection].keywords = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingPBSection].keywords, true), pbItem.keywords, true));
+                var existingI = globalPB.findIndex(function (pb) { return pb.phraseType === pbItem.phraseType; });
+                if (existingI > -1) {
+                    globalPB[existingI].phrases = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingI].phrases, true), pbItem.phrases, true));
+                    globalPB[existingI].keywords = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingI].keywords, true), pbItem.keywords, true));
                     // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
                     // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
-                    if (globalPB[existingPBSection].desc === '') {
-                        globalPB[existingPBSection].desc = pbItem.desc;
+                    if (globalPB[existingI].desc === '') {
+                        globalPB[existingI].desc = pbItem.desc;
+                    }
+                    if (globalPB[existingI].fileName !== pbItem.fileName) {
+                        globalPB[existingI].fileName = globalPB[existingI].fileName + (" " + pbItem.fileName);
                     }
                 }
                 else {
