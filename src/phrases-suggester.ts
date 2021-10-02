@@ -2,6 +2,7 @@ import { App, FuzzyMatch, FuzzySuggestModal } from "obsidian";
 import { PBPhraseTypeFuzzySuggestModal } from "src/phraseType-only-suggester";
 import PBPlugin, { Settings } from "src/main";
 import { getActiveView } from "src/utils";
+import { PBPhraseTypeOrGroupsFuzzySuggestModal } from "src/phraseType-or-groups-suggester";
 
 export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
     app: App;
@@ -22,7 +23,7 @@ export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
     }
 
     getItemText(item: string): string {
-        return item;
+        return `💬 ${item}`;
     }
 
     renderSuggestion(item: FuzzyMatch<string>, el: HTMLElement) {
@@ -32,7 +33,7 @@ export class PBPhrasesFuzzySuggestModal extends FuzzySuggestModal<string> {
     onChooseItem(item: string, evt: MouseEvent | KeyboardEvent): void {
         if (item === 'BACK') {
             this.close()
-            new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open()
+            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open()
         } else {
             try {
                 const activeView = getActiveView(this.plugin);
