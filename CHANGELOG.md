@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.10...0.0.11) (2021-10-02)
+
+
+### Bug Fixes
+
+* :bug: for of loop to await multiple async events ([91d43cf](https://github.com/SkepticMystic/Phrase-Bank/commit/91d43cf2b55eaee36a0600cdfb0b7b33fb52a698))
+* Better grouping ([56e513a](https://github.com/SkepticMystic/Phrase-Bank/commit/56e513a5e6e2bb068f3b9e6b708b7c20db7d8882))
+
 ### [0.0.10](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.9...0.0.10) (2021-10-02)
 
 
