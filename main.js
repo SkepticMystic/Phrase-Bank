@@ -534,7 +534,13 @@ var PBPlugin = /** @class */ (function (_super) {
                         return [4 /*yield*/, this.buildRemotePB()];
                     case 2:
                         remotePB = _a.sent();
-                        this.pb = this.mergePBs(__spreadArray(__spreadArray([], localPBs, true), [remotePB], false));
+                        console.log({ localPBs: localPBs, remotePB: remotePB });
+                        if (localPBs === null || localPBs === void 0 ? void 0 : localPBs.length) {
+                            this.pb = this.mergePBs(__spreadArray(__spreadArray([], localPBs, true), [remotePB], false));
+                        }
+                        else {
+                            this.pb = remotePB;
+                        }
                         new obsidian.Notice('Phrase Bank Refreshed!');
                         console.log({ pb: this.pb });
                         return [2 /*return*/];
