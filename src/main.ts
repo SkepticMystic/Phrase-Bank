@@ -129,19 +129,18 @@ export default class PBPlugin extends Plugin {
     async buildLocalPBs() {
         const localPBs: PBItem[][] = []
         const currFile = this.app.workspace.getActiveFile()
-        await Promise.all([
-            this.settings.pbFileNames.forEach(async (path) => {
-                const pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path)
-                console.log({ pbFile })
-                if (pbFile) {
-                    const content = await this.app.vault.cachedRead(pbFile)
-                    localPBs.push(this.mdToJSON(content, pbFile.basename))
-                } else {
-                    new Notice(`${path} does not exist in your vault.`)
-                }
-            })
-        ])
-
+        for (let path of this.settings.pbFileNames) {
+            const pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path)
+            if (pbFile) {
+                const content = await this.app.vault.cachedRead(pbFile)
+                const localPB = this.mdToJSON(content, pbFile.basename)
+                console.log({ localPB })
+                localPBs.push(localPB)
+            } else {
+                new Notice(`${path} does not exist in your vault.`)
+            }
+        }
+        console.log({ localPBs })
         return localPBs
     }
 
