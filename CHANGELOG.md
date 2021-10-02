@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.9...0.0.10) (2021-10-02)
+
+
+### Features
+
+* :sparkles: Bottom-up groups! ([1458972](https://github.com/SkepticMystic/Phrase-Bank/commit/1458972a0a32b51e0eb2f5c1d30bac1e7b18eb19))
+
 ### [0.0.9](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.8...0.0.9) (2021-10-01)
 
 
