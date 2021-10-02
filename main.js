@@ -105,6 +105,45 @@ function removeDuplicates(a) {
     return result;
 }
 
+var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
+    __extends(PBPhrasesFuzzySuggestModal, _super);
+    function PBPhrasesFuzzySuggestModal(app, plugin, phrases, settings) {
+        var _this = _super.call(this, app) || this;
+        _this.app = app;
+        _this.plugin = plugin;
+        _this.phrases = __spreadArray(__spreadArray([], phrases, true), ['BACK'], false);
+        _this.settings = settings;
+        return _this;
+    }
+    PBPhrasesFuzzySuggestModal.prototype.getItems = function () {
+        return this.phrases;
+    };
+    PBPhrasesFuzzySuggestModal.prototype.getItemText = function (item) {
+        return "\uD83D\uDCAC " + item;
+    };
+    PBPhrasesFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
+        _super.prototype.renderSuggestion.call(this, item, el);
+    };
+    PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
+        if (item === 'BACK') {
+            this.close();
+            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
+        }
+        else {
+            try {
+                var activeView = getActiveView(this.plugin);
+                var activeEditor = activeView.editor;
+                var editorRange = activeEditor.getCursor('from');
+                activeEditor.replaceRange(item, editorRange);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+    };
+    return PBPhrasesFuzzySuggestModal;
+}(obsidian.FuzzySuggestModal));
+
 var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhraseTypeFuzzySuggestModal, _super);
     function PBPhraseTypeFuzzySuggestModal(app, plugin, pb, settings) {
@@ -163,45 +202,6 @@ var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
         }
     };
     return PBPhraseTypeFuzzySuggestModal;
-}(obsidian.FuzzySuggestModal));
-
-var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
-    __extends(PBPhrasesFuzzySuggestModal, _super);
-    function PBPhrasesFuzzySuggestModal(app, plugin, phrases, settings) {
-        var _this = _super.call(this, app) || this;
-        _this.app = app;
-        _this.plugin = plugin;
-        _this.phrases = __spreadArray(__spreadArray([], phrases, true), ['BACK'], false);
-        _this.settings = settings;
-        return _this;
-    }
-    PBPhrasesFuzzySuggestModal.prototype.getItems = function () {
-        return this.phrases;
-    };
-    PBPhrasesFuzzySuggestModal.prototype.getItemText = function (item) {
-        return item;
-    };
-    PBPhrasesFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
-        _super.prototype.renderSuggestion.call(this, item, el);
-    };
-    PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        if (item === 'BACK') {
-            this.close();
-            new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
-        }
-        else {
-            try {
-                var activeView = getActiveView(this.plugin);
-                var activeEditor = activeView.editor;
-                var editorRange = activeEditor.getCursor('from');
-                activeEditor.replaceRange(item, editorRange);
-            }
-            catch (error) {
-                console.log(error);
-            }
-        }
-    };
-    return PBPhrasesFuzzySuggestModal;
 }(obsidian.FuzzySuggestModal));
 
 var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
@@ -407,10 +407,10 @@ var PBPlugin = /** @class */ (function (_super) {
         var pb = [];
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
-            if (pb.length === 0 && !line.startsWith('## ')) ;
-            else if (line.startsWith('## ')) {
+            if (pb.length === 0 && !line.startsWith('### ')) ;
+            else if (line.startsWith('### ')) {
                 // A new heading indicates a new section in the pb
-                var section = line.slice(3);
+                var section = line.slice(4);
                 pb.push({
                     fileName: fileName,
                     phraseType: section,
@@ -482,6 +482,8 @@ var PBPlugin = /** @class */ (function (_super) {
                     case 1:
                         if (!(_i < _a.length)) return [3 /*break*/, 5];
                         path = _a[_i];
+                        if (path === '')
+                            return [2 /*return*/];
                         pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path);
                         if (!pbFile) return [3 /*break*/, 3];
                         return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
