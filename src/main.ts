@@ -130,6 +130,7 @@ export default class PBPlugin extends Plugin {
         const localPBs: PBItem[][] = []
         const currFile = this.app.workspace.getActiveFile()
         for (let path of this.settings.pbFileNames) {
+            if (path === '') return;
             const pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path)
             if (pbFile) {
                 const content = await this.app.vault.cachedRead(pbFile)
