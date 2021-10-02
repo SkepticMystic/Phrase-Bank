@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.14](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.13...0.0.14) (2021-10-02)
+
+
+### Bug Fixes
+
+* :bug: Handle empty localPBs better ([f801ec6](https://github.com/SkepticMystic/Phrase-Bank/commit/f801ec649a89c93bc2e74b43236c91873387a341))
+
 ### [0.0.13](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.12...0.0.13) (2021-10-02)
 
 
