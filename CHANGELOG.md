@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.13](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.12...0.0.13) (2021-10-02)
+
+
+### Bug Fixes
+
+* :bug: Go BACK to first modal ([d073147](https://github.com/SkepticMystic/Phrase-Bank/commit/d073147e4fb2ee5a802dadb9d243c887ff24c396))
+* :bug: skip over empty pbLocalFile paths ([c140a55](https://github.com/SkepticMystic/Phrase-Bank/commit/c140a556c3d42d73fda6c166e0fe8c915221627c))
+
 ### [0.0.12](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.11...0.0.12) (2021-10-02)
 
 ### [0.0.11](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.10...0.0.11) (2021-10-02)
