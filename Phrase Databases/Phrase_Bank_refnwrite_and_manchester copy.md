@@ -320,9 +320,9 @@ A considerable amount of literature has been published on X. These studies ...
 The first serious discussions and analyses of X emerged during the 1970s with ...
 What we know about X is largely based upon empirical studies that investigate how ...
 
-## Referring to Literature
+## General reference to previous research or scholarship: normally more than one author
 
-> General reference to previous research or scholarship: normally more than one author
+↑ Referring to Literature
 
 Traditionally, it has been argued that ... (Smith, 1982; O’Brien, 1984).
 Surveys such as that conducted by Smith (1988) have shown that ...
@@ -356,9 +356,9 @@ It has been suggested that levels of X are independent of the size of the Y (Smi
 It has conclusively been shown that X and Y increase Z (Smith et al. , 1999; Jones, 2001 ...).
 It has been demonstrated that a high intake of X results in damage to ... (Smith, 1998; ...).
 
-## Referring to Literature
+## Reference to current state of knowledge
 
-> Reference to current state of knowledge
+↑ Referring to Literature
 
 There is an unambiguous relationship between X and Y (Rao, 1998).
 X is one of the most intense reactions following CHD (Lane, 2003).
@@ -366,9 +366,9 @@ X has been found to oppose the anti-inflammatory actions of Y on Z (Alourfi, 200
 A relationship exists between an individual’s working memory and their ability to ... (Jones, 2002).
 GM varieties of maize are able to cross-pollinate with non-GM varieties (Smith, 1998; Jones, 1999).
 
-## Referring to Literature
+## Reference to single investigations in the past: researcher(s) as sentence subject
 
-> Reference to single investigations in the past: researcher(s) as sentence subject
+↑ Referring to Literature
 
 Smith (1999) found that as levels of literacy and education of the population rise ...
 Smith (1999) showed that reducing X to 190oC decreased ... (see Figure 2).
@@ -388,9 +388,9 @@ Jones et al. (2001) identified parents of disabled children as ...
 Jones et al. (2001) used a survey to assess the various ...
 Wang et al. (2004) have recently developed a methodology for the selective introduction of ...
 
-## Referring to Literature
+## Reference to single investigations or publications in the past: time frame prominent
 
-> Reference to single investigations or publications in the past: time frame prominent
+↑ Referring to Literature
 
 In 1975, Smith et al. published a paper in which they described ...
 In 1990, Patel et al. demonstrated that replacement of H2O with heavy water led to ...
@@ -400,9 +400,9 @@ In 1981, Smith and co-workers demonstrated that X induced in vitro resistance to
 In 1990, Al-Masry et al. reported a new and convenient synthetic procedure to obtain ...
 In 1984, Jones et al. made several amino acid esters of X and evaluated them as ...
 
-## Referring to Literature
+## Reference to single investigations in the past: investigation prominent
 
-> Reference to single investigations in the past: investigation prominent
+↑ Referring to Literature
 
 Preliminary work on X was undertaken by Abdul Karim (1992).
 The first systematic study of X was reported by Patel et al. in 1986.
@@ -424,9 +424,9 @@ In a randomised controlled study of X, Smith (2012) reported that ...
 In a large longitudinal study, Smith et al. (2012) investigated the incidence of X in Y.
 In one well-known recent experiment, limits on X were found to be .... (Al-Masry, 2013)
 
-## Referring to Literature
+## Reference to single investigations in the past: research topic as main focus
 
-> Reference to single investigations in the past: research topic as main focus
+↑ Referring to Literature
 
 To determine the effects of X, Zhao et al (2005) compared ...
 X was originally isolated from Y in a soil sample from ... (Wang et al. , 1952).
@@ -438,9 +438,9 @@ To better understand the mechanisms of X and its effects, Al-Masry (2013) analys
 The way in which the X gene is regulated was studied extensively by Ho and colleagues (Ho et al.
 1995 and 1998).
 
-## Referring to Literature
+## Reference to what other writers do in their text: author as subject
 
-> Reference to what other writers do in their text: author as subject
+↑ Referring to Literature
 
 Smith (2013) identifies X, Y, and Z as the major causes of ...
 Perez (2013) draws on an extensive range of sources to assess ...
@@ -469,9 +469,9 @@ In her review of ..., Smith (2012) identifies five characteristics of ...
 In her analysis of ..., Smith (2012) identifies five characteristics of ...
 In her introduction to ..., Smith (2012) identifies five characteristics of ...
 
-## Referring to Literature
+## Reference to another writer’s ideas or position (author as subject)
 
-> Reference to another writer’s ideas or position (author as subject)
+↑ Referring to Literature
 
 According to Smith (2003), preventative medicine is far more cost effective, and therefore ...
 As noted by Smith (2003) X is far more cost effective, and therefore ...
@@ -486,9 +486,9 @@ Smith (2013) offers …
 Smith (2013) proposes …
 Smith (2013) suggests …
 
-## Referring to Literature
+## Synthesising sources
 
-> Synthesising sources
+↑ Referring to Literature
 
 Similarly, Nicoladis (2006) found that X ...
 In the same vein, Smith (1994) in his book XYZ notes ...
@@ -521,9 +521,9 @@ While Smith (2008) focusses on X,
 whilst Jones (2011) ...
 Jones (2009) is more concerned with ...
 
-## Referring to Literature
+## Some ways of introducing quotations
 
-> Some ways of introducing quotations
+↑ Referring to Literature
 
 Commenting on X, Smith (2003) argues: ‘... ...’
 As Smith argues: ‘In the past, the purpose of education was to ...’ (Smith , 2000:150).
@@ -536,9 +536,9 @@ As Smith notes: ‘... ... ... ... ... ‘
 As Smith points out: ‘... ... ... ... ... ‘
 As Smith argues: ‘... ... ... ... ... ‘
 
-## Referring to Literature
+## Summarising the review or parts of the review
 
-> Summarising the review or parts of the review
+↑ Referring to Literature
 
 Together, these studies outline that ...
 Overall, these studies highlight the need for ...
@@ -549,9 +549,9 @@ Overall, there seems to be some evidence to indicate that ...
 Together these studies provide important insights into the ...
 In view of all that has been mentioned so far, one may suppose that ...
 
-## Describing Methods
+## Describing previously used methods
 
-> Describing previously used methods
+↑ Describing Methods
 
 To date various methods have been developed and introduced to measure X:
 In most recent studies, X has been measured in four different ways.
@@ -566,9 +566,9 @@ Radiographic techniques are the main non-invasive method used to determine ...
 A variety of methods are used to assess X. Each has its advantages and drawbacks.
 Data were gathered from multiple sources at various time points during ...
 
-## Describing Methods
+## Giving reasons why a particular method was adopted or rejected
 
-> Giving reasons why a particular method was adopted or rejected
+↑ Describing Methods
 
 A case study approach was used to allow a ...
 Qualitative methods offer an effective way of ...
@@ -591,9 +591,9 @@ The main disadvantage of the experimental method is that ...
 A major problem with the experimental method is that ...
 There are certain problems with the use of focus groups. One of these is that there is less ...
 
-## Describing Methods
+## Indicating a specific method
 
-> Indicating a specific method
+↑ Describing Methods
 
 X was prepared according to the procedure used by Patel et al. (1957).
 The synthesis of X was done according to the procedure of Smith (1973).
@@ -602,9 +602,9 @@ This compound was prepared by adapting the procedure used by Zhao et al. (1990).
 An alternative method for making scales homogenous is by using ...
 Samples were analysed for X as previously reported by Smith et al. (2012)
 
-## Describing Methods
+## Describing the characteristics of the sample
 
-> Describing the characteristics of the sample
+↑ Describing Methods
 
 Eligibility criteria required individuals to have received ...
 A random sample of patients with ... was recruited from ...
@@ -625,9 +625,9 @@ Articles were searched from January 1965 until April 2010.
 A systematic literature review was conducted of studies that ...
 All studies described as using some sort of X procedure were included in the analysis.
 
-## Describing Methods
+## Indicating reasons for sample characteristics
 
-> Indicating reasons for sample characteristics
+↑ Describing Methods
 
 Criteria for selecting the subjects were as follows:
 The area of study was chosen for its relatively small ...
@@ -636,9 +636,9 @@ A small sample was chosen because of the expected difficulty of obtaining ...
 The subjects were selected on the basis of a degree of homogeneity of their ...
 A comparison group of 12 male subjects without any history of X was drawn from a pool of ...
 
-## Describing Methods
+## Describing the process: infinitive of purpose
 
-> Describing the process: infinitive of purpose
+↑ Describing Methods
 
 In order to identify the T10 and T11 spinous processes, the subjects were asked to ...
 In order to understand how X regulates Y, a series of transfections was performed.
@@ -655,17 +655,17 @@ The vials were capped with ... to prevent ...
 The process was repeated several times in order to remove ...
 In an attempt to make each interviewee feel as comfortable as possible, the interviewer ...
 
-## Describing Methods
+## Describing the process: other phrases expressing purpose
 
-> Describing the process: other phrases expressing purpose
+↑ Describing Methods
 
 For the purpose of height measurement, subjects were asked to stand ...
 For the purpose of analysis, 2 segments were extracted from each ...
 For the estimation of protein concentration, 100 μL of protein sample was mixed with ...
 
-## Describing Methods
+## Describing the process: typical verbs in the passive form
 
-> Describing the process: typical verbs in the passive form
+↑ Describing Methods
 
 The data _were normalised_ using ...
 Descriptive data _were generated_ for all variables.
@@ -690,9 +690,9 @@ This experiment _was repeated_ under conditions in which the poor signal/noise r
 Article references _were searched_ further for additional relevant publications.
 The mean score for the two trials _was subjected_ to multivariate analysis of variance to determine ...
 
-## Describing Methods
+## Describing the process: sequence words and phrases
 
-> Describing the process: sequence words and phrases
+↑ Describing Methods
 
 Prior to commencing the study, ethical clearance was sought from ...
 Prior to undertaking the investigation, ethical clearance was obtained from ...
@@ -717,9 +717,9 @@ The results were corrected for the background readings and _then_ averaged befor
 Finally, questions were asked as to the role of ...
 In the follow-up phase of the study, participants were asked ...
 
-## Describing Methods
+## Describing the process: adverbs of manner
 
-> Describing the process: adverbs of manner
+↑ Describing Methods
 
 The soil was then placed in a furnace and _gradually_ heated up to ...
 The vials were shaken _manually_ to allow the soil to mix well with the water.
@@ -728,9 +728,9 @@ The resulting solution was _gently_ mixed at room temperature for ten minutes an
 A sample of the concentrate was then _carefully_ injected into ...
 The tubes were _accurately_ reweighed to six decimal places using ...
 
-## Describing Methods
+## Describing the process: using + instrument
 
-> Describing the process: using + instrument
+↑ Describing Methods
 
 15 subjects were recruited using email advertisements requesting healthy students from ...
 All the work on the computer was carried out using Quattro Pro for Windows and ...
@@ -742,17 +742,17 @@ Comparisons between the two groups were made using unrelated t-tests.
 Using the X-ray and looking at the actual X, it was possible to identify ...
 Using an Anthos Micro plate Reader, we were able to separate single cells into different ...
 
-## Describing Methods
+## Describing the process: giving detailed information
 
-> Describing the process: giving detailed information
+↑ Describing Methods
 
 Compounds 3 and 5 were dissolved in X at apparent pH 2.5 to give concentrations of 4mM ...
 ... and the solutions were degraded at 55°C or 37°C for a total time of 42 hours.
 At intervals of 0.5 min, 50 μLof the X was aliquoted into 0.5mL of Y (pH 7.5) to ...
 
-## Describing Methods
+## Indicating problems or limitations
 
-> Indicating problems or limitations
+↑ Describing Methods
 
 In this investigation there are several sources for error. The main error is ...
 Another major source of uncertainty is in the method used to calculate X.
@@ -761,9 +761,9 @@ Further data collection is required to determine exactly how X affects Y.
 It was not possible to investigate the significant relationships of X and Y further because the sample
 size was too small.
 
-## Reporting Results
+## Reference to aim or method
 
-> Reference to aim or method
+↑ Reporting Results
 
 Changes in X and Y were compared using ...
 Simple statistical analysis was used to ...
@@ -797,9 +797,9 @@ The results obtained from the preliminary analysis of X/The results of the corre
 The results obtained from the preliminary analysis of X/The results of the correlational analysis/The themes identified in these responses are set out in Table 1./in Figure 1.
 The results obtained from the preliminary analysis of X/The results of the correlational analysis/The themes identified in these responses are summarised in Table 1./in Figure 1.
 
-## Reporting Results
+## Highlighting significant data in a table or chart
 
-> Highlighting significant data in a table or chart
+↑ Reporting Results
 
 It is apparent from this table that very few ...
 This table is quite revealing in several ways. First, unlike the other tables ....
@@ -812,9 +812,9 @@ From the data in Figure 9, it is apparent that the length of time left between .
 From this data, we can see that Study 2 resulted in the lowest value of ...
 Data from this table can be compared with the data in Table 4.6 which shows ...
 
-## Reporting Results
+## Statements of positive result
 
-> Statements of positive result
+↑ Reporting Results
 
 Strong evidence of X was found when ...
 This result is significant at the p = 0.05 level.
@@ -830,9 +830,9 @@ Post hoc analysis revealed that during ...
 Further analysis showed that ...
 Further statistical tests revealed ...
 
-## Reporting Results
+## Statements of negative result
 
-> Statements of negative result
+↑ Reporting Results
 
 There was no increase of X associated with ....
 There were no significant differences between ...
@@ -846,9 +846,9 @@ The Chi-square test did not show any significant differences between ...
 A clear benefit of X in the prevention of Y could not be identified in this analysis.
 Only trace amounts of X were detected in ...
 
-## Reporting Results
+## Highlighting significant, interesting or surprising results
 
-> Highlighting significant, interesting or surprising results
+↑ Reporting Results
 
 Interestingly, the X was observed to ...
 Interestingly, this correlation is related to ...
@@ -859,18 +859,18 @@ The correlation between X and Y is interesting because ...
 Interestingly, there were also differences in the ratios of ...
 The single most striking observation to emerge from the data comparison was ...
 
-## Reporting Results
+## Reporting a reaction
 
-> Reporting a reaction
+↑ Reporting Results
 
 When X cells were stimulated with Y, no significant difference in the number of Z was detected.
 However, stimulation of X cells with Y did not increase the ...
 Following the addition of X, a significant increase (P<0.05) in the Y was recorded.
 With successive increases in intensity of the X, the Y moved further to ...
 
-## Reporting Results
+## Reporting results from questionnaires and interviews
 
-> Reporting results from questionnaires and interviews
+↑ Reporting Results
 
 The response rate was 60% at six months and 56% at 12 months.
 Of the study population, 90 subjects completed and returned the questionnaire.
@@ -903,9 +903,9 @@ A minority of participants (17%) indicated that ...
 One participant commented: ‘ ...’
 Another interviewee alluded to the notion of ...
 
-## Reporting Results
+## Observations about qualitative data
 
-> Observations about qualitative data
+↑ Reporting Results
 
 The themes of X and Y recurred throughout the dataset.
 Five broad themes emerged from the analysis.
@@ -930,9 +930,9 @@ Some felt that ... while others considered that ...
 Two divergent and often conflicting discourses emerged ...
 Whilst a minority mentioned that... all agreed that...
 
-## Reporting Results
+## Transition statements
 
-> Transition statements
+↑ Reporting Results
 
 If we now turn to ...
 A comparison of the two results reveals ...
@@ -941,9 +941,9 @@ Comparing the two results, it can be seen that ...
 The next section of the survey was concerned with ...
 In the final part of the survey, respondents were asked ...
 
-## Reporting Results
+## Summary and transition
 
-> Summary and transition
+↑ Reporting Results
 
 These results suggest that ...
 Overall, these results indicate that ...
@@ -952,9 +952,9 @@ Taken together, these results suggest that there is an association between ...
 In summary, these results show that ...
 The results in this Chapter indicate that ... The next Chapter, therefore, moves on to discuss the ...
 
-## Discussing Findings
+## Background information: reference to literature or to research aim/question
 
-> Background information: reference to literature or to research aim/question
+↑ Discussing Findings
 
 As mentioned in the literature review, ...
 The third question in this research was ...
@@ -968,9 +968,9 @@ The present study was designed to determine the effect of ...
 A strong relationship between X and Y has been reported in the literature.
 In reviewing the literature, no data was found on the association between X and Y.
 
-## Discussing Findings
+## Statements of result: usually with reference to results section
 
-> Statements of result: usually with reference to results section
+↑ Discussing Findings
 
 The current study found that ...
 The most interesting finding was that ...
@@ -985,9 +985,9 @@ X provided the largest set of significant clusters of ...
 It is interesting to note that in all seven cases of this study ...
 The results of this study did not show that .../did not show any significant increase in ...
 
-## Discussing Findings
+## Unexpected outcome
 
-> Unexpected outcome
+↑ Discussing Findings
 
 Surprisingly, X was found to ...
 What is surprising is that ...
@@ -999,9 +999,9 @@ Contrary to expectations, this study did not find a significant difference betwe
 However, the observed difference between X and Y in this study was not significant.
 However, the ANOVA (one way) showed that these results were not statistically significant.
 
-## Discussing Findings
+## Reference to previous research: support
 
-> Reference to previous research: support
+↑ Discussing Findings
 
 These findings further support the idea of ...
 This finding confirms the association between ...
@@ -1023,9 +1023,9 @@ The findings observed in this study mirror those of the previous studies that ha
 This study produced results which corroborate the findings of a great deal of the previous work in this field.
 There are similarities between the attitudes expressed by X in this study and those described by (Smith, 1987, 1995) and Jones (1986).
 
-## Discussing Findings
+## Reference to previous research: contradict
 
-> Reference to previous research: contradict
+↑ Discussing Findings
 
 However, the findings of the current study do not support the previous research.
 This study has been unable to demonstrate that ...
@@ -1034,9 +1034,9 @@ In contrast to earlier findings, however, no evidence of X was detected.
 These results differ from X’s 2003 estimate of Y, but they are broadly consistent with earlier ...
 Although, these results differ from some published studies (Smith, 1992; Jones, 1996), they are consistent with those of ...
 
-## Discussing Findings
+## Explanations for results
 
-> Explanations for results
+↑ Discussing Findings
 
 There are several possible explanations for this result.
 A possible explanation for these results may be the lack of adequate ...
@@ -1060,9 +1060,9 @@ It may be that these students benefitted from ...
 There are two likely causes for the differences between ...
 The possible interference of X cannot be ruled out.
 
-## Discussing Findings
+## Advising cautious interpretation
 
-> Advising cautious interpretation
+↑ Discussing Findings
 
 These findings cannot be extrapolated to all patients.
 These data must be interpreted with caution because ...
@@ -1071,9 +1071,9 @@ It is important to bear in mind the possible bias in these responses.
 However, with a small sample size, caution must be applied, as the findings might not be transferable to ...
 Although exclusion of X did not reduce the effect on X, these results should be interpreted with caution.
 
-## Discussing Findings
+## Suggesting general hypotheses
 
-> Suggesting general hypotheses
+↑ Discussing Findings
 
 The value of X suggests that a weak link may exist between ...
 It is therefore likely that such connections exist between ...
@@ -1089,9 +1089,9 @@ Therefore, X could be a major factor, if not the only one, causing ...
 It can therefore be assumed that the ...
 This finding, while preliminary, suggests that ...
 
-## Discussing Findings
+## Noting implications
 
-> Noting implications
+↑ Discussing Findings
 
 This finding has important implications for developing ...
 An implication of this is the possibility that ...
@@ -1101,9 +1101,9 @@ This combination of findings provides some support for the conceptual premise th
 These findings may help us to understand ...
 These results provide further support for the hypothesis that ...
 
-## Discussing Findings
+## Commenting on findings
 
-> Commenting on findings
+↑ Discussing Findings
 
 However, these results were not very encouraging.
 These findings are rather disappointing.
@@ -1112,9 +1112,9 @@ The present results are significant in at least major two respects.
 These findings will doubtless be much scrutinized, but there are some immediately dependable conclusions for ...
 The results of this study do not explain the occurrence of these adverse events.
 
-## Discussing Findings
+## Suggestions for future work
 
-> Suggestions for future work
+↑ Discussing Findings
 
 Further work is required to establish this.
 This is an important issue for future research.
@@ -1125,14 +1125,13 @@ Research questions that could be asked include ...
 Future studies on the current topic are therefore recommended.
 A further study with more focus on X is therefore suggested.
 Further studies, which take these variables into account, will need to be undertaken.
-In future investigations, it might be possible to use a different X in which ...
 In further research, the use of this data as X could be a means of ...
 However, more research on this topic needs to be undertaken before the association between X and
 Y is more clearly understood.
 
-## Writing Conclusion
+## Restatement of aims
 
-> Restatement of aims
+↑ Writing Conclusion
 
 This paper has argued that ...
 This study set out to determine ...
@@ -1144,9 +1143,9 @@ The purpose of the current study was to determine ...
 This project was undertaken to design ... and evaluate ...
 Returning to the hypothesis/question posed at the beginning of this study, it is now possible to state that ...
 
-## Writing Conclusion
+## Summarizing research findings
 
-> Summarizing research findings
+↑ Writing Conclusion
 
 This study has shown that ...
 The investigation of X has shown that ...
@@ -1162,9 +1161,9 @@ The most obvious finding to emerge from this study is that ...
 X, Y and Z emerged as reliable predictors of ...
 Multiple regression analysis revealed that the ...
 
-## Writing Conclusion
+## Suggesting implications
 
-> Suggesting implications
+↑ Writing Conclusion
 
 The evidence from this study suggests that ...
 The following conclusions can be drawn from the present study ...
@@ -1175,9 +1174,9 @@ Taken together, these results suggest that ...
 An implication of this is the possibility that ...
 The findings of this study suggest that ...
 
-## Writing Conclusion
+## Significance of the findings or research contribution
 
-> Significance of the findings or research contribution
+↑ Writing Conclusion
 
 This research extends our knowledge of ...
 The present study makes several noteworthy contributions to ...
@@ -1202,18 +1201,18 @@ Taken together, these findings suggest a role for X in promoting Y.
 The present study confirms previous findings and contributes additional evidence that suggests ...
 This research has several practical applications. Firstly, it points to ...
 
-## Writing Conclusion
+## Significance of the findings with a qualification
 
-> Significance of the findings with a qualification
+↑ Writing Conclusion
 
 Whilst this study did not confirm X, it did partially substantiate ...
 Despite its exploratory nature, this study offers some insight into ...
 Although the current study is based on a small sample of participants, the findings suggest ...
 Notwithstanding these limitations, the study suggests that ...
 
-## Writing Conclusion
+## Limitations of the current study
 
-> Limitations of the current study
+↑ Writing Conclusion
 
 Finally, a number of important limitations need to be considered. First, ...
 The findings in this report are subject to at least three limitations. First, ...
@@ -1243,9 +1242,9 @@ A number of caveats need to be noted regarding the present study.
 One source of weakness in this study which could have affected the measurements of X was ...
 Although the study has successfully demonstrated that ..., it has certain limitations in terms of ...
 
-## Writing Conclusion
+## Recommendations for further research work
 
-> Recommendations for further research work
+↑ Writing Conclusion
 
 This research has thrown up many questions in need of further investigation.
 What is now needed is a cross-national study involving ...
@@ -1281,9 +1280,9 @@ More information on X would help us to establish a greater degree of accuracy on
 If the debate is to be moved forward, a better understanding of X needs to be developed.
 I suggest that before X is introduced, a study similar to this one should be carried out on ...
 
-## Writing Conclusion
+## Implications or recommendations for practice or policy
 
-> Implications or recommendations for practice or policy
+↑ Writing Conclusion
 
 Other types of X could include: a), b). ...
 There is, therefore, a definite need for ...
@@ -1300,9 +1299,9 @@ Taken together, these findings do not support strong recommendations to ...
 An implication of these findings is that both X and Y should be taken into account when ...
 The findings of this study have a number of important implications for future practice.
 
-## Being Cautious
+## Common Expressions
 
-> Common Expressions
+↑ Being Cautious
 
 It is thought that …
 It is believed that …
@@ -1366,9 +1365,9 @@ Studies which show no effect are not generally published.
 Research articles generally consist of the following components:
 Quantitative research is generally associated with the positivist paradigm.
 
-## Being Cautious
+## Devices that distance the author from a proposition
 
-> Devices that distance the author from a proposition
+↑ Being Cautious
 
 It is believed that ...
 It is thought that ...
@@ -1383,9 +1382,9 @@ Many scholars hold the view that ...
 Recent research has suggested that ...
 There is some evidence to suggest that ...
 
-## Being Cautious
+## Being cautious when giving explanations or hypothesising
 
-> Being cautious when giving explanations or hypothesising
+↑ Being Cautious
 
 These frequent storms are almost certainly/could be/may be
 might be - due to climate change.
@@ -1398,9 +1397,9 @@ A likely explanation is that these frequent storms are a result of climate chang
 A probable explanation is that these frequent storms are a result of climate change.
 A possible explanation is that these frequent storms are a result of climate change.
 
-## Being Cautious
+## Being cautious when explaining results
 
-> Being cautious when explaining results
+↑ Being Cautious
 
 This inconsistency may be due to ...
 This discrepancy could be attributed to ...
@@ -1414,9 +1413,9 @@ There are two likely causes for the differences between ...
 A possible explanation for these results may be the lack of adequate ...
 Since this difference has not been found elsewhere it is probably not due to ...
 
-## Being Cautious
+## Being cautious when discussing implications or recommendations
 
-> Being cautious when discussing implications or recommendations
+↑ Being Cautious
 
 One possible implication of this is that ...
 The findings of this study suggest that ...
@@ -1432,9 +1431,9 @@ A reasonable approach to tackle this issue could be to ...
 Other types of response could include: a), b). ...
 Another possible area of future research would be to investigate why ...
 
-## Being Cautious
+## Devices for avoiding over-generalisation
 
-> Devices for avoiding over-generalisation
+↑ Being Cautious
 
 Ozone is toxic to almost all living organisms.
 Ozone is toxic to most living organisms.
@@ -1448,9 +1447,9 @@ Ozone levels occasionally exceed WHO levels in many cities.
 Ozone tends to attack cells and break down tissues.
 There is a tendency for ozone to attack cells.
 
-## Being Cautious
+## Being cautious when writing about the future
 
-> Being cautious when writing about the future
+↑ Being Cautious
 
 Severe weather will almost certainly become more common in the future.
 Severe weather will probably become more common in the future.
@@ -1465,9 +1464,9 @@ It is likely that the situation will improve in the long term.
 There is a possibility that the situation will improve in the long term.
 There is a small chance that the situation will improve in the long term.
 
-## Being Cautious
+## Advising cautious interpretation of findings (Refer to Discussing Findings)
 
-> Advising cautious interpretation of findings (Refer to Discussing Findings)
+↑ Being Cautious
 
 These data must be interpreted with caution because ...
 These results therefore need to be interpreted with caution.
@@ -1577,9 +1576,9 @@ In a recent article in _Academic Journal_, Smith (2014) questions the extent to 
 A recently published article by Smith _et al_. (2011) casts doubt on Jones’ assumption that …
 Other authors (see Harbison, 2003; Kaplan, 2004) question the usefulness of such an approach.
 
-## Classifying and Listing
+## Common Expressions
 
-> Common Expressions
+↑ Classifying and Listing
 
 X can be classified into Xi and Xii.
 X can be categorised into Xi, Xii and Xiii.
@@ -1634,9 +1633,9 @@ Smith (2003) argues that there are two broad categories of Y, which are: a) … 
 For Aristotle, motion is of four kinds: (1) motion which …; (2) motion which …; (3) motion …
 Smith (2003) suggests three conditions for X. Firstly, X should be … Secondly, it needs to be …
 
-## Classifying and Listing
+## General classifications
 
-> General classifications
+↑ Classifying and Listing
 
 X may be divided into three main classes/sub-groups/categories.
 X may be classified according to Y into Xi and Xii.
@@ -1652,9 +1651,9 @@ The works of Aristotle fall under three headings: (1) dialogues and ...; (2) col
 There are two basic approaches currently being adopted in research into X. One is the Y approach and the other is ...
 Generally, spectra typing provides two types of information: band intensity pattern and band number.
 
-## Classifying and Listing
+## Specific classifications
 
-> Specific classifications
+↑ Classifying and Listing
 
 In the US system, X is graded according to whether ...
 In the US system, X is graded on the basis of ...
@@ -1666,9 +1665,9 @@ Smith and Jones (2003) argue that there are two broad categories of Y, which are
 For Aristotle, motion is of four kinds: (1) motion which ...; (2) motion which ...; (3) motion which ...; and (4) motion which...
 To better understand the mechanisms of X and its therapeutic implications, Smith et al. (2011) classified X into 3 distinct types using ...
 
-## Classifying and Listing
+## Introducing lists
 
-> Introducing lists
+↑ Classifying and Listing
 
 This topic can best be treated under three headings: X, Y and Z.
 The key aspects of management can be listed as follows: X, Y and Z.
@@ -1681,9 +1680,9 @@ During his tour of Britain, he visited the following industrial centres: Manches
 This section has been included for several reasons: it is ...; it illustrates ...; and it describes...
 The _Mass for Four Voices_ consists of five movements, which are: the _Kyrie, Gloria, Credo, Santus_ and _Agnus Dei_.
 
-## Classifying and Listing
+## Referring to other people’s lists
 
-> Referring to other people’s lists
+↑ Classifying and Listing
 
 Smith and Jones (1991) list X, Y and Z as the major causes of infant mortality.
 Smith (2003) lists the main features of X as follows: it is X; it is Y; and it has Z.
@@ -1691,9 +1690,9 @@ Smith (2003) argues that there are two broad categories of Y, which are: a) ... 
 Smith (2003) suggests three conditions for its acceptance. Firstly, X should be ... Secondly, it needs to be... Thirdly, ....
 For Aristotle, motion is of four kinds: (1) motion which ...; (2) motion which ...; (3) motion which ...; and (4) motion which...
 
-## Compare and Contrast
+## Common Expressions
 
-> Common Expressions
+↑ Compare and Contrast
 
 X is different from Y in a number of respects.
 X differs from Y in a number of important ways.
@@ -1722,9 +1721,9 @@ Women are faster/slower than men at certain precision manual tasks, such as …
 Women are more/less likely to suffer from X when the front part of the brain is damaged.
 The part of the brain connecting the two hemispheres may be more/less extensive in women.
 
-## Compare and Contrast
+## Introductory Sentences: Differences
 
-> Introductory Sentences: Differences
+↑ Compare and Contrast
 
 X is different from Y in a number of respects.
 X differs from Y in a number of important ways.
@@ -1740,9 +1739,9 @@ Jones (2013) found dramatic differences in the rate of decline of X between Y an
 Areas where significant differences have been found include X and Y.
 The nervous systems of X are significantly different from those of Y in several key features.
 
-## Compare and Contrast
+## Introductory Sentences: Similarities
 
-> Introductory Sentences: Similarities
+↑ Compare and Contrast
 
 The mode of processing used by the right brain is similar to that used by the left brain.
 The mode of processing used by the right brain is comparable to that used by the left brain.
@@ -1752,9 +1751,9 @@ The effects of X on human health are similar to those of Y.
 Both X and Y generally take place in a ‘safe environment’.
 Numerous studies have compared Xs in humans and animals and found that they are essentially identical.
 
-## Compare and Contrast
+## Comparison within one sentence
 
-> Comparison within one sentence
+↑ Compare and Contrast
 
 Oral societies tend to be more concerned with the present whereas/while - literate societies have a very definite awareness of the past.
 Whereas/While - oral societies tend to be more concerned with the present, literate societies have a very definite awareness of the past.
@@ -1764,9 +1763,9 @@ This interpretation contrasts with that of Smith and Jones (2004) who argue that
 This interpretation differs from that of Smith and Jones (2004) who argue that ...
 This interpretation is different from that of Smith and Jones (2004) who argue that ...
 
-## Compare and Contrast
+## Comparison within one sentence (comparative forms)
 
-> Comparison within one sentence (comparative forms)
+↑ Compare and Contrast
 
 Women are faster/slower than men at certain precision manual tasks, such as ....
 Women tend to perform better/worse than men on tests of perceptual speed.
@@ -1777,25 +1776,25 @@ Women tend to have greater/less verbal fluency than men.
 In the trial, women made fewer errors than men.
 The corpus callosum, a part of the brain connecting the two hemispheres, may be more/less extensive in women.
 
-## Compare and Contrast
+## Indicating difference across two sentences
 
-> Indicating difference across two sentences
+↑ Compare and Contrast
 
 It is very difficult to get away from calendar time in literate societies. By contrast,many people in oral communities have little idea of the calendar year of their birth.
 It is very difficult to get away from calendar time in literate societies. In contrast,many people in oral communities have little idea of the calendar year of their birth.
 It is very difficult to get away from calendar time in literate societies. On the other hand,many people in oral communities have little idea of the calendar year of their birth.
 
-## Compare and Contrast
+## Indicating similarity across two sentences
 
-> Indicating similarity across two sentences
+↑ Compare and Contrast
 
 Young children learning their first language need simplified input. Similarly,low level adult L2 learners need graded input supplied in most cases by a teacher.
 Young children learning their first language need simplified input. Likewise,low level adult L2 learners need graded input supplied in most cases by a teacher.
 Young children learning their first language need simplified input. In the same way, low level adult L2 learners need graded input supplied in most cases by a teacher.
 
-## Defining Terms
+## Common Expressions
 
-> Common Expressions
+↑ Defining Terms
 
 The term ‘X’ was first used by …
 The term ‘X’ can be traced back to …
@@ -1894,27 +1893,27 @@ X is the degree to which an assessment process or device in need of revision sin
 X is the degree to which an assessment process or device important for what it excludes. (Smith _et al_., 1986).
 X is the degree to which an assessment process or device the most precise produced so far. (Smith _et al_., 1986).
 
-## Defining Terms
+## Introductory phrases:
 
-> Introductory phrases:
+↑ Defining Terms
 
 It is necessary here to clarify exactly what is meant by ...
 This shows a need to be explicit about exactly what is meant by the word X.
 X is a term frequently used in the literature, but to date there is no consensus about ...
 There is a degree of uncertainty around the terminology in ...
 
-## Defining Terms
+## Simple three-part definitions
 
-> Simple three-part definitions
+↑ Defining Terms
 
 A university is an institution where knowledge is produced and passed on to others
 Social Economics may be defined as the branch of economics [which is] concerned with the measurement causes and consequences of social problems.
 Research may be defined as a systematic process which consists of three elements or components: (1) a question, problem, or hypothesis, (2) data, and (3) analysis and interpretation of data.
 Braille is a system of touch reading and writing for blind people in which raised dots on paper represent the letters of the alphabet.
 
-## Defining Terms
+## General meanings or application of meanings
 
-> General meanings or application of meanings
+↑ Defining Terms
 
 The term X refers to ...
 The term X encompasses A), B), and C).
@@ -1931,9 +1930,9 @@ The term X is a relatively new name for a Y, commonly referred to...
 In broad biological terms, X can be defined as any stimulus that is ...
 Defined as XYZ, obesity is now considered a worldwide epidemic and is associated with ...
 
-## Defining Terms
+## Indicating difficulties in defining a term
 
-> Indicating difficulties in defining a term
+↑ Defining Terms
 
 A generally accepted definition of X is lacking.
 Unfortunately, X remains a poorly defined term.
@@ -1944,9 +1943,9 @@ Smith (2001) identified four abilities that might be subsumed under the term X: 
 Although differences of opinion still exist, there appears to be some agreement that X refers to ...
 X is a commonly-used notion in language learning and yet it is a concept difficult to define precisely.
 
-## Defining Terms
+## Specifying terms that are used in an essay or thesis
 
-> Specifying terms that are used in an essay or thesis
+↑ Defining Terms
 
 In the present report, X was therefore defined in terms of ...
 In this essay, the term X will be used in its broadest sense to refer to all ...
@@ -1955,9 +1954,9 @@ In this dissertation, the terms X and Y are used interchangeably to mean ...
 Throughout this thesis, the term education is used to refer to informal systems as well as ....
 While a variety of definitions of the term X have been suggested, this paper will use the definition first suggested by Smith (1968) who saw it as ...
 
-## Defining Terms
+## Referring to people’s definitions: author prominent
 
-> Referring to people’s definitions: author prominent
+↑ Defining Terms
 
 For Smith (2001), fluency means/refers to ...
 Smith (2001) uses the term ‘fluency’ to refer to ...
@@ -1975,15 +1974,15 @@ The term ‘matter’ is used by Aristotle in four overlapping senses. First, it
 Secondly, it is the potential which ...
 Smith et al. (2002) have provided a new definition of health: ‘health is a state of being with physical, cultural, psychological ...’
 
-## Defining Terms
+## Referring to people’s definitions: author non-prominent
 
-> Referring to people’s definitions: author non-prominent
+↑ Defining Terms
 
 Validity is the degree to which an assessment process or device measures what it is intended to measure (Smith et al. , 1986)
 
-## Describing Trends
+## Common Expressions
 
-> Common Expressions
+↑ Describing Trends
 
 The graph shows that there has been a slight fall/rise/drop/decline/increase/decrease in the number of divorces in England and Wales since 1981.
 The graph shows that there has been a steep fall/rise/drop/decline/increase/decrease in the number of divorces in England and Wales since 1981.
@@ -2010,24 +2009,24 @@ The number of Xs reached a peak during …
 Production of X reached a low point in 1990.
 The rate fell to a low point of $5.00 at the end of the year.
 
-## Describing Trends
+## Describing high and low points in figures
 
-> Describing high and low points in figures
+↑ Describing Trends
 
 The number of live births outside marriage reached a peak during the second world war.
 The peak age for committing a crime is 18.
 Oil production peaked in 1985.
 Gas production reached a (new) low in 1990.
 
-## Describing Trends
+## Projecting trends
 
-> Projecting trends
+↑ Describing Trends
 
 The number of Xs/The amount of Y/The rate of Z - is projected to/ is expected to/is likely to/will probably - decline steadily/drop sharply/level off - after 2020.
 
-## Describing Quantities
+## Common Expressions
 
-> Common Expressions
+↑ Describing Quantities
 
 _Over half of those_ surveyed indicated that …
 _Nearly half of_ the respondents (48%) agreed that …
@@ -2066,9 +2065,9 @@ The evidence shows that life expectancy from birth lies in the range of twenty t
 At between 575 and 590 metres depth, the sea floor is extremely flat, with an average slope of …
 The mean income of the bottom 20 percent of U.S. families declined from $10,716 to $9,833.
 
-## Describing Quantities
+## Describing ratios and proportions
 
-> Describing ratios and proportions
+↑ Describing Quantities
 
 _The proportion of_ live births outside marriage reached _one in ten_ in 1945.
 _The proportion of the population_ attending emergency departments was 65% higher in X than ...
@@ -2086,9 +2085,9 @@ _Nearly half of_ the respondents (48%) agreed that ...
 _Less than a third of_ those who responded (32%) indicated that ...
 The number of first marriages in the United Kingdom fell _by nearly two-fifths._
 
-## Describing Quantities
+## Describing percentages
 
-> Describing percentages
+↑ Describing Quantities
 
 The response rate was _60% at six months_ and 56% at 12 months.
 Returned surveys from 34 radiologists yielded _a 34% response rate_.
@@ -2099,9 +2098,10 @@ X found that of 2,500 abortions, 58% were in young women aged 15-24, _of whom 62
 He also noted that _less than 10% of_ the articles included in his study cited ...
 In 1960 _just over 5%_ of live births in 1960 were outside marriage.
 
-## Describing Quantities
+## Describing averages
 
-> Describing averages
+↑ Describing Quantities
+
 > This figure can be seen as the _average_ life expectancy at various ages.
 > The proposed model suggests a steep decline in _mean_ life expectancy ...
 > Roman slaves probably had a _lower than average_ life expectancy.
@@ -2109,9 +2109,9 @@ In 1960 _just over 5%_ of live births in 1960 were outside marriage.
 > _The mean score f_ or the two trials was subjected to multivariate analysis of variance to determine ...
 > The _mean income_ of the bottom 20 percent of U.S. families declined from $10,716 in 1970 to ...
 
-## Describing Quantities
+## Describing ranges
 
-> Describing ranges
+↑ Describing Quantities
 
 Estimates of X range from 200,000 to 700,000 and up to a million or more.
 The respondents had practised for an average of 15 years (range 6 to 35 years).
@@ -2122,9 +2122,9 @@ The evidence shows that life expectancy from birth lies in the range of twenty t
 Between 575 and 590 metres depth the sea floor is extremely flat, with an average slope of ...
 The mean income of the bottom 20 percent of U.S. families declined from $10,716 to $9,833.
 
-## Explaining Causality
+## Common Expressions
 
-> Common Expressions
+↑ Explaining Causality
 
 may cause
 can lead to
@@ -2205,18 +2205,18 @@ The use of X may be linked to behaviour problems in …
 The human papilloma virus is linked to most cervical cancer.
 The findings indicate that regular exercise could improve cognitive function in people at risk of …
 
-## Explaining Causality
+## Verbs indicating causality
 
-> Verbs indicating causality
+↑ Explaining Causality
 
 Lack of protein may cause/can lead to/can result in - mental disability.
 Scurvy is a disease caused by/resulting from/stemming from - lack of vitamin C.
 Much of the instability in X stems from the economic effects of the war.
 Low levels of ch lorine can give rise to high blood pressure.
 
-## Explaining Causality
+## Nouns indicating causality
 
-> Nouns indicating causality
+↑ Explaining Causality
 
 The most likely causes of X are poor diet and lack of exercise.
 The _causes_ of X have been the subject of intense debate within ...
@@ -2226,31 +2226,31 @@ Physical activity is an important _factor_ in maintaining fitness.
 Many other medications have an _influence_ on cholesterol levels.
 Another _reason_ why Xs have declined is that ...
 
-## Explaining Causality
+## Prepositional phrases indicating causality
 
-> Prepositional phrases indicating causality
+↑ Explaining Causality
 
 200,000 people per year become deaf owing to/because of/as a result of/as a consequence of - a lack of iodine.
 
-## Explaining Causality
+## Sentence connectors indicating causality
 
-> Sentence connectors indicating causality
+↑ Explaining Causality
 
 If undernourished children do survive to become adults, they have decreased learning ability. Therefore, when they grow up, it will probably be difficult for them to find work.
 If undernourished children do survive to become adults, they have decreased learning ability. Consequently,when they grow up, it will probably be difficult for them to find work.
 If undernourished children do survive to become adults, they have decreased learning ability. Because of this, when they grow up, it will probably be difficult for them to find work.
 If undernourished children do survive to become adults, they have decreased learning ability. As a result (of this), - when they grow up, it will probably be difficult for them to find work.
 
-## Explaining Causality
+## Adverbial phrases indicating causality
 
-> Adverbial phrases indicating causality
+↑ Explaining Causality
 
 Malnutrition leads to illness and a reduced ability to work in adulthood,thus/thereby - perpetuating the poverty cycle.
 The warm air rises above the surface of the sea, thus/thereby - creating an area of low pressure.
 
-## Explaining Causality
+## Other examples
 
-> Other examples
+↑ Explaining Causality
 
 X and Y are important driving factors of Z.
 As a consequence of X , it appears that Y alone is not the causative factor of...
@@ -2262,9 +2262,9 @@ The mixing of X and Y exerts a powerful effect upon Z through ....
 The study found that loneliness has twice the impact on early death as obesity does.
 Loneliness can have profound health consequences for older people.
 
-## Explaining Causality
+## Possible cause and effect relationships expressed tentatively
 
-> Possible cause and effect relationships expressed tentatively
+↑ Explaining Causality
 
 This suggests a weak link may exist between X and Y.
 The human papilloma virus is linked to most cervical cancer.
@@ -2280,9 +2280,9 @@ In the literature, X has been associated with Y.
 X in many cases may be associated with certain bacterial infections.
 A high consumption of X could be associated with infertility.
 
-## Giving Examples
+## Common Expressions
 
-> Common Expressions
+↑ Giving Examples
 
 For example, the word ‘doctor’ used to mean a ‘learned man’.
 For example, Smith and Jones (2004) conducted a series of semi-structured interviews in …
@@ -2355,9 +2355,9 @@ X illustrates this point this point clearly.
 By way of illustration, Smith (2003) shows how the data for ...
 These experiments illustrate that X and Y have distinct functions in ...
 
-## Giving Examples
+## Examples as additional information in a sentence
 
-> Examples as additional information in a sentence
+↑ Giving Examples
 
 Young people begin smoking for a variety of reasons, _such as_ pressure from peers and the role model of parents.
 Pavlov found that if some other stimulus, _for example_ the ringing of a bell, preceded the food, the dog would start salivating.
@@ -2365,9 +2365,9 @@ In Paris, Gassendi kept in close contact with many other prominent scholars, _su
 The prices of resources, _such as_ copper, iron ore, oil, coal and aluminium, have declined in real terms over the past 20 years.
 Many diseases can result at least in part from stress _, including_ : arthritis, asthma, migraine, headaches and ulcers.
 
-## Giving Examples
+## Reporting cases as support
 
-> Reporting cases as support
+↑ Giving Examples
 
 Overall, these cases support the view that ...
 This case has shown that ...
@@ -2382,9 +2382,9 @@ This case demonstrates the need for better strategies for ...
 In support of X, Y has been shown to induce Y in several cases (Smith et al. , 2001).
 Recent cases reported by Smith et al. (2013) also support the hypothesis that ...
 
-## Signalling Transition
+## Common Expressions
 
-> Common Expressions
+↑ Signalling Transition
 
 The section below describes …
 What follows is an account of …
@@ -2447,9 +2447,9 @@ The next chapter describes the procedures and methods used in this investigation
 In the next section, I will present the principal findings of the current investigation …
 These analytical procedures and the results obtained from them are described in the next chapter.
 
-## Signalling Transition
+## Previewing sections of text
 
-> Previewing sections of text
+↑ Signalling Transition
 
 The purpose of this chapter is to review the literature on X. It begins by ...
 This introductory section provides a brief overview of ... It then goes on to ...
@@ -2459,9 +2459,9 @@ The final chapter of this dissertation is divided into two parts. The first ...
 This chapter is divided into four main sections, each of which presents the results relating to one of the research questions.
 The structure and biological functions of Xs will be discussed in the forthcoming sections.
 
-## Signalling Transition
+## Introducing a new topic or aspect of a topic
 
-> Introducing a new topic or aspect of a topic
+↑ Signalling Transition
 
 As regards X, ...
 With respect to X, ...
@@ -2471,9 +2471,9 @@ As far as X is concerned, ...
 In terms of X, ...
 In the case of X ...
 
-## Signalling Transition
+## Reintroducing a topic
 
-> Reintroducing a topic
+↑ Signalling Transition
 
 As was pointed out in the introduction to this paper, ...
 As was mentioned in the previous chapter, ...
@@ -2483,9 +2483,9 @@ As described on the previous page, ...
 As discussed above, ...
 Returning (briefly) to the (subject/issue) of X, ...
 
-## Signalling Transition
+## Moving from one section to the next
 
-> Moving from one section to the next
+↑ Signalling Transition
 
 So far this paper/chapter has focussed on X. The following section will discuss ...
 Before proceeding to examine X, it will be necessary to ...
@@ -2497,18 +2497,18 @@ This chapter has demonstrated that ... It is now necessary to explain the course
 Turning now to the experimental evidence on ...
 This (chapter) follows on from the previous (chapter), which (examined/laid out/outlined) X.
 
-## Signalling Transition
+## Moving from one section to the next whilst indicating addition, contrast or opposition
 
-> Moving from one section to the next whilst indicating addition, contrast or opposition
+↑ Signalling Transition
 
 In addition, it is important to ask ...
 On the other hand, in spite of much new knowledge about the role of ...,
 However, this system also has a number of serious drawbacks.
 Despite this, little progress has been made in the ...
 
-## Signalling Transition
+## Previewing a following section
 
-> Previewing a following section
+↑ Signalling Transition
 
 This raises questions about X which will be discussed in the next chapter.
 The next chapter describes synthesis and evaluation of ...
@@ -2517,9 +2517,9 @@ The following is a brief report on a ...
 What follows is a description/outline/account of ...
 The problem of X is discussed in the following section.
 
-## Signalling Transition
+## Transition statements for results and discussion
 
-> Transition statements for results and discussion
+↑ Signalling Transition
 
 Turning now to the experimental evidence on ...
 Comparing the two results, it can be seen that ...
@@ -2529,9 +2529,9 @@ From the previous discussion, it can be seen that ....
 It is also worth noting that X is significantly more frequent in ...
 The differences between X and Y are highlighted in Table 4.
 
-## Signalling Transition
+## Summary and preview
 
-> Summary and preview
+↑ Signalling Transition
 
 This section has reviewed the three key aspects of ...
 This chapter has described the methods used in this investigation and it has ...
@@ -2541,9 +2541,9 @@ These analytical procedures and the results obtained from them are described in 
 A summary of the main findings and of the principal issues and suggestions which have arisen in this discussion are provided in the next chapter, which ...
 In the next section, I will present some of the findings of my empirical research on the impact of ...
 
-## Writing About the Past
+## Common Expressions
 
-> Common Expressions
+↑ Writing About the Past
 
 Time phrases associated with the use of the present perfect tense: past and present connected - close
 To date, little evidence has been found associating X with Y.
@@ -2579,9 +2579,9 @@ In 1984, Jones et al. made several amino acid esters of X and evaluated them as 
 In 1990, Patel et al. demonstrated that replacement of H2O with heavy water led to …
 Thirty years later, Smith (1974) reported three cases of Candida Albicans which …
 
-## Writing About the Past
+## Time phrases associated with the use of the simple past tense: specific times or periods of time in the past, completed
 
-> Time phrases associated with the use of the simple past tense: specific times or periods of time in the past, completed
+↑ Writing About the Past
 
 During the Nazi period, restrictions were placed on German academics.
 Between 1933 and 1945, restrictions were placed on German academics.
@@ -2594,9 +2594,9 @@ Following World War I, Fleming actively searched for anti-bacterial agents.
 In 1999, Fleming actively searched for anti-bacterial agents.
 Fleming was named one of the 100 Most Important People of the century.
 
-## Writing About the Past
+## Time phrases associated with the use of the present perfect tense: past and present connected
 
-> Time phrases associated with the use of the present perfect tense: past and present connected
+↑ Writing About the Past
 
 To date, little evidence has been found associating X with Y.
 Up to now, the research has tended to focus on X rather than on Y.
@@ -2610,9 +2610,9 @@ The past decade has seen the rapid development of X in many ...
 Over the past few decades, the world has seen the stunning transformation of X, Y and Z.
 Over the past century there has been a dramatic increase in ...
 
-## Writing About the Past
+## The present perfect tense may also be used to describe research or scholarly activity that has taken place recently
 
-> The present perfect tense may also be used to describe research or scholarly activity that has taken place recently
+↑ Writing About the Past
 
 Several studies have revealed that ...
 Previous studies of X have not dealt with ...
@@ -2622,9 +2622,9 @@ The new material has been shown to enhance cooling properties (Smith, 1985, Jone
 Invasive plants have been identified as major contributing factors for the decline of ....
 The relationship between a diet high in fats and poor health has been widely investigated (Smith, 1985, Jones, ...)
 
-## Writing About the Past
+## For reference to single investigations or publications in the past the simple past tense is used
 
-> For reference to single investigations or publications in the past the simple past tense is used
+↑ Writing About the Past
 
 In 1975, Smith et al. published a paper in which they described ...
 In 1990, Patel et al. demonstrated that replacement of H2O with heavy water led to ...
