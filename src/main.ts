@@ -161,7 +161,12 @@ export default class PBPlugin extends Plugin {
 
         const localPBs = await this.buildLocalPBs()
         const remotePB = await this.buildRemotePB()
-        this.pb = this.mergePBs([...localPBs, remotePB])
+        console.log({ localPBs, remotePB })
+        if (localPBs?.length) {
+            this.pb = this.mergePBs([...localPBs, remotePB])
+        } else {
+            this.pb = remotePB
+        }
 
         new Notice('Phrase Bank Refreshed!')
         console.log({ pb: this.pb })
