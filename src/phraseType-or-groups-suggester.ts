@@ -32,7 +32,7 @@ export class PBPhraseTypeOrGroupsFuzzySuggestModal extends FuzzySuggestModal<PBI
                 noDupGroups.push(group)
             }
         })
-        return [...this.pb, ...noDupGroups];
+        return [...noDupGroups, ...this.pb];
     }
 
     getItemText(item: PBItem | GroupItem): string {
