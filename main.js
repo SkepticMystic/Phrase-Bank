@@ -382,7 +382,7 @@ var PBPlugin = /** @class */ (function (_super) {
                             var resp, _a;
                             return __generator(this, function (_b) {
                                 switch (_b.label) {
-                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Databases/U%20Manchester%20Phrase%20Bank.md')];
+                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Databases/Phrase_Bank_refnwrite_and_manchester%20copy.md')];
                                     case 1:
                                         resp = _b.sent();
                                         _a = this;
