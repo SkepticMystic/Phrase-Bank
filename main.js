@@ -227,7 +227,7 @@ var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
                 noDupGroups.push(group);
             }
         });
-        return __spreadArray(__spreadArray([], this.pb, true), noDupGroups, true);
+        return __spreadArray(__spreadArray([], noDupGroups, true), this.pb, true);
     };
     PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.getItemText = function (item) {
         if (item.phraseType) {
@@ -471,37 +471,34 @@ var PBPlugin = /** @class */ (function (_super) {
     };
     PBPlugin.prototype.buildLocalPBs = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var localPBs, currFile;
-            var _this = this;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
+            var localPBs, currFile, _i, _a, path, pbFile, content, localPB;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
                     case 0:
                         localPBs = [];
                         currFile = this.app.workspace.getActiveFile();
-                        return [4 /*yield*/, Promise.all([
-                                this.settings.pbFileNames.forEach(function (path) { return __awaiter(_this, void 0, void 0, function () {
-                                    var pbFile, content;
-                                    return __generator(this, function (_a) {
-                                        switch (_a.label) {
-                                            case 0:
-                                                pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path);
-                                                console.log({ pbFile: pbFile });
-                                                if (!pbFile) return [3 /*break*/, 2];
-                                                return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
-                                            case 1:
-                                                content = _a.sent();
-                                                localPBs.push(this.mdToJSON(content, pbFile.basename));
-                                                return [3 /*break*/, 3];
-                                            case 2:
-                                                new obsidian.Notice(path + " does not exist in your vault.");
-                                                _a.label = 3;
-                                            case 3: return [2 /*return*/];
-                                        }
-                                    });
-                                }); })
-                            ])];
+                        _i = 0, _a = this.settings.pbFileNames;
+                        _b.label = 1;
                     case 1:
-                        _a.sent();
+                        if (!(_i < _a.length)) return [3 /*break*/, 5];
+                        path = _a[_i];
+                        pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path);
+                        if (!pbFile) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.app.vault.cachedRead(pbFile)];
+                    case 2:
+                        content = _b.sent();
+                        localPB = this.mdToJSON(content, pbFile.basename);
+                        console.log({ localPB: localPB });
+                        localPBs.push(localPB);
+                        return [3 /*break*/, 4];
+                    case 3:
+                        new obsidian.Notice(path + " does not exist in your vault.");
+                        _b.label = 4;
+                    case 4:
+                        _i++;
+                        return [3 /*break*/, 1];
+                    case 5:
+                        console.log({ localPBs: localPBs });
                         return [2 /*return*/, localPBs];
                 }
             });
