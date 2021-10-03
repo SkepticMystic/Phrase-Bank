@@ -10,7 +10,9 @@ Each heading (level 2) represents a section, which can have its own description,
 Format it like so:
 
 ```md
-## Group
+### Phrase Type
+
+! Group1, Group2
 
 > Description 
 
@@ -20,12 +22,4 @@ Format it like so:
 One phrase per line
 
 Another phrase
-```
-
-### JSON
-
-This is open to change, but we currently use the following format in the `phrasebank.json` file:
-
-```js
-{ "section": string, "keywords": string[] "phrases": string[] }[]
 ```
