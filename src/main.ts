@@ -48,7 +48,7 @@ export default class PBPlugin extends Plugin {
 
         this.pb = []
         this.app.workspace.onLayoutReady(async () => {
-            const resp = await fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Databases/Phrase_Bank_refnwrite_and_manchester%20copy.md')
+            const resp = await fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Banks/Master%20PB.md')
             this.remotePBmd = await resp.text()
             await this.refreshPB()
         })
