@@ -107,12 +107,12 @@ function removeDuplicates(a) {
 
 var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhrasesFuzzySuggestModal, _super);
-    function PBPhrasesFuzzySuggestModal(app, plugin, phrases, settings) {
+    function PBPhrasesFuzzySuggestModal(app, plugin, phrases) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.plugin = plugin;
-        _this.phrases = __spreadArray(__spreadArray([], phrases, true), ['BACK'], false);
-        _this.settings = settings;
+        _this.phrases = __spreadArray(__spreadArray([], phrases, true), ["BACK"], false);
+        _this.settings = plugin.settings;
         return _this;
     }
     PBPhrasesFuzzySuggestModal.prototype.getItems = function () {
@@ -125,15 +125,15 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
         _super.prototype.renderSuggestion.call(this, item, el);
     };
     PBPhrasesFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        if (item === 'BACK') {
+        if (item === "BACK") {
             this.close();
-            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
+            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin).open();
         }
         else {
             try {
                 var activeView = getActiveView(this.plugin);
                 var activeEditor = activeView.editor;
-                var editorRange = activeEditor.getCursor('from');
+                var editorRange = activeEditor.getCursor("from");
                 activeEditor.replaceRange(item, editorRange);
             }
             catch (error) {
@@ -146,13 +146,22 @@ var PBPhrasesFuzzySuggestModal = /** @class */ (function (_super) {
 
 var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhraseTypeFuzzySuggestModal, _super);
-    function PBPhraseTypeFuzzySuggestModal(app, plugin, pb, settings) {
+    function PBPhraseTypeFuzzySuggestModal(app, plugin, pb) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.plugin = plugin;
-        _this.pb = __spreadArray(__spreadArray([], pb, true), [{ phraseType: 'BACK', fileName: '', desc: '', groups: [], keywords: [], phrases: [] }], false);
-        _this.settings = settings;
-        _this.scope.register(['Shift'], 'Enter', function (evt) {
+        _this.pb = __spreadArray(__spreadArray([], pb, true), [
+            {
+                phraseType: "BACK",
+                fileName: "",
+                desc: "",
+                groups: [],
+                keywords: [],
+                phrases: []
+            },
+        ], false);
+        _this.settings = plugin.settings;
+        _this.scope.register(["Shift"], "Enter", function (evt) {
             // @ts-ignore
             _this.chooser.useSelectedItem(evt);
             return false;
@@ -163,27 +172,30 @@ var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
         return this.pb;
     };
     PBPhraseTypeFuzzySuggestModal.prototype.getItemText = function (item) {
-        return item.phraseType + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
+        return (item.phraseType + "|||" + item.keywords.join(", ") + ", " + item.fileName);
     };
     PBPhraseTypeFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
-        el.innerText = el.innerText.split('|||')[0];
+        el.innerText = el.innerText.split("|||")[0];
         this.updateSuggestionElWithDesc(item, el);
     };
     PBPhraseTypeFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
         if (item.item.desc) {
-            el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
+            el.createEl("div", {
+                text: item.item.desc,
+                cls: "PB-Desc"
+            });
         }
     };
     PBPhraseTypeFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
-        if (item.phraseType === 'BACK') {
+        if (item.phraseType === "BACK") {
             this.close();
-            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin, this.plugin.pb, this.settings).open();
+            new PBPhraseTypeOrGroupsFuzzySuggestModal(this.app, this.plugin).open();
         }
         else {
             if (!evt.shiftKey) {
                 this.close();
-                new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases, this.settings).open();
+                new PBPhrasesFuzzySuggestModal(this.app, this.plugin, item.phrases).open();
             }
             else {
                 var randI = Math.floor(Math.random() * (item.phrases.length - 1));
@@ -192,7 +204,7 @@ var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
                     this.close();
                     var activeView = getActiveView(this.plugin);
                     var activeEditor = activeView.editor;
-                    var editorRange = activeEditor.getCursor('from');
+                    var editorRange = activeEditor.getCursor("from");
                     activeEditor.replaceRange(randPhrase, editorRange);
                 }
                 catch (error) {
@@ -206,13 +218,13 @@ var PBPhraseTypeFuzzySuggestModal = /** @class */ (function (_super) {
 
 var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
     __extends(PBPhraseTypeOrGroupsFuzzySuggestModal, _super);
-    function PBPhraseTypeOrGroupsFuzzySuggestModal(app, plugin, pb, settings) {
+    function PBPhraseTypeOrGroupsFuzzySuggestModal(app, plugin) {
         var _this = _super.call(this, app) || this;
         _this.app = app;
         _this.plugin = plugin;
-        _this.pb = pb;
-        _this.settings = settings;
-        _this.scope.register(['Shift'], 'Enter', function (evt) {
+        _this.pb = plugin.pb;
+        _this.settings = plugin.settings;
+        _this.scope.register(["Shift"], "Enter", function (evt) {
             // @ts-ignore
             _this.chooser.useSelectedItem(evt);
             return false;
@@ -231,20 +243,27 @@ var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
     };
     PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.getItemText = function (item) {
         if (item.phraseType) {
-            return item.phraseType + '|||' + item.keywords.join(', ') + ', ' + item.fileName;
+            return (item.phraseType +
+                "|||" +
+                item.keywords.join(", ") +
+                ", " +
+                item.fileName);
         }
         else if (item.name) {
-            return '📂 ' + item.name;
+            return "📂 " + item.name;
         }
     };
     PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.renderSuggestion = function (item, el) {
         _super.prototype.renderSuggestion.call(this, item, el);
-        el.innerText = el.innerText.split('|||')[0];
+        el.innerText = el.innerText.split("|||")[0];
         this.updateSuggestionElWithDesc(item, el);
     };
     PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.updateSuggestionElWithDesc = function (item, el) {
         if (item.item.desc) {
-            el.createEl('div', { text: item.item.desc, cls: 'PB-Desc' });
+            el.createEl("div", {
+                text: item.item.desc,
+                cls: "PB-Desc"
+            });
         }
     };
     PBPhraseTypeOrGroupsFuzzySuggestModal.prototype.onChooseItem = function (item, evt) {
@@ -259,7 +278,7 @@ var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
                     this.close();
                     var activeView = getActiveView(this.plugin);
                     var activeEditor = activeView.editor;
-                    var editorRange = activeEditor.getCursor('from');
+                    var editorRange = activeEditor.getCursor("from");
                     activeEditor.replaceRange(randPhrase, editorRange);
                 }
                 catch (error) {
@@ -269,7 +288,9 @@ var PBPhraseTypeOrGroupsFuzzySuggestModal = /** @class */ (function (_super) {
         }
         else if (item.name) {
             console.log(item.name);
-            var filteredPB = this.pb.filter(function (pbItem) { return pbItem.groups.some(function (group) { return group.name === item.name; }); });
+            var filteredPB = this.pb.filter(function (pbItem) {
+                return pbItem.groups.some(function (group) { return group.name === item.name; });
+            });
             console.log({ filteredPB: filteredPB });
             this.close();
             new PBPhraseTypeFuzzySuggestModal(this.app, this.plugin, filteredPB, this.settings).open();
@@ -290,19 +311,19 @@ var PBSettingTab = /** @class */ (function (_super) {
         var containerEl = this.containerEl;
         var _a = this.plugin, settings = _a.settings; _a.saveSettings;
         containerEl.empty();
-        containerEl.createEl('h2', { text: 'Settings for Phrase Bank' });
+        containerEl.createEl("h2", { text: "Settings for Phrase Bank" });
         new obsidian.Setting(containerEl)
-            .setName('Phrase Bank file names')
-            .setDesc('Names of your phrase bank.md files in your vault. You can also enter a comma-separated list of pb.md filenames, and the plugin will merge them into one global PB')
+            .setName("Phrase Bank file names")
+            .setDesc("Names of your phrase bank.md files in your vault. You can also enter a comma-separated list of pb.md filenames, and the plugin will merge them into one global PB")
             .addText(function (tc) {
-            tc.setValue(settings.pbFileNames.join(', '));
+            tc.setValue(settings.pbFileNames.join(", "));
             tc.inputEl.onblur = function () { return __awaiter(_this, void 0, void 0, function () {
                 var value;
                 return __generator(this, function (_a) {
                     switch (_a.label) {
                         case 0:
                             value = tc.inputEl.value;
-                            settings.pbFileNames = value.split(',').map(function (path) { return path.trim(); });
+                            settings.pbFileNames = value.split(",").map(function (path) { return path.trim(); });
                             return [4 /*yield*/, this.plugin.saveSettings()];
                         case 1:
                             _a.sent();
@@ -314,36 +335,26 @@ var PBSettingTab = /** @class */ (function (_super) {
                 });
             }); };
         });
-        new obsidian.Setting(containerEl)
-            .setName('Use Remote Phrase Bank')
-            .setDesc('Use the content of the community-maintaned PB from: https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md')
-            .addToggle(function (tg) {
-            tg
-                .setValue(settings.useRemotePB)
-                .onChange(function (val) { return __awaiter(_this, void 0, void 0, function () {
-                return __generator(this, function (_a) {
-                    switch (_a.label) {
-                        case 0:
-                            settings.useRemotePB = val;
-                            return [4 /*yield*/, this.plugin.saveSettings()];
-                        case 1:
-                            _a.sent();
-                            return [4 /*yield*/, this.plugin.refreshPB()];
-                        case 2:
-                            _a.sent();
-                            return [2 /*return*/];
-                    }
-                });
-            }); });
-        });
+        // new Setting(containerEl)
+        //   .setName("Use Remote Phrase Bank")
+        //   .setDesc(
+        //     "Use the content of the community-maintaned PB from: https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Bank%20copy.md"
+        //   )
+        //   .addToggle((tg) => {
+        //     tg.setValue(settings.useRemotePB).onChange(async (val) => {
+        //       settings.useRemotePB = val;
+        //       await this.plugin.saveSettings();
+        //       await this.plugin.refreshPB();
+        //     });
+        //   });
     };
     return PBSettingTab;
 }(obsidian.PluginSettingTab));
 
 var DEFAULT_SETTINGS = {
-    pbFileNames: [''],
-    useRemotePB: false
+    pbFileNames: [""]
 };
+
 var PBPlugin = /** @class */ (function (_super) {
     __extends(PBPlugin, _super);
     function PBPlugin() {
@@ -355,18 +366,20 @@ var PBPlugin = /** @class */ (function (_super) {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        console.log('Loading PhraseBank plugin');
+                        console.log("Loading PhraseBank plugin");
                         return [4 /*yield*/, this.loadSettings()];
                     case 1:
                         _a.sent();
                         this.addCommand({
-                            id: 'phrase-bank-suggestor',
-                            name: 'Pick from Phrase Bank',
-                            callback: function () { return new PBPhraseTypeOrGroupsFuzzySuggestModal(_this.app, _this, _this.pb, _this.settings).open(); }
+                            id: "phrase-bank-suggestor",
+                            name: "Pick from Phrase Bank",
+                            callback: function () {
+                                return new PBPhraseTypeOrGroupsFuzzySuggestModal(_this.app, _this).open();
+                            }
                         });
                         this.addCommand({
-                            id: 'refresh-phrase-bank',
-                            name: 'Refresh Phrase Bank',
+                            id: "refresh-phrase-bank",
+                            name: "Refresh Phrase Bank",
                             callback: function () { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
                                 switch (_a.label) {
                                     case 0: return [4 /*yield*/, this.refreshPB()];
@@ -375,23 +388,22 @@ var PBPlugin = /** @class */ (function (_super) {
                             }); }); }
                         });
                         this.addSettingTab(new PBSettingTab(this.app, this));
-                        // this.refreshPB()
-                        // this.pb = JSON.parse(readFileSync('C:\\Users\\rossk\\OneDrive\\1D Personal\\Programming\\Obsidian Plugins\\PB Vault\\.obsidian\\plugins\\Phrase-Bank\\phrasebank.json', 'utf-8'))
                         this.pb = [];
                         this.app.workspace.onLayoutReady(function () { return __awaiter(_this, void 0, void 0, function () {
-                            var resp, _a;
-                            return __generator(this, function (_b) {
-                                switch (_b.label) {
-                                    case 0: return [4 /*yield*/, fetch('https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Databases/Phrase_Bank_refnwrite_and_manchester%20copy.md')];
+                            return __generator(this, function (_a) {
+                                switch (_a.label) {
+                                    case 0: 
+                                    //   const resp = await fetch(
+                                    //     "https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Banks/Master%20PB.md?token=AQ3RB3AKC7BM2OM35YJWVQTBNFCNQ"
+                                    //   );
+                                    //   this.remotePBmd = await resp.text();
+                                    return [4 /*yield*/, this.refreshPB()];
                                     case 1:
-                                        resp = _b.sent();
-                                        _a = this;
-                                        return [4 /*yield*/, resp.text()];
-                                    case 2:
-                                        _a.remotePBmd = _b.sent();
-                                        return [4 /*yield*/, this.refreshPB()];
-                                    case 3:
-                                        _b.sent();
+                                        //   const resp = await fetch(
+                                        //     "https://raw.githubusercontent.com/SkepticMystic/Phrase-Bank/main/Phrase%20Banks/Master%20PB.md?token=AQ3RB3AKC7BM2OM35YJWVQTBNFCNQ"
+                                        //   );
+                                        //   this.remotePBmd = await resp.text();
+                                        _a.sent();
                                         return [2 /*return*/];
                                 }
                             });
@@ -403,42 +415,45 @@ var PBPlugin = /** @class */ (function (_super) {
     };
     PBPlugin.prototype.mdToJSON = function (content, fileName) {
         var _a;
-        var lines = content.split('\n');
+        var lines = content.split("\n");
         var pb = [];
         for (var _i = 0, lines_1 = lines; _i < lines_1.length; _i++) {
             var line = lines_1[_i];
-            if (pb.length === 0 && !line.startsWith('### ')) ;
-            else if (line.startsWith('### ')) {
+            if (pb.length === 0 && !line.startsWith("### ")) ;
+            else if (line.startsWith("### ")) {
                 // A new heading indicates a new section in the pb
                 var section = line.slice(4);
                 pb.push({
                     fileName: fileName,
                     phraseType: section,
                     groups: [],
-                    desc: '',
+                    desc: "",
                     keywords: [],
                     phrases: []
                 });
             }
-            else if (line.startsWith('!') || line.startsWith('↑')) {
+            else if (line.startsWith("!") || line.startsWith("↑")) {
                 // Groups start with '!' or '↑'
-                var groups = line.split(/!|↑/)[1].trim().split(',');
+                var groups = line.split(/!|↑/)[1].trim().split(",");
                 groups.forEach(function (group) {
                     pb.last().groups.push({ name: group.trim(), keywords: [] });
                 });
             }
-            else if (line.startsWith('>')) {
+            else if (line.startsWith(">")) {
                 // Blockquotes indicate description
-                pb.last().desc = line.split('>')[1].trim();
+                pb.last().desc = line.split(">")[1].trim();
             }
-            else if (line.startsWith('- ')) {
+            else if (line.startsWith("- ")) {
                 // Bullets indicates keywords
-                var kws = line.slice(2).split(',').map(function (kw) { return kw.trim(); });
+                var kws = line
+                    .slice(2)
+                    .split(",")
+                    .map(function (kw) { return kw.trim(); });
                 (_a = pb.last().keywords).push.apply(_a, kws);
             }
-            else if (line.startsWith('%%')) ;
-            else if (line.startsWith('|')) ;
-            else if (line.trim() !== '') {
+            else if (line.startsWith("%%")) ;
+            else if (line.startsWith("|")) ;
+            else if (line.trim() !== "") {
                 // Every other non-blank line is considered a phrase
                 pb.last().phrases.push(line);
             }
@@ -455,11 +470,12 @@ var PBPlugin = /** @class */ (function (_super) {
                     globalPB[existingI].keywords = removeDuplicates(__spreadArray(__spreadArray([], globalPB[existingI].keywords, true), pbItem.keywords, true));
                     // globalPB[existingPBSection].phrases.push(...pbItem.phrases)
                     // globalPB[existingPBSection].keywords.push(...pbItem.keywords)
-                    if (globalPB[existingI].desc === '') {
+                    if (globalPB[existingI].desc === "") {
                         globalPB[existingI].desc = pbItem.desc;
                     }
                     if (globalPB[existingI].fileName !== pbItem.fileName) {
-                        globalPB[existingI].fileName = globalPB[existingI].fileName + (" " + pbItem.fileName);
+                        globalPB[existingI].fileName =
+                            globalPB[existingI].fileName + (" " + pbItem.fileName);
                     }
                 }
                 else {
@@ -482,7 +498,7 @@ var PBPlugin = /** @class */ (function (_super) {
                     case 1:
                         if (!(_i < _a.length)) return [3 /*break*/, 5];
                         path = _a[_i];
-                        if (path === '')
+                        if (path === "")
                             return [2 /*return*/];
                         pbFile = this.app.metadataCache.getFirstLinkpathDest(path, currFile.path);
                         if (!pbFile) return [3 /*break*/, 3];
@@ -506,42 +522,34 @@ var PBPlugin = /** @class */ (function (_super) {
             });
         });
     };
-    PBPlugin.prototype.buildRemotePB = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var remotePBItemArr;
-            return __generator(this, function (_a) {
-                if (this.settings.useRemotePB) {
-                    remotePBItemArr = this.mdToJSON(this.remotePBmd, 'REMOTE');
-                    return [2 /*return*/, remotePBItemArr];
-                }
-                return [2 /*return*/, []];
-            });
-        });
-    };
+    //   async buildRemotePB() {
+    //     if (this.settings.useRemotePB) {
+    //       const remotePBItemArr = this.mdToJSON(this.remotePBmd, "REMOTE");
+    //       return remotePBItemArr;
+    //     }
+    //     return [];
+    //   }
     PBPlugin.prototype.refreshPB = function () {
         return __awaiter(this, void 0, void 0, function () {
-            var localPBs, remotePB;
+            var localPBs;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        if (this.settings.pbFileNames[0] === '' && !this.settings.useRemotePB) {
-                            new obsidian.Notice('Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.');
+                        if (this.settings.pbFileNames[0] === ""
+                        // && !this.settings.useRemotePB
+                        ) {
+                            new obsidian.Notice("Please enter a path to the phrase bank.md file, or enable the setting to use the remote PB.");
                             return [2 /*return*/];
                         }
                         return [4 /*yield*/, this.buildLocalPBs()];
                     case 1:
                         localPBs = _a.sent();
-                        return [4 /*yield*/, this.buildRemotePB()];
-                    case 2:
-                        remotePB = _a.sent();
-                        console.log({ localPBs: localPBs, remotePB: remotePB });
+                        // const remotePB = await this.buildRemotePB();
+                        console.log({ localPBs: localPBs });
                         if (localPBs === null || localPBs === void 0 ? void 0 : localPBs.length) {
-                            this.pb = this.mergePBs(__spreadArray(__spreadArray([], localPBs, true), [remotePB], false));
+                            this.pb = this.mergePBs(__spreadArray([], localPBs, true));
                         }
-                        else {
-                            this.pb = remotePB;
-                        }
-                        new obsidian.Notice('Phrase Bank Refreshed!');
+                        new obsidian.Notice("Phrase Bank Refreshed!");
                         console.log({ pb: this.pb });
                         return [2 /*return*/];
                 }
@@ -549,7 +557,7 @@ var PBPlugin = /** @class */ (function (_super) {
         });
     };
     PBPlugin.prototype.onunload = function () {
-        console.log('unloading plugin');
+        console.log("unloading plugin");
     };
     PBPlugin.prototype.loadSettings = function () {
         return __awaiter(this, void 0, void 0, function () {
