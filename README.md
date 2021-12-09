@@ -2,12 +2,10 @@
 
 ## Format
 
-Phrase Bank supports two file formats, each with a specific syntax.
+PhraseBank requires a specifc syntax to be used, so that it can parse and display the results.
 
-### Markdown
-
-Each heading (level 2) represents a section, which can have its own description, keywords, and phrases.
-Format it like so:
+Each heading (level 3) represents a phrase type, which can have its own description, keywords, groups, and phrases.
+Formatted like so:
 
 ```md
 ### Phrase Type
@@ -23,3 +21,7 @@ One phrase per line
 
 Another phrase
 ```
+
+A `group` is a higher-level _grouping_ of different phrase types. It is like a folder for different phrase types, which are themselves subfolders for various phrases.
+
+This approaching to grouping is bottom-up, meaning each phrase type can belong to multiple groups.
