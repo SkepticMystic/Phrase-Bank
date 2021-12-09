@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/SkepticMystic/Phrase-Bank/compare/0.0.16...1.0.0) (2021-12-09)
+
+
+### Features
+
+* :fire: Remove remote PB ([9b37ec8](https://github.com/SkepticMystic/Phrase-Bank/commit/9b37ec86c579969eb0145f4ba32b9213dfbf99fb))
+
 ### 0.0.16 (2021-10-08)
 
 
